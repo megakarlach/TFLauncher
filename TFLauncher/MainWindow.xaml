@@ -1,0 +1,30 @@
+﻿<Window x:Class="TFLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck Collector's Edition - Launcher" Height="594" Width="1280">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3C0000" Offset="0"/>
+                <GradientStop Color="#FFBD8100" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,0,10,26" HorizontalAlignment="Right" Width="562" />
+        <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="300" Height="448">
+            <Button.Background>
+                <ImageBrush ImageSource="gamecover/TF2142coverart.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="133,374,0,0" VerticalAlignment="Top" Width="74"/>
+        <Label x:Name="LauncherNameLabel" Content="TetFuck Launcher - Please select your game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="v10.0.6.1 - BETA" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Button x:Name="button2" Content="Visit TetFuck Website" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32"/>
+        <Button x:Name="OpenTetFuck5000" Content="COMING SOON" HorizontalAlignment="Left" Margin="315,54,0,0" VerticalAlignment="Top" Width="300" Height="448" Background="White" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
