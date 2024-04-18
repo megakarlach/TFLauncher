@@ -25,5 +25,25 @@ namespace TFLauncher
         {
             InitializeComponent();
         }
+
+        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.LaunchWebsite("https://tetfakgame.wordpress.com/");
+        }
+
+        private void QuitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.Quit();
+        }
+
+        private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.OpenTetFuck2142();
+        }
+
+        private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
