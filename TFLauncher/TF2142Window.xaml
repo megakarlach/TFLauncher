@@ -1,0 +1,25 @@
+﻿<Window x:Class="TFLauncher.TF2142Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TF2142" Height="720" Width="1280">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="bg/2142_bg.jpg"/>
+        </Grid.Background>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,54,10,111" HorizontalAlignment="Right" Width="597" />
+        <Label x:Name="LauncherNameLabel" Content="TetFuck 2142: Bloodbath Miami Vice" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFFB3FF" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="GoBackBtn" Content="◄ Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
