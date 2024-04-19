@@ -1,0 +1,14 @@
+﻿<Window x:Class="TFLauncher.AboutTF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="About TetFuck" Height="960" Width="640">
+    <Grid>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://tetfakgame.wordpress.com/about/" Margin="0,0,0,50" HorizontalAlignment="Right" Width="632" />
+        <Button x:Name="OKbtn" Content="OK" HorizontalAlignment="Center" Margin="276,897,266,0" VerticalAlignment="Center" Width="90" Click="OKbtn_Click"/>
+    </Grid>
+</Window>

@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TFLauncher")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TetFuck Launcher")]
+[assembly: AssemblyDescription("Launcher for the Number 1 best Tetris game mod ever made, TetFuck 2142 and TetFuck V.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TFLauncher")]
-[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyCompany("Starfuckers Inc.")]
+[assembly: AssemblyProduct("TetFuck Launcher")]
+[assembly: AssemblyCopyright("Copyright © Starfuckers Inc. (leonidakarlach) 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

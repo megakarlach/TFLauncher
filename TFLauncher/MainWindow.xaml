@@ -6,8 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck Collector's Edition - Launcher" Height="643
-        " Width="1280" Background="#FF418B8A" Foreground="White">
+        Title="TetFuck Collector's Edition - Launcher" Height="670" Width="1280" Background="#FF418B8A" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,15 +14,16 @@
                 <GradientStop Color="#FF1F383D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,54,10,111" HorizontalAlignment="Right" Width="597" />
+        <Image x:Name="image" HorizontalAlignment="Left" Height="84" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="350" Source="gamecover/tfcollectorsedition.png"/>
+        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="181,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Launcher v1.0.0.0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,54,10,80" HorizontalAlignment="Right" Width="597" />
         <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="300" Height="448" Click="OpenTetFuck2142_Click">
             <Button.Background>
                 <ImageBrush ImageSource="gamecover/TF2142coverart.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="181,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"/>
-        <Label x:Name="label1" Content="v10.0.6.1 - BETA" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
-        <Button x:Name="VisitTFWebsiteBtn" Content="Visit TetFuck Website" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,22" Height="32" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A">
+        <Button x:Name="VisitTFWebsiteBtn" Content="Visit TetFuck Website" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,404,22" Height="32" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF161B21" Offset="0"/>
@@ -36,7 +36,15 @@
                 <ImageBrush ImageSource="gamecover/TF5000NewCover.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A">
+        <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF211616" Offset="0"/>
+                    <GradientStop Color="#FF3F1D1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AboutBtn" Content="About" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,207,22" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF161B21" Offset="0"/>
@@ -44,6 +52,5 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-
     </Grid>
 </Window>

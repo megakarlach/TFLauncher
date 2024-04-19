@@ -33,13 +33,13 @@ namespace TFLauncher
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
         {
-            Environment.Exit(0);
+            Launcher.ExitMe();
         }
 
         private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
         {
             // Open up the TF2142 - Select Music window and hide the select game window.
-            this.Hide();
+            this.Close();
             TF2142Window tf2142win = new TF2142Window();
             tf2142win.ShowDialog();
         }
@@ -47,6 +47,13 @@ namespace TFLauncher
         private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTetFuck5000();
+            Launcher.ExitMe();
+        }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AboutTF aboutpopup = new AboutTF();
+            aboutpopup.ShowDialog();
         }
     }
 }

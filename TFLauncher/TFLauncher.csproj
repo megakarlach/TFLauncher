@@ -56,7 +56,7 @@
     <ApplicationIcon>launcher.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>320F0ED0A4C43D7413B2C726D3EDA6A192E4F921</ManifestCertificateThumbprint>
@@ -65,7 +65,7 @@
     <ManifestKeyFile>TFLauncher_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
@@ -88,6 +88,9 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -112,6 +115,9 @@
     <Compile Include="TF2142Window.xaml.cs">
       <DependentUpon>TF2142Window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AboutTF.xaml.cs">
+      <DependentUpon>AboutTF.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -126,6 +132,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="TF2142Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AboutTF.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,6 +158,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +167,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="albumcover\ninwoodst94.jpg" />
+    <Resource Include="albumcover\verbalasesong.jpg" />
     <Resource Include="launcher.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +196,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg\2142_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="albumcover\tetfuckost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="albumcover\ut99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="albumcover\basshunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="albumcover\phm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gamecover\tfcollectorsedition.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets')" />
