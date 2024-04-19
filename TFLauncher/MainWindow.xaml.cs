@@ -39,7 +39,7 @@ namespace TFLauncher
         private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
         {
             // Open up the TF2142 - Select Music window and hide the select game window.
-            this.Close();
+            this.Hide();
             TF2142Window tf2142win = new TF2142Window();
             tf2142win.ShowDialog();
         }

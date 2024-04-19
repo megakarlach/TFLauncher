@@ -17,11 +17,11 @@ using System.Diagnostics;
 namespace TFLauncher
 {
     /// <summary>
-    /// Interaction logic for TF2142Window.xaml
+    /// Interaction logic for TF2142Window3.xaml
     /// </summary>
-    public partial class TF2142Window : Window
+    public partial class TF2142Window3 : Window
     {
-        public TF2142Window()
+        public TF2142Window3()
         {
             InitializeComponent();
         }
@@ -32,7 +32,13 @@ namespace TFLauncher
             MainWindow mainwin = new MainWindow();
             mainwin.ShowDialog();
         }
-
+        private void BackPage2Btn_Click(object sender, RoutedEventArgs e)
+        {
+            // Previous page.
+            this.Hide();
+            TF2142Window2 tf2142win2 = new TF2142Window2();
+            tf2142win2.ShowDialog();
+        }
         private void PlayTF2142NoMusicBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTetFuck2142();
@@ -44,13 +50,7 @@ namespace TFLauncher
             Launcher.OpenTF2142LegacyLauncher();
             Launcher.ExitMe();
         }
-        private void NextPage2Btn_Click(object sender, RoutedEventArgs e)
-        {
-            // Next page.
-            this.Hide();
-            TF2142Window2 tf2142win2 = new TF2142Window2();
-            tf2142win2.ShowDialog();
-        }
+
         private void PlayTF2142Mus1Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142Mus1();

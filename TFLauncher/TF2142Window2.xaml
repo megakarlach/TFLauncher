@@ -1,0 +1,127 @@
+﻿<Window x:Class="TFLauncher.TF2142Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck 2142 - Select your music and play!" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="bg/2142_bg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,52,10,185" HorizontalAlignment="Right" Width="597" />
+        <Label x:Name="LauncherNameLabel" Content="TetFuck 2142: Bloodbath Miami Vice - PAGE 2" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Foreground="#FFFFB3FF" FontFamily="Tahoma" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="GoBackBtn" Content="◄ Back (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BackPage1Btn" Content="◄ Back (Page 1)" HorizontalAlignment="Left" Width="192" Margin="10,652,0,0" Click="BackPage1Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14" Height="32" VerticalAlignment="Top">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FFC347AC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="NextPage3Btn" Content="► Next (Page 3)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,644,0,0" Height="32" Click="NextPage3Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FFC347AC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142NoMusicBtn" Content="Play without Music" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="404,0,0,10" Height="32" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF702548" Offset="0"/>
+                    <GradientStop Color="#FFC347AC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="UseLegacyTF2142LauncherBtn" Content="Use Legacy CMD Launcher" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="207,0,0,10" Height="32" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF702548"/>
+                    <GradientStop Color="#FFC347AC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF211616" Offset="0"/>
+                    <GradientStop Color="#FF3F1D1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label1" Content="Launcher v1.0.0.0, TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
+        <Button x:Name="PlayTF2142Mus12Btn" Content="12. Sticking out Your Gyat&#xD;&#xA;for the Rizzler + &#xD;&#xA;Dame Tu Cosita" HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus12Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/dametucosita.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus13Btn" Content="13. Jasper Byrne - Hotline" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus13Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF00FFDC" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/hm1.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus14Btn" Content="14. I'm gonna camp&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="404,52,0,0" Click="PlayTF2142Mus14Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF612A14" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/tf2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus15Btn" Content="15. NIN - Survivalism" HorizontalAlignment="Left" Width="192" Margin="601,52,0,0" Click="PlayTF2142Mus15Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/nin-yz.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus15bBtn" Content="15B. Survivalism (8-bit)&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus15bBtn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/nin-yz-8bit.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus16Btn" Content="16. NIN Broken 5 in 1&#xD;&#xA;&#xD;&#xA;- pinion&#xD;&#xA;- wish&#xD;&#xA;- suck&#xD;&#xA;- happiness in slavery&#xD;&#xA;(with Wikipedia CBT)&#xD;&#xA;- gave up" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus16Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/ninbroken.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus17Btn" Content="17. NIN PHM 4 in 1&#xD;&#xA;&#xD;&#xA;- head like a hole&#xD;&#xA;- terrible lie&#xD;&#xA;- down in it&#xD;&#xA;- sin" HorizontalAlignment="Left" Width="192" Margin="404,250,0,0" Click="PlayTF2142Mus17Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/phm.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus18Btn" Content="18. NIN The Fragile 9 in 1&#xD;&#xA;&#xD;&#xA;just like you imagined&#xD;&#xA;even deeper, no you don't&#xD;&#xA;la mer, where is everybody&#xD;&#xA;please, starfuckers inc.&#xD;&#xA;the big come down&#xD;&#xA;underneath it all" HorizontalAlignment="Left" Width="192" Margin="601,250,0,0" Click="PlayTF2142Mus18Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/ninfragile.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus19Btn" Content="19. Downward Spiral 4 in 1&#xD;&#xA;&#xD;&#xA;- piggy&#xD;&#xA;- heresy&#xD;&#xA;- march of the pigs&#xD;&#xA;- closer" HorizontalAlignment="Left" Width="192" Margin="10,447,0,0" Click="PlayTF2142Mus19Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/tds.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus20Btn" Content="20. femtanyl songs&#xA;is an actual cancer.&#xA;&#xA;here's your&#xA;FEMTANYL - CHASER" HorizontalAlignment="Left" Width="192" Margin="207,447,0,0" Click="PlayTF2142Mus20Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/femtanyl.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus21Btn" Content="21. &#xD;&#xA;Les Rythmes Digitales -&#xD;&#xA;Music Makes You &#xD;&#xA;Lose Control" HorizontalAlignment="Left" Width="192" Margin="404,447,0,0" Click="PlayTF2142Mus21Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/losecontrol.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus22Btn" Content="22. TOOL - &#xD;&#xA;Rosetta Stoned&#xD;&#xA;Maynards Dick" HorizontalAlignment="Left" Width="192" Margin="601,447,0,0" Click="PlayTF2142Mus22Btn_Click" BorderBrush="#FFFF7ED4" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top" Foreground="#FFBAC4E0">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/tool.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
