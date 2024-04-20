@@ -55,5 +55,10 @@ namespace TFLauncher
             AboutTF aboutpopup = new AboutTF();
             aboutpopup.ShowDialog();
         }
+
+        private void sendfeedbackbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
+        }
     }
 }

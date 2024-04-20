@@ -53,35 +53,35 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label1" Content="Launcher v1.0.0.0, TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
-        <Button x:Name="PlayTF2142Mus23Btn" Content="23. AC/DC - Thunderstruck&#xD;&#xA;and SOAD - B.Y.O.B." HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus23Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Label x:Name="label1" Content="Launcher v0.9.0.0 (BETA), TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
+        <Button x:Name="PlayTF2142Mus23Btn" Content="23. AC/DC - Thunderstruck&#xD;&#xA;and SOAD - B.Y.O.B." HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus23Btn_Click" BorderBrush="#FFFF7E7E" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/acdcbyob.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus24Btn" Content="24. Skibidi Toilet Gen Alpha&#xD;&#xA;rizz ohio &amp; &#xD;&#xA;Titan Speakerman song&#xD;&#xA;(Tears For Fears - Everybody&#xD;&#xA;Wants To Rule The World)" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus24Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus24Btn" Content="24. Skibidi Toilet Gen Alpha&#xD;&#xA;rizz ohio &amp; &#xD;&#xA;Titan Speakerman song&#xD;&#xA;(Tears For Fears - Everybody&#xD;&#xA;Wants To Rule The World)" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus24Btn_Click" BorderBrush="#FFFF7E7E" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/titanspeakermansus-thisisasin.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus25Btn" Content="25. Michael Jackson - &#xD;&#xA;Thriller &amp; Bad&#xD;&#xA;&#xD;&#xA;- billie jean&#xD;&#xA;- beat it&#xD;&#xA;- thriller&#xD;&#xA;- bad&#xD;&#xA;- smooth criminal" HorizontalAlignment="Left" Width="192" Margin="404,52,0,0" Click="PlayTF2142Mus25Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF612A14" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus25Btn" Content="25. Michael Jackson - &#xD;&#xA;Thriller &amp; Bad&#xD;&#xA;&#xD;&#xA;- billie jean&#xD;&#xA;- beat it&#xD;&#xA;- thriller&#xD;&#xA;- bad&#xD;&#xA;- smooth criminal" HorizontalAlignment="Left" Width="192" Margin="404,52,0,0" Click="PlayTF2142Mus25Btn_Click" BorderBrush="White" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/tf2.jpg"/>
+                <ImageBrush ImageSource="albumcover/mjthrillerbad.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus26Btn" Content="26. TETRIS 99 THEME" HorizontalAlignment="Left" Width="192" Margin="601,52,0,0" Click="PlayTF2142Mus26Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus26Btn" Content="26. TETRIS 99 THEME" HorizontalAlignment="Left" Width="192" Margin="601,52,0,0" Click="PlayTF2142Mus26Btn_Click" BorderBrush="#FFFEFFD5" Foreground="#FFFEFFD5" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/nin-yz.jpg"/>
+                <ImageBrush ImageSource="albumcover/TetFuck99.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus27Btn" Content="27. NIN - AATCHB (Live)&#xD;&#xA;- terrible lie&#xD;&#xA;- sin&#xD;&#xA;- march of the pigs&#xD;&#xA;- closer&#xD;&#xA; - wish&#xD;&#xA;- suck&#xD;&#xA;- head like a hole&#xD;&#xA;-starfuckers inc." HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus27Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus27Btn" Content="27. NIN - AATCHB (Live)&#xD;&#xA;- terrible lie&#xD;&#xA;- sin&#xD;&#xA;- march of the pigs&#xD;&#xA;- closer&#xD;&#xA; - wish&#xD;&#xA;- suck&#xD;&#xA;- head like a hole&#xD;&#xA;-starfuckers inc." HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus27Btn_Click" BorderBrush="#FFCCB45E" Foreground="#FFCCB45E" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/nin-yz-8bit.png"/>
+                <ImageBrush ImageSource="albumcover/NIN-AATCHB.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus28Btn" Content="28. ciberindustriales - &#xD;&#xA;Destructores De Brasil&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus28Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus28Btn" Content="28. ciberindustriales - &#xD;&#xA;Destructores De Brasil&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus28Btn_Click" BorderBrush="#FF189942" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/ninbroken.jpg"/>
+                <ImageBrush ImageSource="albumcover/tijon-debrasil.jpg"/>
             </Button.Background>
         </Button>
         <!-- COMMENTED OUT

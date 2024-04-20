@@ -45,7 +45,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label1" Content="Launcher v1.0.0.0, TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="label1" Content="Launcher v0.9.0.0 (BETA), TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
         <Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,652,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -54,12 +54,12 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus1Btn" Content="1. Five Little Quakerots&#xD;&#xA;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus1Btn" Content="1. Five Little Quakerots&#xD;&#xA;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus1aBtn" Content="1A. Dotarot Music" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus1aBtn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus1aBtn" Content="1A. Dotarot Music" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus1aBtn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
@@ -74,42 +74,42 @@
                 <ImageBrush ImageSource="albumcover/verbalasesong.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus4Btn" Content="4. TetRot (Tetris&#xA;Type-A theme vocoded)&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus4Btn" Content="4. TetRot (Tetris&#xA;Type-A theme vocoded)&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus5Btn" Content="5. Mechanism Eight&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus5Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus5Btn" Content="5. Mechanism Eight&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus5Btn_Click" BorderBrush="#FF86ABFF" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/ut99.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus6Btn" Content="6. Basshunter - DOTA" HorizontalAlignment="Left" Width="192" Margin="404,250,0,0" Click="PlayTF2142Mus6Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus6Btn" Content="6. Basshunter - DOTA" HorizontalAlignment="Left" Width="192" Margin="404,250,0,0" Click="PlayTF2142Mus6Btn_Click" BorderBrush="#FF4DBF8D" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/basshunter.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus7Btn" Content="7. Head Like A Hole" HorizontalAlignment="Left" Width="192" Margin="601,250,0,0" Click="PlayTF2142Mus7Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus7Btn" Content="7. Head Like A Hole" HorizontalAlignment="Left" Width="192" Margin="601,250,0,0" Click="PlayTF2142Mus7Btn_Click" BorderBrush="#FF28B2E6" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/phm.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus8Btn" Content="8. NIN - Suck Harder&#xD;&#xA;(PARODY)" HorizontalAlignment="Left" Width="192" Margin="10,447,0,0" Click="PlayTF2142Mus8Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus8Btn" Content="8. NIN - Suck Harder&#xD;&#xA;(PARODY)" HorizontalAlignment="Left" Width="192" Margin="10,447,0,0" Click="PlayTF2142Mus8Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus9Btn" Content="9. Perturbator - &#xD;&#xA;Oversexualizer&#xD;&#xA;(PARODY)" HorizontalAlignment="Left" Width="192" Margin="207,447,0,0" Click="PlayTF2142Mus9Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus9Btn" Content="9. Perturbator - &#xD;&#xA;Oversexualizer&#xD;&#xA;(PARODY)" HorizontalAlignment="Left" Width="192" Margin="207,447,0,0" Click="PlayTF2142Mus9Btn_Click" BorderBrush="#FF4CFF85" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/hm2.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus10Btn" Content="10. The Verkkars - EZ4ENCE" HorizontalAlignment="Left" Width="192" Margin="404,447,0,0" Click="PlayTF2142Mus10Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus10Btn" Content="10. The Verkkars - EZ4ENCE" HorizontalAlignment="Left" Width="192" Margin="404,447,0,0" Click="PlayTF2142Mus10Btn_Click" BorderBrush="#FF95886E" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/ez4ence.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus11Btn" Content="11. NIN - March Of The Pigs" HorizontalAlignment="Left" Width="192" Margin="601,447,0,0" Click="PlayTF2142Mus11Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus11Btn" Content="11. NIN - March Of The Pigs" HorizontalAlignment="Left" Width="192" Margin="601,447,0,0" Click="PlayTF2142Mus11Btn_Click" BorderBrush="#FFFEEEC9" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tds.jpg"/>
             </Button.Background>
