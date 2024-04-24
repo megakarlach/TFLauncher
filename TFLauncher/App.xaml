@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:TFLauncher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="lightsinthesky">./resources/lightsinthesky.ttf</FontFamily>
+        <FontFamily x:Key="markersfeltthin">./resources/marker.ttf</FontFamily>
     </Application.Resources>
 </Application>

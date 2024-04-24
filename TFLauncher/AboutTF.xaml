@@ -8,7 +8,21 @@
         mc:Ignorable="d"
         Title="About TetFuck" Height="960" Width="640">
     <Grid>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://tetfakgame.wordpress.com/about/" Margin="0,0,0,50" HorizontalAlignment="Right" Width="632" />
-        <Button x:Name="OKbtn" Content="OK" HorizontalAlignment="Center" Margin="276,897,266,0" VerticalAlignment="Center" Width="90" Click="OKbtn_Click"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF780052" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/about.html" Margin="0,0,0,50" />
+        <Button x:Name="OKbtn" Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="#FF418B8A" BorderBrush="#FF418B8A">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="brokenBtn" Content="broken" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="brokenBtn_Click" Foreground="#02418B8A" BorderBrush="#0CEAB118" Background="#0A000000"/>
     </Grid>
 </Window>

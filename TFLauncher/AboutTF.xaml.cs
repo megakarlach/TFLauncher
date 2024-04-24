@@ -27,5 +27,11 @@ namespace TFLauncher
         {
             this.Close();
         }
+
+        private void brokenBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.LaunchWebsite("https://archive.org/details/NineInchNails-Broken/");
+            Launcher.ExitMe();
+        }
     }
 }

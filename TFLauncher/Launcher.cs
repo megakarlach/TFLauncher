@@ -147,5 +147,9 @@ namespace TFLauncher
         {
             Process.Start("tf5000.cmd");
         }
+        public static void OpenTetFuck4000()
+        {
+            Process.Start("tf4000.cmd");
+        }
     }
 }

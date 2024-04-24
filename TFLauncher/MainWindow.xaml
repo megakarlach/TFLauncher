@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck Collector's Edition - Launcher" Height="670" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck Collector's Edition - Launcher" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -14,11 +14,11 @@
                 <GradientStop Color="#FF1F383D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="350" Source="gamecover/tfcollectorsedition.png"/>
-        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="198,46,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontSize="24" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="230" Source="gamecover/tfcollectorsedition.png"/>
+        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="266,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontSize="24" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Launcher v0.9.0.0 (BETA)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,90,10,80" HorizontalAlignment="Right" Width="597" />
-        <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="26,90,0,0" VerticalAlignment="Top" Width="300" Height="448" Click="OpenTetFuck2142_Click">
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="782,90,10,80" />
+        <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="26,88,0,0" VerticalAlignment="Top" Width="240" Height="360" Click="OpenTetFuck2142_Click">
             <Button.Background>
                 <ImageBrush ImageSource="gamecover/TF2142coverart.png"/>
             </Button.Background>
@@ -31,7 +31,12 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="OpenTetFuck5000" Content="" HorizontalAlignment="Left" Margin="332,90,0,0" VerticalAlignment="Top" Width="300" Height="448" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click">
+        <Button x:Name="OpenTetFuck4000" Content="" HorizontalAlignment="Left" Margin="271,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="gamecover/TF4000NewCover.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="OpenTetFuck5000" Content="" HorizontalAlignment="Left" Margin="516,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click">
             <Button.Background>
                 <ImageBrush ImageSource="gamecover/TF5000NewCover.png"/>
             </Button.Background>
@@ -57,5 +62,6 @@
                 <ImageBrush ImageSource="bg/beta_hover.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
+        <Label x:Name="label" Content="- Better than COD HQ." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="136,0,0,74" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="26" VerticalAlignment="Bottom" FontSize="14"/>
     </Grid>
 </Window>

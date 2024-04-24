@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck 2142 - Select your music and play!" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck 2142 - Select your music and play! - PAGE 3" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="bg/2142_bg.jpg" Stretch="UniformToFill"/>
