@@ -63,8 +63,10 @@ namespace TFLauncher
 
         private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
         {
-            Launcher.OpenTetFuck4000();
-            Launcher.ExitMe();
+            // Open up the TF4K window and hide the select game window.
+            this.Hide();
+            TF4000Window tf4kwin = new TF4000Window();
+            tf4kwin.ShowDialog();
         }
     }
 }

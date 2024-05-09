@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:TFLauncher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <FontFamily x:Key="lightsinthesky">./resources/lightsinthesky.ttf</FontFamily>
-        <FontFamily x:Key="markersfeltthin">./resources/marker.ttf</FontFamily>
+        <FontFamily x:Key="lights in the sky">./resources/lightsinthesky.ttf</FontFamily>
+        <FontFamily x:Key="markers felt thin">./resources/marker.ttf</FontFamily>
+        <FontFamily x:Key="Segoe UI Light">./resources/segoeuil.ttf</FontFamily>
     </Application.Resources>
 </Application>

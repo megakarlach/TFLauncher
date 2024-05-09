@@ -6,13 +6,12 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck 2142 - Select your music and play! - PAGE 3" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ - TetFuck 2142 - Select your music - PAGE 3" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="bg/2142_bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,52,10,185" HorizontalAlignment="Right" Width="597" />
-        <Label x:Name="LauncherNameLabel" Content="TetFuck 2142: Bloodbath Miami Vice - PAGE 3" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Foreground="#FFFFB3FF" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="LauncherNameLabel" Content="TetFuck 2142: Mr. DestructStock - PAGE 3" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Foreground="#FFFFB3FF" FontSize="24" FontWeight="Bold" FontFamily="/resources/#Segoe UI Light"/>
         <Button x:Name="GoBackBtn" Content="◄ Back (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -53,35 +52,71 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label1" Content="Launcher v0.9.0.0 (BETA), TetFuck 2142 version 10.0.6.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" FontFamily="Tahoma" FontSize="10"/>
-        <Button x:Name="PlayTF2142Mus23Btn" Content="23. AC/DC - Thunderstruck&#xD;&#xA;and SOAD - B.Y.O.B." HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus23Btn_Click" BorderBrush="#FFFF7E7E" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
-            <Button.Background>
-                <ImageBrush ImageSource="albumcover/acdcbyob.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="PlayTF2142Mus24Btn" Content="24. Skibidi Toilet Gen Alpha&#xD;&#xA;rizz ohio &amp; &#xD;&#xA;Titan Speakerman song&#xD;&#xA;(Tears For Fears - Everybody&#xD;&#xA;Wants To Rule The World)" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus24Btn_Click" BorderBrush="#FFFF7E7E" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Label x:Name="labelresetaudionotice" Content="IMPOTANT: When playing TetFuck 2142 for the first time, you MUST reset the audio settings, for various sound effects to play properly." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,47" HorizontalAlignment="Left" Width="852"/>
+        <Label x:Name="label1" Content="Launcher v11.0, TetFuck 2142 version 10.1.0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Button x:Name="PlayTF2142Mus24Btn" Content="24. Skibidi Toilet Gen Alpha&#xD;&#xA;rizz ohio &amp; &#xD;&#xA;Titan Speakerman song&#xD;&#xA;(Tears For Fears - Everybody&#xD;&#xA;Wants To Rule The World)" HorizontalAlignment="Left" Width="192" Margin="10,52,0,0" Click="PlayTF2142Mus24Btn_Click" BorderBrush="#FFFF7E7E" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/titanspeakermansus-thisisasin.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus25Btn" Content="25. Michael Jackson - &#xD;&#xA;Thriller &amp; Bad&#xD;&#xA;&#xD;&#xA;- billie jean&#xD;&#xA;- beat it&#xD;&#xA;- thriller&#xD;&#xA;- bad&#xD;&#xA;- smooth criminal" HorizontalAlignment="Left" Width="192" Margin="404,52,0,0" Click="PlayTF2142Mus25Btn_Click" BorderBrush="White" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus25Btn" Content="25. Michael Jackson - &#xD;&#xA;Thriller &amp; Bad&#xD;&#xA;&#xD;&#xA;- billie jean&#xD;&#xA;- beat it&#xD;&#xA;- thriller&#xD;&#xA;- bad&#xD;&#xA;- smooth criminal" HorizontalAlignment="Left" Width="192" Margin="207,52,0,0" Click="PlayTF2142Mus25Btn_Click" BorderBrush="White" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/mjthrillerbad.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus26Btn" Content="26. TETRIS 99 THEME" HorizontalAlignment="Left" Width="192" Margin="601,52,0,0" Click="PlayTF2142Mus26Btn_Click" BorderBrush="#FFFEFFD5" Foreground="#FFFEFFD5" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus26Btn" Content="26. TETRIS 99 THEME" HorizontalAlignment="Left" Width="192" Margin="404,53,0,0" Click="PlayTF2142Mus26Btn_Click" BorderBrush="#FFFEFFD5" Foreground="#FFFEFFD5" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/TetFuck99.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus27Btn" Content="27. NIN - AATCHB (Live)&#xD;&#xA;- terrible lie&#xD;&#xA;- sin&#xD;&#xA;- march of the pigs&#xD;&#xA;- closer&#xD;&#xA; - wish&#xD;&#xA;- suck&#xD;&#xA;- head like a hole&#xD;&#xA;-starfuckers inc." HorizontalAlignment="Left" Width="192" Margin="10,250,0,0" Click="PlayTF2142Mus27Btn_Click" BorderBrush="#FFCCB45E" Foreground="#FFCCB45E" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus27Btn" Content="27. NIN - AATCHB (Live)&#xD;&#xA;- terrible lie&#xD;&#xA;- sin&#xD;&#xA;- march of the pigs&#xD;&#xA;- closer&#xD;&#xA; - wish&#xD;&#xA;- suck&#xD;&#xA;- head like a hole&#xD;&#xA;-starfuckers inc." HorizontalAlignment="Left" Width="192" Margin="601,53,0,0" Click="PlayTF2142Mus27Btn_Click" BorderBrush="#FFCCB45E" Foreground="#FFCCB45E" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/NIN-AATCHB.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus28Btn" Content="28. ciberindustriales - &#xD;&#xA;Destructores De Brasil&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="207,250,0,0" Click="PlayTF2142Mus28Btn_Click" BorderBrush="#FF189942" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+        <Button x:Name="PlayTF2142Mus28Btn" Content="28. ciberindustriales - &#xD;&#xA;Destructores De Brasil&#xD;&#xA;&#xD;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="10,249,0,0" Click="PlayTF2142Mus28Btn_Click" BorderBrush="#FF189942" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tijon-debrasil.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus15bBtn" Content="15B. Survivalism (8-bit)&#xA;&#xA;(No copyright)" HorizontalAlignment="Left" Width="192" Margin="810,256,0,0" Click="PlayTF2142Mus15bBtn_Click" BorderBrush="#FFD8E6F4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/nin-yz-8bit.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus16Btn" Content="16. NIN Broken 5 in 1&#xA;&#xA;- pinion&#xA;- wish&#xA;- suck&#xA;- happiness in slavery&#xA;(with Wikipedia CBT)&#xA;- gave up" HorizontalAlignment="Left" Width="192" Margin="1007,256,0,0" Click="PlayTF2142Mus16Btn_Click" BorderBrush="#FFFFAB4D" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/ninbroken.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus17Btn" Content="17. NIN PHM 4 in 1&#xA;&#xA;- head like a hole&#xA;- terrible lie&#xA;- down in it&#xA;- sin" HorizontalAlignment="Left" Width="192" Margin="1204,256,0,0" Click="PlayTF2142Mus17Btn_Click" BorderBrush="#FF28B2E6" Foreground="White" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/phm.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus18Btn" Content="18. NIN The Fragile 9 in 1&#xA;&#xA;just like you imagined&#xA;even deeper, no you don't&#xA;la mer, where is everybody&#xA;please, starfuckers inc.&#xA;the big come down&#xA;underneath it all" HorizontalAlignment="Left" Width="192" Margin="1401,256,-159,0" Click="PlayTF2142Mus18Btn_Click" BorderBrush="#FF9F2A2A" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/ninfragile.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus19Btn" Content="19. Downward Spiral 4 in 1&#xA;&#xA;- piggy&#xA;- heresy&#xA;- march of the pigs&#xA;- closer" HorizontalAlignment="Left" Width="192" Margin="810,453,0,0" Click="PlayTF2142Mus19Btn_Click" BorderBrush="#FFFDEAB6" Foreground="Black" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/tds.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus21Btn" Content="21. &#xA;Les Rythmes Digitales -&#xA;Music Makes You &#xA;Lose Control" HorizontalAlignment="Left" Width="192" Margin="1007,453,0,0" Click="PlayTF2142Mus21Btn_Click" BorderBrush="#FFB1A7F0" Foreground="White" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/losecontrol.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus22Btn" Content="22. TOOL - &#xA;Rosetta Stoned&#xA;Maynards Dick" HorizontalAlignment="Left" Width="192" Margin="1204,453,0,0" Click="PlayTF2142Mus22Btn_Click" BorderBrush="#FF9FAABD" FontSize="14" FontWeight="Bold" IsCancel="True" Height="192" VerticalAlignment="Top" Foreground="#FFBAC4E0">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/tool.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus23Btn" Content="23. AC/DC - Thunderstruck&#xA;and SOAD - B.Y.O.B." HorizontalAlignment="Left" Width="192" Margin="1401,453,-159,0" Click="PlayTF2142Mus23Btn_Click" BorderBrush="#FFFF7E7E" Foreground="Black" FontSize="14" FontWeight="Bold" Height="192" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/acdcbyob.jpg"/>
             </Button.Background>
         </Button>
         <!-- COMMENTED OUT

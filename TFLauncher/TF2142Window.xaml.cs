@@ -51,6 +51,11 @@ namespace TFLauncher
             TF2142Window2 tf2142win2 = new TF2142Window2();
             tf2142win2.ShowDialog();
         }
+        private void PlayTF2142AllMusicBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.OpenTF2142AllMusic();
+            Launcher.ExitMe();
+        }
         private void PlayTF2142Mus1Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142Mus1();

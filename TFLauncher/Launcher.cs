@@ -15,9 +15,14 @@ namespace TFLauncher
         {
             Process.Start(url);
         }
+        // TetFuck 2142
         public static void OpenTetFuck2142()
         {
             Process.Start("tf2142_playnomusic.cmd");
+        }
+        public static void OpenTF2142AllMusic()
+        {
+            Process.Start("tf2142_allmusic.cmd");
         }
         public static void OpenTF2142Mus1()
         {
@@ -143,13 +148,19 @@ namespace TFLauncher
         {
             Process.Start("tf2142_legacylauncher.cmd");
         }
-        public static void OpenTetFuck5000()
-        {
-            Process.Start("tf5000.cmd");
-        }
+        // TetFuck 4000
         public static void OpenTetFuck4000()
         {
             Process.Start("tf4000.cmd");
+        }
+        public static void OpenTetFuck4000Setup()
+        {
+            Process.Start("tf4000setup.cmd");
+        }
+        // TetFuck 5000
+        public static void OpenTetFuck5000()
+        {
+            Process.Start("tf5000.cmd");
         }
     }
 }

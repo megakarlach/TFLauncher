@@ -6,24 +6,24 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck Collector's Edition - Launcher" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ - a place for the best Tetris mod ever made!" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF4D4B48" Offset="0.103"/>
-                <GradientStop Color="#FF1F383D" Offset="1"/>
+                <GradientStop Color="#FF71177A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="230" Source="gamecover/tfcollectorsedition.png"/>
-        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="266,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontSize="24" FontWeight="Bold"/>
-        <Label x:Name="label1" Content="Launcher v0.9.0.0 (BETA)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="782,90,10,80" />
+        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="230" Source="gamecover/tfhqlogo.png"/>
+        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontSize="36" FontWeight="Bold" FontFamily="/resources/#Segoe UI Light"/>
+        <Label x:Name="label1" Content="Launcher v11.0.0.0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="782,90,10,96" />
         <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="26,88,0,0" VerticalAlignment="Top" Width="240" Height="360" Click="OpenTetFuck2142_Click">
             <Button.Background>
                 <ImageBrush ImageSource="gamecover/TF2142coverart.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="VisitTFWebsiteBtn" Content="Visit TetFuck Website" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,404,22" Height="32" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
+        <Button x:Name="VisitTFWebsiteBtn" Content="Visit TetFuck Website" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,207,59" Height="32" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF161B21" Offset="0"/>
@@ -33,12 +33,12 @@
         </Button>
         <Button x:Name="OpenTetFuck4000" Content="" HorizontalAlignment="Left" Margin="271,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000_Click">
             <Button.Background>
-                <ImageBrush ImageSource="gamecover/TF4000NewCover.png"/>
+                <ImageBrush ImageSource="gamecover/TF4000NewCover_unreleased.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="OpenTetFuck5000" Content="" HorizontalAlignment="Left" Margin="516,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click">
             <Button.Background>
-                <ImageBrush ImageSource="gamecover/TF5000NewCover.png"/>
+                <ImageBrush ImageSource="gamecover/TF5000NewCover_unreleased.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="14">
@@ -62,6 +62,15 @@
                 <ImageBrush ImageSource="bg/beta_hover.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="- Better than COD HQ." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="136,0,0,74" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="26" VerticalAlignment="Bottom" FontSize="14"/>
+        <Label x:Name="label" Content="- Better than Call of Duty HQ." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="240,0,0,10" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="26" VerticalAlignment="Bottom" FontSize="14"/>
+        <Label x:Name="labelnotice" Content="IMPORTANT NOTES for first-time launch:&#xA;TETFUCK 2142 requires reset sounds to default for sound effects to work properly.&#xA;TETFUCK 4K requires manual music configuration in order to play music.&#xD;&#xA;&#xD;&#xA;Other Important Notes:&#xD;&#xA;- This game has some copyrighted soundtrack, if you are planning to stream, record this and upload&#xA;to YOUTUBE or TWITCH (and other platforms), you MUST select songs that are copyright-free,&#xA;otherwise your videos/streams will get demonetized, shared revenue, or copyright striked." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="26,0,0,105" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="136" VerticalAlignment="Bottom" FontSize="14"/>
+        <Button x:Name="FeedbackBtn2" Content="Technical Support/Feedback" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,59" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
