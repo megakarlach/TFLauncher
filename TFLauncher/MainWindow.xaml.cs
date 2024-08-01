@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CefSharp;
 using CefSharp.Wpf;
+using System.Media;
 
 namespace TFLauncher
 {
@@ -26,47 +27,52 @@ namespace TFLauncher
             InitializeComponent();
         }
 
+        private void animatedBG_Loaded(object sender, RoutedEventArgs e)
+        {
+            animatedBG.Play();
+        }
+
+        private void animatedBG_Ended(object sender, RoutedEventArgs e)
+        {
+
+           animatedBG.Position = TimeSpan.FromSeconds(0);
+
+        }
+        // TOP BAR STUFF
         private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.LaunchWebsite("https://tetfakgame.wordpress.com/");
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
         {
-            Launcher.ExitMe();
-        }
-
-        private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
-        {
-            // Open up the TF2142 - Select Music window and hide the select game window.
-            this.Hide();
-            TF2142Window tf2142win = new TF2142Window();
-            tf2142win.ShowDialog();
-        }
-
-        private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTetFuck5000();
+            Launcher.PlayBtnSound();
             Launcher.ExitMe();
         }
 
         private void AboutBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             AboutTF aboutpopup = new AboutTF();
             aboutpopup.ShowDialog();
         }
 
         private void sendfeedbackbtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
         }
+        // TOP BAR STUFF
 
-        private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
-        {
-            // Open up the TF4K window and hide the select game window.
+        private void selectgamebtn_Click(object sender, RoutedEventArgs e)
+        { //click to select game btn
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // stop animated BG
+            // Open up the select game window.
             this.Hide();
-            TF4000Window tf4kwin = new TF4000Window();
-            tf4kwin.ShowDialog();
+            SelectGameWindow selectgamewin = new SelectGameWindow();
+            selectgamewin.ShowDialog();
         }
     }
 }

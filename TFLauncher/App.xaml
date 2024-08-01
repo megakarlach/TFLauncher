@@ -7,5 +7,6 @@
         <FontFamily x:Key="lights in the sky">./resources/lightsinthesky.ttf</FontFamily>
         <FontFamily x:Key="markers felt thin">./resources/marker.ttf</FontFamily>
         <FontFamily x:Key="Segoe UI Light">./resources/segoeuil.ttf</FontFamily>
+        <FontFamily x:Key="Stratum2 Md">./resources/stratum2.ttf</FontFamily>
     </Application.Resources>
 </Application>

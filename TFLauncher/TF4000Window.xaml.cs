@@ -13,6 +13,7 @@ using System.Windows.Shapes;
 using CefSharp;
 using CefSharp.Wpf;
 using System.Diagnostics;
+using System.Media;
 
 namespace TFLauncher
 {
@@ -25,13 +26,40 @@ namespace TFLauncher
         {
             InitializeComponent();
         }
+        // TOP BAR STUFF
+        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://tetfakgame.wordpress.com/");
+        }
+
+        private void QuitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.ExitMe();
+        }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            AboutTF aboutpopup = new AboutTF();
+            aboutpopup.ShowDialog();
+        }
+
+        private void sendfeedbackbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
+        }
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MainWindow mainwin = new MainWindow();
-            mainwin.ShowDialog();
+            SelectGameWindow selgamewin = new SelectGameWindow();
+            selgamewin.ShowDialog();
         }
+
+        // TOP BAR STUFF
 
         private void PlayTF4000Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -39,12 +67,7 @@ namespace TFLauncher
             Launcher.ExitMe();
         }
 
-        private void QuitBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.ExitMe();
-        }
-
-        private void RunTF4KSetupBtn_Click(object sender, RoutedEventArgs e)
+        private void OpenTF4KSettingsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTetFuck4000Setup();
         }

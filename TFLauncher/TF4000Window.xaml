@@ -9,54 +9,84 @@
         Title="TetFuck HQ - TetFuck 4K" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="bg/woodstock94-2.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="bg/TF4KBG.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="0,10,10,59" HorizontalAlignment="Right" Width="508" />
-        <Label x:Name="LauncherNameLabel" Content="TetFuck 4K - DestructStock" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" FontFamily="/resources/#Segoe UI Light" Background="#FF162352">
-            <Label.Foreground>
+        <!-- top bar grid -->
+        <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
+            <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFE84126" Offset="1"/>
-                    <GradientStop Color="#FFECBE3E"/>
-                    <GradientStop Color="#FFEAAB3B" Offset="0.5"/>
-                    <GradientStop Color="#FFE2422C" Offset="0.515"/>
+                    <GradientStop Color="#3F494949" Offset="0"/>
+                    <GradientStop Color="#3F000000" Offset="0.997"/>
                 </LinearGradientBrush>
-            </Label.Foreground>
-        </Label>
-        <Button x:Name="GoBackBtn" Content="◄ Back (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF161B21" Offset="0"/>
-                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="RunTF4KSetupBtn" Content="TetFuck 4K Setup" VerticalAlignment="Bottom" Margin="44,0,0,127" Height="32" Click="RunTF4KSetupBtn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14" HorizontalAlignment="Left" Width="389">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF702548" Offset="0"/>
-                    <GradientStop Color="#FFC347AC" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF211616" Offset="0"/>
-                    <GradientStop Color="#FF3F1D1D" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Label x:Name="labelresetaudionotice" Content="IMPOTANT: When playing TetFuck 4K for the first time, you MAY need to run setup to &#xD;&#xA;configure the MIDI music, otherwise the music will not play. Futhermore, TetFuck 4K &#xD;&#xA;also support music playback via CDs, but you need third-party software in order to use CD music playback.&#xA;TetFuck 4K's MIDI music work best with SC-55 soundfont (instead of built-in one from Windows) and VirtualMIDISynth." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="11" Margin="10,0,572,47" Background="#7F000000" Height="62"/>
-        <Label x:Name="label1" Content="Launcher v11.0.0.0, TetFuck 4K version 3.0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
-        <Button x:Name="PlayTF4000Btn" Content="Play Now" Margin="44,0,0,164" Click="PlayTF4000Btn_Click" BorderBrush="#FFC5262C" Foreground="White" FontSize="24" FontWeight="Bold" IsCancel="True" Height="80" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Marker Felt" HorizontalAlignment="Left" Width="389">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFCBC7BF" Offset="0.23"/>
-                    <GradientStop Color="#FF46668F"/>
-                    <GradientStop Color="#FF687D2E" Offset="0.24"/>
-                    <GradientStop Color="#FFDBAC3E" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+            </Grid.Background>
+            <Button x:Name="GoBackBtn" Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="VisitTFWebsiteBtn" Content="OFFICIAL WEBSITE" Margin="207,11,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="QuitBtn" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF211616" Offset="0"/>
+                        <GradientStop Color="#FF3F1D1D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="AboutBtn" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="FeedbackBtn2" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!-- top bar grid -->
+        <Label x:Name="labelresetaudionotice" Content="TetFuck 4K supports CD and MIDI music. To play the game with built-in MP3, M4A music, you MUST disable it from in-game settings." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852"/>
+        <Label x:Name="label1" Content="TetFuck Launcher v1.0.0.1 (build 9411) | TetFuck 4K version 3.0.0&#xA;© 2024 leonidakarlach (The TetFuck Company) | 2001 - 2003 Volkov Artem, Petrov Sergey&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <!-- Game logo and play button -->
+        <Image x:Name="image" Height="253" Margin="420,226,420,367" VerticalAlignment="Center" Source="gamecover/logos/tf4klogo.png"/>
+        <Grid Height="297" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="12,0">
+            <Button x:Name="PlayTF4000Btn" Content="PLAY NOW ▶" Margin="444,10,666,207" Click="PlayTF4000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Center" Width="300">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9DD53A" Offset="0"/>
+                        <GradientStop Color="#FF7CBC0A" Offset="1"/>
+                        <GradientStop Color="#FFA1D54F" Offset="0.5"/>
+                        <GradientStop Color="#FF80C217" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTF4KSettingsBtn" Content=" OPTIONS ⚙️" Margin="749,10,431,207" Click="OpenTF4KSettingsBtn_Click" BorderBrush="#FFB5C6D0" Foreground="#FF394044" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Center">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                        <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                        <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                        <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!-- Game logo and play button-->
     </Grid>
 </Window>

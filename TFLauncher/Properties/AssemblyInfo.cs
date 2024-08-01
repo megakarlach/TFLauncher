@@ -8,9 +8,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TetFuck Launcher")]
-[assembly: AssemblyDescription("Launcher for the Number 1 best Tetris game mod ever made, TetFuck 2142, TetFuck 4K and TetFuck V.")]
+[assembly: AssemblyDescription("Launcher for TetFuck 2142, TetFuck 4K, TetFuck V and Cunny Crysis.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Starfuckers Inc.")]
+[assembly: AssemblyCompany("The TetFuck Company (leonidakarlach)")]
 [assembly: AssemblyProduct("TetFuck Launcher")]
 [assembly: AssemblyCopyright("Copyright © Starfuckers Inc. (leonidakarlach) 2024")]
 [assembly: AssemblyTrademark("")]
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.9.1.0")]
-[assembly: AssemblyFileVersion("0.9.1.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]

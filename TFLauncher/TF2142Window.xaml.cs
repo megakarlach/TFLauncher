@@ -13,6 +13,7 @@ using System.Windows.Shapes;
 using CefSharp;
 using CefSharp.Wpf;
 using System.Diagnostics;
+using System.Media;
 
 namespace TFLauncher
 {
@@ -26,12 +27,39 @@ namespace TFLauncher
             InitializeComponent();
         }
 
+        // TOP BAR STUFF
+        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://tetfakgame.wordpress.com/");
+        }
+
+        private void QuitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.ExitMe();
+        }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            AboutTF aboutpopup = new AboutTF();
+            aboutpopup.ShowDialog();
+        }
+
+        private void sendfeedbackbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
+        }
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MainWindow mainwin = new MainWindow();
-            mainwin.ShowDialog();
+            SelectGameWindow selgamewin = new SelectGameWindow();
+            selgamewin.ShowDialog();
         }
+
+        // TOP BAR STUFF
 
         private void PlayTF2142NoMusicBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -44,13 +72,6 @@ namespace TFLauncher
             Launcher.OpenTF2142LegacyLauncher();
             Launcher.ExitMe();
         }
-        private void NextPage2Btn_Click(object sender, RoutedEventArgs e)
-        {
-            // Next page.
-            this.Hide();
-            TF2142Window2 tf2142win2 = new TF2142Window2();
-            tf2142win2.ShowDialog();
-        }
         private void PlayTF2142AllMusicBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142AllMusic();
@@ -62,17 +83,12 @@ namespace TFLauncher
             Launcher.ExitMe();
         }
 
-        private void PlayTF2142Mus1aBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus1a();
-            Launcher.ExitMe();
-        }
-
         private void PlayTF2142Mus2Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142Mus2();
             Launcher.ExitMe();
         }
+
         private void PlayTF2142Mus3Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142Mus3();
@@ -81,136 +97,6 @@ namespace TFLauncher
         private void PlayTF2142Mus4Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.OpenTF2142Mus4();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus5Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus5();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus6Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus6();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus7Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus7();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus8Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus8();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus9Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus9();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus10Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus10();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus11Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus11();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus12Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus12();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus13Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus13();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus14Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus14();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus15Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus15();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus15bBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus15b();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus16Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus16();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus17Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus17();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus18Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus18();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus19Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus19();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus20Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus20();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus21Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus21();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus22Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus22();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus23Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus23();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus24Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus24();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus25Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus25();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus26Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus26();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus27Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus27();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus28Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.OpenTF2142Mus28();
-            Launcher.ExitMe();
-        }
-
-        private void QuitBtn_Click(object sender, RoutedEventArgs e)
-        {
             Launcher.ExitMe();
         }
     }

@@ -9,68 +9,57 @@
         Title="TetFuck HQ - a place for the best Tetris mod ever made!" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF4D4B48" Offset="0.103"/>
-                <GradientStop Color="#FF71177A" Offset="1"/>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="bg/loading.jpg" TileMode="Tile" Stretch="UniformToFill"/>
         </Grid.Background>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="230" Source="gamecover/tfhqlogo.png"/>
-        <Label x:Name="LauncherNameLabel" Content="Select TetFuck game:" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Foreground="#FF6AE2E0" FontSize="36" FontWeight="Bold" FontFamily="/resources/#Segoe UI Light"/>
-        <Label x:Name="label1" Content="Launcher v11.0.0.0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="782,90,10,96" />
-        <Button x:Name="OpenTetFuck2142" Content="" HorizontalAlignment="Left" Margin="26,88,0,0" VerticalAlignment="Top" Width="240" Height="360" Click="OpenTetFuck2142_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="gamecover/TF2142coverart.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="VisitTFWebsiteBtn" Content="Visit TetFuck Website" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,207,59" Height="32" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
-            <Button.Background>
+        <MediaElement x:Name="animatedBG" Source="media/background.mp4" Volume="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True"/>
+        <Image x:Name="image" Height="186" Margin="0,73,0,453" VerticalAlignment="Center" Source="gamecover/LauncherLogo_CE.png"/>
+        <!-- top bar grid -->
+        <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
+            <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF161B21" Offset="0"/>
-                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    <GradientStop Color="#3F494949" Offset="0"/>
+                    <GradientStop Color="#3F000000" Offset="0.997"/>
                 </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="OpenTetFuck4000" Content="" HorizontalAlignment="Left" Margin="271,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="gamecover/TF4000NewCover_unreleased.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="OpenTetFuck5000" Content="" HorizontalAlignment="Left" Margin="516,88,0,0" VerticalAlignment="Top" Width="240" Height="360" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="gamecover/TF5000NewCover_unreleased.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="QuitBtn" Content="Quit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,22" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF211616" Offset="0"/>
-                    <GradientStop Color="#FF3F1D1D" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="AboutBtn" Content="About" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,207,22" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF161B21" Offset="0"/>
-                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="sendfeedbackbtn" Content="Share your feedback" HorizontalAlignment="Right" Width="160" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="sendfeedbackbtn_Click" Height="90" VerticalAlignment="Top">
-            <Button.Background>
-                <ImageBrush ImageSource="bg/beta_hover.png" Stretch="UniformToFill"/>
-            </Button.Background>
-        </Button>
-        <Label x:Name="label" Content="- Better than Call of Duty HQ." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="240,0,0,10" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="26" VerticalAlignment="Bottom" FontSize="14"/>
-        <Label x:Name="labelnotice" Content="IMPORTANT NOTES for first-time launch:&#xA;TETFUCK 2142 requires reset sounds to default for sound effects to work properly.&#xA;TETFUCK 4K requires manual music configuration in order to play music.&#xD;&#xA;&#xD;&#xA;Other Important Notes:&#xD;&#xA;- This game has some copyrighted soundtrack, if you are planning to stream, record this and upload&#xA;to YOUTUBE or TWITCH (and other platforms), you MUST select songs that are copyright-free,&#xA;otherwise your videos/streams will get demonetized, shared revenue, or copyright striked." FontFamily="/resources/#Marker Felt" HorizontalAlignment="Left" Margin="26,0,0,105" Foreground="White" RenderTransformOrigin="0.18,0.808" Height="136" VerticalAlignment="Bottom" FontSize="14"/>
-        <Button x:Name="FeedbackBtn2" Content="Technical Support/Feedback" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="192" Margin="0,0,10,59" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF161B21" Offset="0"/>
-                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+            </Grid.Background>
+            <Button x:Name="VisitTFWebsiteBtn" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="QuitBtn" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF211616" Offset="0"/>
+                        <GradientStop Color="#FF3F1D1D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="AboutBtn" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="FeedbackBtn2" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!-- top bar grid -->
+        <Label x:Name="versionlabel" Content="TetFuck Launcher v1.0.0.1 (build 9411)&#xA;© 2024 leonidakarlach (The TetFuck Company)&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <!-- <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdates.html" Margin="873,484,10,81" /> -->
+        <Grid Margin="10,0,10,10" Height="330" VerticalAlignment="Bottom">
+            <Image x:Name="image1" Margin="454,0,766,257" Source="materials/xbox_btn.png" Stretch="None" HorizontalAlignment="Center" Width="32" Height="32" VerticalAlignment="Bottom" RenderTransformOrigin="0.922,0.141"/>
+            <Button x:Name="button" Content="/ CLICK HERE TO SELECT GAME" Margin="492,0,440,256" VerticalAlignment="Bottom" FontSize="22" FontFamily="Trebuchet MS" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" HorizontalAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>
