@@ -8,7 +8,7 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TetFuck Launcher")]
-[assembly: AssemblyDescription("Launcher for TetFuck 2142, TetFuck 4K, TetFuck V and Cunny Crysis.")]
+[assembly: AssemblyDescription("Launcher for TetFuck 2142, TetFuck 4K, TetFuck V and Kunny Krysis.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("The TetFuck Company (leonidakarlach)")]
 [assembly: AssemblyProduct("TetFuck Launcher")]

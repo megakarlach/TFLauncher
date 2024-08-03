@@ -16,6 +16,12 @@ namespace TFLauncher
         {
             Process.Start(url);
         }
+        public static void PlayHoverBtnSound()
+        {
+            SoundPlayer buttonclickrollover = new SoundPlayer(@".\sound\buttonrollover.wav");
+            buttonclickrollover.Load();
+            buttonclickrollover.Play();
+        }
         public static void PlayBtnSound()
         {
             SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\buttonclickrelease.wav");
@@ -69,7 +75,7 @@ namespace TFLauncher
         // Cunny Crisis (Puyo Puyo)
         public static void OpenCunnyCrisis()
         {
-            Process.Start("StartCunnyCrisis.cmd");
+            Process.Start("StartKunnyKrysis.cmd");
         }
     }
 }

@@ -39,11 +39,23 @@ namespace TFLauncher
             animatedBG.Position = TimeSpan.FromSeconds(0);
 
         }
+        // Play sounds when hovering buttons
+        private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // start playing
+            Launcher.PlayHoverBtnSound();
+        }
+
+        private void ButtonSFX_MouseLeave(object sender, MouseEventArgs e)
+        {
+            // stop playing
+        }
+
         // Top bar buttons
         private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://tetfakgame.wordpress.com/");
+            Launcher.LaunchWebsite("https://playtetfuck.wordpress.com/"); //link updated 8/3/2024
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)

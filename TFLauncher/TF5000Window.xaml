@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck HQ - TetFuck V (Five)" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="The TetFuck Box - TetFuck V (Five)" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="bg/TF5000BG.jpg" Stretch="UniformToFill"/>
@@ -15,11 +15,11 @@
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#3F494949" Offset="0"/>
-                    <GradientStop Color="#3F000000" Offset="0.997"/>
+                    <GradientStop Color="#BF494949" Offset="0"/>
+                    <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="GoBackBtn" Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="GoBackBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -27,7 +27,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="VisitTFWebsiteBtn" Content="OFFICIAL WEBSITE" Margin="207,11,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="207,11,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -35,7 +35,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="QuitBtn" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF211616" Offset="0"/>
@@ -43,7 +43,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="AboutBtn" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -51,7 +51,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="FeedbackBtn2" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -93,7 +93,7 @@
         </Button>-->
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="286" Margin="420,226,420,334" VerticalAlignment="Center" Source="gamecover/logos/tffivelogo.png"/>
-        <Button x:Name="PlayTF5000Btn" Content="PLAY NOW ▶" Margin="420,537,420,229" Click="PlayTF5000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
+        <Button x:Name="PlayTF5000Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OPEN TFV LAUNCHER/PLAY ▶" Margin="420,537,420,229" Click="PlayTF5000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9DD53A" Offset="0"/>

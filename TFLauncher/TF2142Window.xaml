@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck HQ - TetFuck 2142" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="The TetFuck Box - TetFuck 2142" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="bg/2142_bg.jpg" Stretch="UniformToFill"/>
@@ -16,11 +16,11 @@
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#3F494949" Offset="0"/>
-                    <GradientStop Color="#3F000000" Offset="0.997"/>
+                    <GradientStop Color="#BF494949"/>
+                    <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="GoBackBtn" Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="GoBackBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -28,7 +28,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="VisitTFWebsiteBtn" Content="OFFICIAL WEBSITE" Margin="207,11,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="207,11,0,9" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -36,7 +36,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="QuitBtn" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF211616" Offset="0"/>
@@ -44,7 +44,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="AboutBtn" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -52,7 +52,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="FeedbackBtn2" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -62,7 +62,7 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Button x:Name="PlayTF2142NoMusicBtn" Content="Play without Music" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14" RenderTransformOrigin="0.518,0.7">
+        <Button x:Name="PlayTF2142NoMusicBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Play without Music" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14" RenderTransformOrigin="0.518,0.7">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF4B2F13" Offset="0"/>
@@ -70,11 +70,11 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="UseLegacyTF2142LauncherBtn" Content="Use Legacy CMD Launcher" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
+        <Button x:Name="UseLegacyTF2142LauncherBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Use Legacy CMD Launcher" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF702548"/>
-                    <GradientStop Color="#FFC347AC" Offset="1"/>
+                    <GradientStop Color="#FF4B2F13" Offset="0"/>
+                    <GradientStop Color="#FF895522" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
@@ -89,22 +89,22 @@
             </Button.Background>
         </Button> -->
         <!-- Music setlist -->
-        <Button x:Name="PlayTF2142Mus1Btn" Content="Play now with&#xD;&#xA;Music setlist #1" HorizontalAlignment="Center" Width="160" Margin="436,593,838,93" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="160" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus1Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #1" HorizontalAlignment="Center" Width="160" Margin="436,593,838,93" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="160" VerticalAlignment="Center">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus2Btn" Content="Play now with&#xD;&#xA;Music setlist #2" HorizontalAlignment="Center" Width="128" Margin="601,609,705,109" Click="PlayTF2142Mus2Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus2Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #2" HorizontalAlignment="Center" Width="128" Margin="601,609,705,109" Click="PlayTF2142Mus2Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus3Btn" Content="Play now with&#xD;&#xA;Music setlist #3" HorizontalAlignment="Center" Width="128" Margin="734,609,572,109" Click="PlayTF2142Mus3Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus3Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #3" HorizontalAlignment="Center" Width="128" Margin="734,609,572,109" Click="PlayTF2142Mus3Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/ninwoodst94.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus4Btn" Content="Play now with&#xD;&#xA;Music setlist #4" HorizontalAlignment="Center" Width="128" Margin="867,609,439,109" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus4Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #4" HorizontalAlignment="Center" Width="128" Margin="867,609,439,109" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
             <Button.Background>
                 <ImageBrush ImageSource="albumcover/verbalasesong.jpg"/>
             </Button.Background>
@@ -112,7 +112,7 @@
         <!-- Music setlist -->
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="253" Margin="420,226,420,367" VerticalAlignment="Center" Source="gamecover/logos/tf2142logo.png"/>
-        <Button x:Name="PlayTF2142Btn" Content="PLAY NOW ▶" Margin="420,500,595,266" Click="PlayTF2142AllMusicBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Center">
+        <Button x:Name="PlayTF2142Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="PLAY NOW ▶&#xD;&#xA;(all music)" Margin="475,500,679,266" Click="PlayTF2142AllMusicBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="24" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Center" Width="280">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9DD53A" Offset="0"/>
