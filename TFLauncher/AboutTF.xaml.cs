@@ -23,6 +23,18 @@ namespace TFLauncher
             InitializeComponent();
         }
 
+        // Play sounds when hovering buttons
+        private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // start playing
+            Launcher.PlayHoverBtnSound();
+        }
+
+        private void ButtonSFX_MouseLeave(object sender, MouseEventArgs e)
+        {
+            // stop playing
+        }
+
         private void OKbtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
