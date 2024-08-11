@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="bg/2142_bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <Image x:Name="image1" Margin="0,209,26,200" Source="screenshots/TF2142.png" HorizontalAlignment="Right" Width="389"/>
+        <Image x:Name="image1" Margin="10,143,0,266" Source="screenshots/TF2142.png" HorizontalAlignment="Left" Width="389"/>
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.Background>
@@ -62,7 +62,7 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Button x:Name="PlayTF2142NoMusicBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Play without Music" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14" RenderTransformOrigin="0.518,0.7">
+        <Button x:Name="PlayTF2142NoMusicBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="PLAY WITHOUT MUSIC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="16" RenderTransformOrigin="0.518,0.7" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF4B2F13" Offset="0"/>
@@ -89,30 +89,45 @@
             </Button.Background>
         </Button> -->
         <!-- Music setlist -->
-        <Button x:Name="PlayTF2142Mus1Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #1" HorizontalAlignment="Center" Width="160" Margin="436,593,838,93" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="160" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus1Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #1&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="160" Margin="336,590,938,96" Click="PlayTF2142Mus1Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="160" VerticalAlignment="Center">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
+                <ImageBrush ImageSource="albumcover/TFalbum art 1.png" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus2Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #2" HorizontalAlignment="Center" Width="128" Margin="601,609,705,109" Click="PlayTF2142Mus2Btn_Click" BorderBrush="#FFA0D9F7" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus2Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #2&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="501,606,805,112" Click="PlayTF2142Mus2Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/tetfuckost.png"/>
+                <ImageBrush ImageSource="albumcover/TFalbum art 2.png" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus3Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #3" HorizontalAlignment="Center" Width="128" Margin="734,609,572,109" Click="PlayTF2142Mus3Btn_Click" BorderBrush="#FFFF7ED4" Foreground="Black" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus3Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #3&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="634,606,672,112" Click="PlayTF2142Mus3Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center" OpacityMask="#FFFF2D2D">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/ninwoodst94.jpg"/>
+                <ImageBrush ImageSource="albumcover/TFalbum art 3.png" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus4Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xD;&#xA;Music setlist #4" HorizontalAlignment="Center" Width="128" Margin="867,609,439,109" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFFF7ED4" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+        <Button x:Name="PlayTF2142Mus4Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #4&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="767,606,539,112" Click="PlayTF2142Mus4Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
             <Button.Background>
-                <ImageBrush ImageSource="albumcover/verbalasesong.jpg"/>
+                <ImageBrush ImageSource="albumcover/TFalbum art 4.png" Opacity="0.5"/>
             </Button.Background>
         </Button>
         <!-- Music setlist -->
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="253" Margin="420,226,420,367" VerticalAlignment="Center" Source="gamecover/logos/tf2142logo.png"/>
         <Button x:Name="PlayTF2142Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="PLAY NOW ▶&#xD;&#xA;(all music)" Margin="475,500,679,266" Click="PlayTF2142AllMusicBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="24" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Center" Width="280">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9DD53A" Offset="0"/>
+                    <GradientStop Color="#FF7CBC0A" Offset="1"/>
+                    <GradientStop Color="#FFA1D54F" Offset="0.5"/>
+                    <GradientStop Color="#FF80C217" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlayTF2142Mus5Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #5&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="900,606,406,112" Click="PlayTF2142Mus5Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/TFalbum art 5.png" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="NextSetlistBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="&gt;" Margin="1033,606,369,112" Click="NextSetlistBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="24" FontWeight="Bold" Height="128" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" HorizontalAlignment="Center" Width="32">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9DD53A" Offset="0"/>

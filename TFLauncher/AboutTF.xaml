@@ -23,6 +23,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="brokenBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="broken" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="brokenBtn_Click" Foreground="#02418B8A" BorderBrush="#0CEAB118" Background="#0A000000"/>
+        <Button x:Name="brokenBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="broken" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="brokenBtn_Click" Foreground="#02418B8A" BorderBrush="#0CEAB118" Background="#05000000"/>
     </Grid>
 </Window>

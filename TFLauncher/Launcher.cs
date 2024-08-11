@@ -28,6 +28,12 @@ namespace TFLauncher
             buttonclickrelease.Load();
             buttonclickrelease.Play();
         }
+        public static void PlayScrollBtnSound()
+        {
+            SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\csgo_ui_page_scroll.wav");
+            buttonclickrelease.Load();
+            buttonclickrelease.Play();
+        }
         // TetFuck 2142
         public static void OpenTetFuck2142()
         {
@@ -35,23 +41,47 @@ namespace TFLauncher
         }
         public static void OpenTF2142AllMusic()
         {
-            Process.Start("tf2142_allmusic.cmd");
+            Process.Start("StartTF2142.cmd");
         }
         public static void OpenTF2142Mus1()
         {
             Process.Start("StartTF2142_MUS1.cmd");
         }
+        public static void OpenTF2142Mus1B()
+        {
+            Process.Start("StartTF2142_MUS1B.cmd");
+        }
         public static void OpenTF2142Mus2()
         {
             Process.Start("StartTF2142_MUS2.cmd");
+        }
+        public static void OpenTF2142Mus2B()
+        {
+            Process.Start("StartTF2142_MUS2B.cmd");
         }
         public static void OpenTF2142Mus3()
         {
             Process.Start("StartTF2142_MUS3.cmd");
         }
+        public static void OpenTF2142Mus3B()
+        {
+            Process.Start("StartTF2142_MUS3B.cmd");
+        }
         public static void OpenTF2142Mus4()
         {
             Process.Start("StartTF2142_MUS4.cmd");
+        }
+        public static void OpenTF2142Mus4B()
+        {
+            Process.Start("StartTF2142_MUS4B.cmd");
+        }
+        public static void OpenTF2142Mus5()
+        {
+            Process.Start("StartTF2142_MUS5.cmd");
+        }
+        public static void OpenTF2142Mus5B()
+        {
+            Process.Start("StartTF2142_MUS5B.cmd");
         }
         public static void OpenTF2142LegacyLauncher()
         {

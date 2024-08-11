@@ -64,6 +64,7 @@ namespace TFLauncher
         }
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             this.Hide();
             SelectGameWindow selgamewin = new SelectGameWindow();
             selgamewin.ShowDialog();
@@ -73,41 +74,62 @@ namespace TFLauncher
 
         private void PlayTF2142NoMusicBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTetFuck2142();
             Launcher.ExitMe();
         }
 
         private void UseLegacyTF2142Launcher_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142LegacyLauncher();
             Launcher.ExitMe();
         }
         private void PlayTF2142AllMusicBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142AllMusic();
             Launcher.ExitMe();
         }
         private void PlayTF2142Mus1Btn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142Mus1();
             Launcher.ExitMe();
         }
 
         private void PlayTF2142Mus2Btn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142Mus2();
             Launcher.ExitMe();
         }
 
         private void PlayTF2142Mus3Btn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142Mus3();
             Launcher.ExitMe();
         }
         private void PlayTF2142Mus4Btn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTF2142Mus4();
             Launcher.ExitMe();
+        }
+        private void PlayTF2142Mus5Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.OpenTF2142Mus5();
+            Launcher.ExitMe();
+        }
+
+        private void NextSetlistBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayScrollBtnSound();
+            this.Hide();
+            TF2142Window_P2 tf2142page2 = new TF2142Window_P2();
+            tf2142page2.ShowDialog();
         }
     }
 }

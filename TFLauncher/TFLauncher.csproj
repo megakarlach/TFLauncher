@@ -138,6 +138,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TF2142Window_P2.xaml.cs">
+      <DependentUpon>TF2142Window_P2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TF5000Window.xaml.cs">
       <DependentUpon>TF5000Window.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
     <Compile Include="AboutTF.xaml.cs">
       <DependentUpon>AboutTF.xaml</DependentUpon>
     </Compile>
+    <Page Include="TF2142Window_P2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TF5000Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -239,8 +246,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="albumcover\ninwoodst94.jpg" />
-    <Resource Include="albumcover\verbalasesong.jpg" />
     <Resource Include="launcher.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -264,82 +269,10 @@
     <Resource Include="bg\2142_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="albumcover\tetfuckost.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\ut99.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\basshunter.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\phm.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\hm2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\ez4ence.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\tds.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\ninfragile.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\ninbroken.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\femtanyl.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\losecontrol.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\tool.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\hm1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\tf2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\nin-yz.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\nin-yz-8bit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\dametucosita.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\acdcbyob.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\titanspeakermansus-thisisasin.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\mjthrillerbad.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\TetFuck99.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\NIN-AATCHB.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\tijon-debrasil.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="bg\beta.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg\beta_hover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="albumcover\trent-challengers.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="gamecover\tfhqlogo.png" />
@@ -375,13 +308,18 @@
     <Resource Include="materials\xbox_btn.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sound\csgo_ui_page_scroll.wav" />
+    <Resource Include="albumcover\TFalbum art 1.png" />
+    <Resource Include="albumcover\TFalbum art 2.png" />
+    <Resource Include="albumcover\TFalbum art 3.png" />
+    <Resource Include="albumcover\TFalbum art 4.png" />
+    <Resource Include="albumcover\TFalbum art 5.png" />
     <Content Include="sound\buttonrollover.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="gamecover\logos\CunnyCrysisLogoTransparent.png" />
     <Resource Include="bg\CunnyCrysisLauncherBG.jpg" />
     <Resource Include="bg\TF4KBG.jpg" />
-    <Resource Include="bg\placeholder-csgoui.jpg" />
     <Resource Include="bg\loading.jpg" />
     <Resource Include="bg\TF5000BG.jpg" />
     <Content Include="sound\buttonclickrelease.wav">

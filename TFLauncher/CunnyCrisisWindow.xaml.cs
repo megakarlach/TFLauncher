@@ -64,6 +64,7 @@ namespace TFLauncher
         }
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             this.Hide();
             SelectGameWindow selgamewin = new SelectGameWindow();
             selgamewin.ShowDialog();
@@ -72,7 +73,14 @@ namespace TFLauncher
 
         private void PlayCunnyCrisisBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenCunnyCrisis();
+            Launcher.ExitMe();
+        }
+        private void PlayCunnyCrisisNSFWBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://www.youtube.com/watch?v=avCWDDox1nE");
             Launcher.ExitMe();
         }
     }

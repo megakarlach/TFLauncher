@@ -67,6 +67,7 @@ namespace TFLauncher
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             this.Hide();
             SelectGameWindow selgamewin = new SelectGameWindow();
             selgamewin.ShowDialog();
@@ -76,12 +77,14 @@ namespace TFLauncher
 
         private void PlayTF4000Btn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTetFuck4000();
             Launcher.ExitMe();
         }
 
         private void OpenTF4KSettingsBtn_Click(object sender, RoutedEventArgs e)
         {
+            Launcher.PlayBtnSound();
             Launcher.OpenTetFuck4000Setup();
         }
     }

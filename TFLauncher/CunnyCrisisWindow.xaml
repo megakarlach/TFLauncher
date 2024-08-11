@@ -103,6 +103,16 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Button x:Name="PlayCunnyCrisisNSFWBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="🥵PLAY WITH NSFW NUDES MODEL 🥵" Margin="420,622,420,144" Click="PlayCunnyCrisisNSFWBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FFFFF7F7" FontSize="26" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD53A3A" Offset="0"/>
+                    <GradientStop Color="#FFBC0A0A" Offset="1"/>
+                    <GradientStop Color="#FFD54F4F" Offset="0.5"/>
+                    <GradientStop Color="#FFC21717" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <!-- Game logo and play button-->
     </Grid>
 </Window>
