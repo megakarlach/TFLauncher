@@ -308,7 +308,16 @@
     <Resource Include="materials\xbox_btn.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sound\csgo_ui_page_scroll.wav" />
+    <Resource Include="albumcover\TFalbum art 5 Part II.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 1.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 2.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 3.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 4.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 5 Part II.png" />
+    <Resource Include="albumcover - Copy\TFalbum art 5.png" />
+    <Content Include="sound\csgo_ui_page_scroll.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="albumcover\TFalbum art 1.png" />
     <Resource Include="albumcover\TFalbum art 2.png" />
     <Resource Include="albumcover\TFalbum art 3.png" />

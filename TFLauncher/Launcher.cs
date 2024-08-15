@@ -107,5 +107,10 @@ namespace TFLauncher
         {
             Process.Start("StartKunnyKrysis.cmd");
         }
+        // See music setlist (Excel)
+        public static void OpenSetlist()
+        {
+            Process.Start("ListOfTetFuckOST.xls");
+        }
     }
 }

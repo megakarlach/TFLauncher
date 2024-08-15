@@ -76,7 +76,7 @@
                     <ImageBrush ImageSource="gamecover/TF5KBanner.jpg"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="OpenCunnyCrisis" Content="Play Kunny Krysis" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="943,0,0,80" VerticalAlignment="Bottom" Width="306" Height="144" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenCunnyCrisis_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFDAC5AE" Foreground="#00000000">
+            <Button x:Name="OpenCunnyCrisis" Content="Play Kunny Krysis" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="943,0,0,80" VerticalAlignment="Bottom" Width="306" Height="143" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenCunnyCrisis_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFDAC5AE" Foreground="#00000000">
                 <Button.Background>
                     <ImageBrush ImageSource="gamecover/CunnyCrisisSteamBanner.jpg"/>
                 </Button.Background>

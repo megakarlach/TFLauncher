@@ -61,7 +61,7 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Label x:Name="labelresetaudionotice" Content="Cunny Crisis is a petty new Puyo Puyo/Candy Crisis mod, so there might be some bugs or assets left unchanged.&#xD;&#xA;NOTE: if widescreen opions is disabled, the Credits button will not be available." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852" Background="#3F000000"/>
+        <Label x:Name="labelresetaudionotice" Content="Kunny Krisis is a petty new Puyo Puyo/Candy Crisis mod, so there might be some bugs or assets left unchanged.&#xA;NOTE: if widescreen opions is disabled, the Credits button will not be available.&#xD;&#xA;Kunny Krysis requires Windows 7 (64-bit) or later to run." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852" Background="#3F000000"/>
         <Label x:Name="label1" Content="TetFuck Launcher v1.0.0.1 (build 9394) | Cunny Crysis 4.0.0&#xA;© 2024 leonidakarlach (The TetFuck Company) | original ver by John Stiles&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!--Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,651,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>

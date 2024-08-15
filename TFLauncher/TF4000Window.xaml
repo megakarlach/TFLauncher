@@ -61,7 +61,7 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Label x:Name="labelresetaudionotice" Content="TetFuck 4K supports CD and MIDI music. To play the game with built-in MP3, M4A music, you MUST disable it from in-game settings." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852"/>
+        <Label x:Name="labelresetaudionotice" Content="TetFuck 4K supports CD and MIDI music. To play the game with built-in MP3, M4A music, you MUST disable it from in-game settings.&#xD;&#xA;NOTE: 8/13/2024 - Built-in MP3 Music is currently unavailable, but we will add it later." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852"/>
         <Label x:Name="label1" Content="TetFuck Launcher v1.0.0.1 (build 9411) | TetFuck 4K version 3.0.0&#xA;© 2024 leonidakarlach (The TetFuck Company) | 2001 - 2003 Alawar / Volkov Artem, Petrov Sergey&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="253" Margin="420,226,420,367" VerticalAlignment="Center" Source="gamecover/logos/tf4klogo.png"/>

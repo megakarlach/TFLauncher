@@ -62,24 +62,8 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Button x:Name="PlayTF2142NoMusicBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="PLAY WITHOUT MUSIC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="16" RenderTransformOrigin="0.518,0.7" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF4B2F13" Offset="0"/>
-                    <GradientStop Color="#FF895522" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="UseLegacyTF2142LauncherBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Use Legacy CMD Launcher" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF4B2F13" Offset="0"/>
-                    <GradientStop Color="#FF895522" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Label x:Name="labelresetaudionotice" Content="IMPOTANT: When playing TetFuck 2142 for the first time, you MUST reset the audio settings, for various sound effects to play properly.&#xD;&#xA;Select other music by clicking on one of the setlist, or click play now to play game with all music." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,47" HorizontalAlignment="Left" Width="852"/>
-        <Label x:Name="versionlabel" Content="TetFuck Launcher v1.0 (build 9382) | TF2142 version 11.0.0 (7/22/2024)&#xA;© 2024 leonidakarlach (The TetFuck Company) | 2000 - 2003 Jaibo Software&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" />
+        <Label x:Name="labelresetaudionotice" Content="IMPOTANT: When playing TetFuck 2142 for the first time, you MUST reset the audio settings, for various sound effects to play properly.&#xA;HOW TO START GAME: Select any music by clicking on one of the setlist, or click &quot;PLAY NOW&quot; to play game with all music." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,47" HorizontalAlignment="Left" Width="852"/>
+        <Label x:Name="versionlabel" Content="TetFuck Launcher v1.0.0.1 (build 9411) | TF2142 version 11.0.0 (7/22/2024)&#xA;© 2024 leonidakarlach (The TetFuck Company) | 2000 - 2003 Jaibo Software&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" />
         <!-- <Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,651,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -109,6 +93,21 @@
                 <ImageBrush ImageSource="albumcover/TFalbum art 4.png" Opacity="0.5"/>
             </Button.Background>
         </Button>
+        <Button x:Name="PlayTF2142Mus5Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #5&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="900,606,406,112" Click="PlayTF2142Mus5Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
+            <Button.Background>
+                <ImageBrush ImageSource="albumcover/TFalbum art 5.png" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="NextSetlistBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="&gt;" Margin="1033,606,369,112" Click="NextSetlistBtn_Click" BorderBrush="#FF323232" Foreground="#FF323232" FontSize="24" FontWeight="Bold" Height="128" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" HorizontalAlignment="Center" Width="32">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2E2E2" Offset="0"/>
+                    <GradientStop Color="#FFFEFEFE" Offset="1"/>
+                    <GradientStop Color="#FFDBDBDB" Offset="0.5"/>
+                    <GradientStop Color="#FFD1D1D1" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <!-- Music setlist -->
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="253" Margin="420,226,420,367" VerticalAlignment="Center" Source="gamecover/logos/tf2142logo.png"/>
@@ -122,18 +121,27 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayTF2142Mus5Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="Play now with&#xA;Music setlist #5&#xD;&#xA;&#xD;&#xA;DISC 1" HorizontalAlignment="Center" Width="128" Margin="900,606,406,112" Click="PlayTF2142Mus5Btn_Click" BorderBrush="#FFDAC5AE" Foreground="White" FontSize="14" FontWeight="Bold" Height="128" VerticalAlignment="Center">
-            <Button.Background>
-                <ImageBrush ImageSource="albumcover/TFalbum art 5.png" Opacity="0.5"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="NextSetlistBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="&gt;" Margin="1033,606,369,112" Click="NextSetlistBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="24" FontWeight="Bold" Height="128" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" HorizontalAlignment="Center" Width="32">
+        <Button x:Name="PlayTF2142NoMusicBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="PLAY WITHOUT MUSIC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="760,500,504,266" Height="80" Click="PlayTF2142NoMusicBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="16" RenderTransformOrigin="0.518,0.7" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF9DD53A" Offset="0"/>
-                    <GradientStop Color="#FF7CBC0A" Offset="1"/>
-                    <GradientStop Color="#FFA1D54F" Offset="0.5"/>
-                    <GradientStop Color="#FF80C217" Offset="0.51"/>
+                    <GradientStop Color="#FF4B2F13" Offset="0"/>
+                    <GradientStop Color="#FF895522" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="UseLegacyTF2142LauncherBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Use Legacy CMD Launcher" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="192" Margin="10,0,0,10" Height="32" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4B2F13" Offset="0"/>
+                    <GradientStop Color="#FF895522" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="OpenMusicSetlistBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="See list of songs on setlist (requires Excel)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="300" Margin="207,0,0,10" Height="32" Click="OpenMusicSetlistBtn_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4B2F13" Offset="0"/>
+                    <GradientStop Color="#FF895522" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>

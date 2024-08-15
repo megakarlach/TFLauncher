@@ -61,7 +61,7 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Label x:Name="labelresetaudionotice" Content="NOTE: If you have issues with the animated background, try to switch the themes again.&#xD;&#xA;TetFuck V is designed for widescreen monitors (16:9) only, any other resolutions will stretch that out and makes it ugly." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852" Background="#3F000000"/>
+        <Label x:Name="labelresetaudionotice" Content="NOTE: If you have issues with the animated background, try to switch the themes again.&#xA;TetFuck V is designed for widescreen monitors (16:9) only, any other resolutions will stretch the background and makes it ugly.&#xD;&#xA;TetFuck V's Tetris block will be stretched due to the game engine designed for 4:3 monitors." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852" Background="#3F000000"/>
         <Label x:Name="label1" Content="TetFuck Launcher v1.0.0.1 (build 9411) | TetFuck V 2.0&#xA;© 2024 leonidakarlach (The TetFuck Company) | original ver by Elefun Multimedia&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!--Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,651,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>
@@ -93,7 +93,7 @@
         </Button>-->
         <!-- Game logo and play button -->
         <Image x:Name="image" Height="286" Margin="420,226,420,334" VerticalAlignment="Center" Source="gamecover/logos/tffivelogo.png"/>
-        <Button x:Name="PlayTF5000Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OPEN TFV LAUNCHER/PLAY ▶" Margin="420,537,420,229" Click="PlayTF5000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
+        <Button x:Name="PlayTF5000Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OPEN TFV LAUNCHER (PLAY) ▶" Margin="420,537,420,229" Click="PlayTF5000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9DD53A" Offset="0"/>

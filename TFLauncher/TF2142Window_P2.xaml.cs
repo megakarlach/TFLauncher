@@ -14,6 +14,7 @@ using CefSharp;
 using CefSharp.Wpf;
 using System.Diagnostics;
 using System.Media;
+using System.Threading;
 
 namespace TFLauncher
 {
@@ -126,9 +127,16 @@ namespace TFLauncher
         private void PrevSetlistBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayScrollBtnSound();
+            Thread.Sleep(150);
             this.Hide();
             TF2142Window tf2142page1 = new TF2142Window();
             tf2142page1.ShowDialog();
+        }
+
+        private void OpenMusicSetlistBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.OpenSetlist();
         }
     }
 }
