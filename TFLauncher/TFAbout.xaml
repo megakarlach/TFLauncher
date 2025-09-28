@@ -1,0 +1,39 @@
+﻿<Window x:Class="TFLauncher.TFAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="About TetFuck HQ Launcher" Height="415" Width="517" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="337*"/>
+            <RowDefinition Height="48*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF180000" Offset="0"/>
+                <GradientStop Color="#FF6A1A1A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="imageRR" Margin="205,89,0,0" Source="bg/RR_Spirit_of_Ecstasy.png" Opacity="0.24" Grid.RowSpan="2"/>
+        <Image x:Name="TF_banner" Margin="0,0,0,255" Source="materials/tfhq_banner.png"/>
+        <Button x:Name="OKbtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="#FF418B8A" BorderBrush="#FF418B8A" Grid.Row="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF161B21" Offset="0"/>
+                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="brokenBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="broken" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="brokenBtn_Click" Foreground="#02418B8A" BorderBrush="#0C4F3C07" Background="#02000000" Grid.Row="1"/>
+        <Label x:Name="labellaunchername" Content="TetFuck HQ Launcher" Foreground="White" FontFamily="/TFLauncher;component/resources/#Segoe UI Light" FontSize="20" Margin="10,87,0,0" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36"/>
+        <Label x:Name="labellauncherver" Content="Version 26.0.0" Foreground="White" FontFamily="/TFLauncher;component/resources/#Segoe UI Light" Margin="0,89,0,0" FontSize="11" VerticalAlignment="Top" HorizontalAlignment="Right" Width="88"/>
+        <Label x:Name="labellauncherdesc" Content="A Launcher for TetFuck Games. Built using .NET &amp; C#" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" FontSize="11" Margin="10,128,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="labellaunchergames" Content="Includes: TetFuck 2142, 4K, Five, TetRizz and Kunny Krysis" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" FontSize="11" Margin="10,158,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="labellauncherdev" Content="Developed by leonidakarlach &amp; TetFuck Company" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" FontSize="11" Margin="10,189,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="labellaunchercopyright" Content="© 2015 - 2025 MEGA Ltd. &amp; The TetFuck Company &amp; Starfuckers Inc." Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" FontSize="11" Margin="10,304,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

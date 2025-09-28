@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="Welcome to The TetFuck Box!" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="bg/loading.jpg" TileMode="Tile" Stretch="UniformToFill"/>
@@ -15,6 +15,10 @@
         <Image x:Name="image" Height="86" Margin="0,0,0,10" VerticalAlignment="Bottom" Source="gamecover/LauncherLogo_CE.png" HorizontalAlignment="Left" Width="258"/>
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="235*"/>
+                <ColumnDefinition Width="401*"/>
+            </Grid.ColumnDefinitions>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#BF494949" Offset="0"/>
@@ -29,7 +33,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF211616" Offset="0"/>
@@ -37,7 +41,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -45,7 +49,15 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,601,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK FOR UPDATES..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="UpdateBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -55,9 +67,8 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Label x:Name="versionlabel" Content="TetFuck Launcher v1.0.0.1 (build 9411)&#xA;© 2024 leonidakarlach (The TetFuck Company)&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="versionlabel" Content="TetFuck Launcher v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!-- game version check -->
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="file:///V:/GitHub/tetfuckupload/launcher_version/launcher_v1.0.0.1.html" Margin="10,52,12,0" Height="90" VerticalAlignment="Top" />
         <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="322,147,310,99" />
         <Grid Margin="10,0,10,10" Height="330" VerticalAlignment="Bottom">
             <Image x:Name="image1" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="454,0,766,52" Source="materials/xbox_btn.png" Stretch="None" HorizontalAlignment="Center" Width="32" Height="32" VerticalAlignment="Bottom" RenderTransformOrigin="0.922,0.141"/>

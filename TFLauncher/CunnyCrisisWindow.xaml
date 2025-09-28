@@ -13,13 +13,17 @@
         </Grid.Background>
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="235*"/>
+                <ColumnDefinition Width="401*"/>
+            </Grid.ColumnDefinitions>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#BF494949" Offset="0"/>
                     <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="GoBackBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="◄ BACK (Select Game)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="10,11,0,0" Height="32" Click="GoBackBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -27,15 +31,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="OFFICIAL WEBSITE" Margin="207,11,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF161B21" Offset="0"/>
-                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT TO DESKTOP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,10,0" Height="32" Click="QuitBtn_Click" BorderBrush="#FFE46C6C" Foreground="#FFE46C6C" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF211616" Offset="0"/>
@@ -43,7 +39,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,207,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -51,7 +47,15 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md">
+            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,601,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK FOR UPDATES..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,404,0" Height="32" Click="UpdateBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -61,8 +65,51 @@
             </Button>
         </Grid>
         <!-- top bar grid -->
-        <Label x:Name="labelresetaudionotice" Content="Kunny Krisis is a petty new Puyo Puyo/Candy Crisis mod, so there might be some bugs or assets left unchanged.&#xA;NOTE: if widescreen opions is disabled, the Credits button will not be available.&#xD;&#xA;Kunny Krysis requires Windows 7 (64-bit) or later to run." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="852" Background="#3F000000"/>
-        <Label x:Name="label1" Content="TetFuck Launcher v1.0.0.1 (build 9394) | Cunny Crysis 4.0.0&#xA;© 2024 leonidakarlach (The TetFuck Company) | original ver by John Stiles&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <!-- select game toolbar -->
+        <Grid HorizontalAlignment="Left" Margin="0,52,0,0" Width="69" Background="#65101010">
+            <Button x:Name="OpenTetFuck2142" Content="Play TetFuck 2142" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" Width="40" Height="48" Click="OpenTetFuck2142_Click" RenderTransformOrigin="0.5,0.5" FontFamily="/TFLauncher;component/resources/#Marker Felt" Foreground="#00000000" OpacityMask="#FFC164BD" BorderBrush="#FFC1478A">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetfuck2142.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck4000" Content="Play TetFuck 4K" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,63,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFDAC5AE" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetfuck4k.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck4000Enhanced" Content="Play TetFuck 4K" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,116,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000Enhanced_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFDAC5AE" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetfuck4k_enhanced.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck5000" Content="Play TetFuck V" HorizontalAlignment="Left" Margin="14,169,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click" OpacityMask="#FF65C95C" BorderBrush="#FF82BF5F" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetfuckv.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenCunnyCrisis" Content="Play Kunny Krysis" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,275,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenCunnyCrisis_Click" OpacityMask="#FF81E4D7" BorderBrush="#FF90DAC6" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_pussyopussyo.png"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="LauncherNameLabel" Content="Select Game" Margin="10,0,1090,10" VerticalAlignment="Bottom" Foreground="White" FontSize="22" HorizontalAlignment="Center"/>
+            <Button x:Name="OpenTetRizz" Content="Play TetRizz" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,328,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizz_Click" OpacityMask="#FFCD90DA" BorderBrush="#FFCD90DA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetrizz.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetRizzEnhanced" Content="Play TetRizz Enhanced" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" HorizontalAlignment="Left" Margin="14,381,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizzEnhanced_Click" OpacityMask="#FFCD90DA" BorderBrush="#FFCD90DA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetrizz_enhanced.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck5000Enhanced" Content="Play TetFuck V" HorizontalAlignment="Left" Margin="14,222,0,0" Width="40" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000Enhanced_Click" OpacityMask="#FF65C95C" BorderBrush="#FF82BF5F" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="gamecover/battlelog/icon_tetfuckv_enhanced.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!-- select game toolbar -->
         <!--Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,651,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -92,8 +139,10 @@
             </Button.Background>
         </Button>-->
         <!-- Game logo and play button -->
-        <Image x:Name="image" Height="286" Margin="420,226,420,334" VerticalAlignment="Center" Source="gamecover/logos/CunnyCrysisLogoTransparent.png"/>
-        <Button x:Name="PlayCunnyCrisisBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="PLAY NOW ▶" Margin="420,537,420,229" Click="PlayCunnyCrisisBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontSize="36" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
+    <Grid Margin="69,52,0,0">
+        <Image x:Name="image_tf2142_screenshot" Margin="184,10,241,298" Source="screenshots/kunny-krysis-screenshot.png"/>
+        <Image x:Name="GameLogo" Margin="13,0,0,145" VerticalAlignment="Bottom" Source="gamecover/logos/logo_tf_kunnykrysis.png" HorizontalAlignment="Left" Width="594"/>
+            <Button x:Name="PlayCunnyCrysisBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="START GAME" Margin="13,0,0,105" Click="PlayCunnyCrysisBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Left" Width="223" FontSize="20">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9DD53A" Offset="0"/>
@@ -103,16 +152,20 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayCunnyCrisisNSFWBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="🥵PLAY WITH NSFW NUDES MODEL 🥵" Margin="420,622,420,144" Click="PlayCunnyCrisisNSFWBtn_Click" BorderBrush="#FFA1D54F" Foreground="#FFFFF7F7" FontSize="26" FontWeight="Bold" Height="80" VerticalAlignment="Center" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFD53A3A" Offset="0"/>
-                    <GradientStop Color="#FFBC0A0A" Offset="1"/>
-                    <GradientStop Color="#FFD54F4F" Offset="0.5"/>
-                    <GradientStop Color="#FFC21717" Offset="0.51"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <!-- Game logo and play button-->
+            <Label x:Name="labelnotice" Content="Kunny Krisis is a petty new Puyo Puyo/Candy Crisis mod, so there might be some bugs or assets left unchanged.&#xA;NOTE: if widescreen options is disabled, the Credits button will not be available.&#xA;System Requirements: Win 7, 512MB RAM, DirectX 11 (feature level 9.0) GPU" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="939" Background="#66303030"/>
+        <Label x:Name="labelver" Content="TetFuck Launcher &amp; Kunny Krysis v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | Original Candy Crisis by John Stiles&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Button x:Name="PlayCunnyCrisisNSFWBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="🥵 Enable 18+ NSFW mode 🥵" Margin="241,0,0,105" Click="PlayCunnyCrisisNSFWBtn_Click" BorderBrush="#FFE73827" Foreground="White" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Left" Width="310" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF85032" Offset="0"/>
+                        <GradientStop Color="#FFE73827" Offset="1"/>
+                        <GradientStop Color="#FFF16F5C" Offset="0.5"/>
+                        <GradientStop Color="#FFF6290C" Offset="0.51"/>
+                        <GradientStop Color="#FFF02F17" Offset="0.71"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    <!-- Game logo and play button-->
     </Grid>
 </Window>

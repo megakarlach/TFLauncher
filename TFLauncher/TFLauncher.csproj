@@ -138,8 +138,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TF2142Window_P2.xaml.cs">
-      <DependentUpon>TF2142Window_P2.xaml</DependentUpon>
+    <Compile Include="TetRizzEnhancedWindow.xaml.cs">
+      <DependentUpon>TetRizzEnhancedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TF4000EnhancedWindow.xaml.cs">
+      <DependentUpon>TF4000EnhancedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TetRizzWindow.xaml.cs">
+      <DependentUpon>TetRizzWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TF5000EnhancedWindow.xaml.cs">
+      <DependentUpon>TF5000EnhancedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TFAbout.xaml.cs">
+      <DependentUpon>TFAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TFViewControlsWindow.xaml.cs">
+      <DependentUpon>TFViewControlsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TFChkUpdateWindow.xaml.cs">
+      <DependentUpon>TFChkUpdateWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="TF5000Window.xaml.cs">
       <DependentUpon>TF5000Window.xaml</DependentUpon>
@@ -156,10 +174,31 @@
     <Compile Include="TF2142Window.xaml.cs">
       <DependentUpon>TF2142Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AboutTF.xaml.cs">
-      <DependentUpon>AboutTF.xaml</DependentUpon>
-    </Compile>
-    <Page Include="TF2142Window_P2.xaml">
+    <Page Include="TetRizzEnhancedWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TF4000EnhancedWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TetRizzWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TF5000EnhancedWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TFAbout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TFViewControlsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TFChkUpdateWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -196,10 +235,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AboutTF.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -226,6 +261,30 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="resources\Purista-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\Purista-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="resources\stratum2.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -266,9 +325,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg\2142_bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="bg\beta.png" />
   </ItemGroup>
   <ItemGroup>
@@ -279,14 +335,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg\woodstock94-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gamecover\logos\tf2142logo.png" />
-    <Resource Include="gamecover\logos\tf4klogo.png" />
-    <Resource Include="gamecover\logos\tffivelogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="screenshots\TF2142.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg\tflauncher_bg.jpg" />
@@ -300,21 +348,36 @@
     <Resource Include="gamecover\legacy\TF5000NewCover.png" />
     <Resource Include="gamecover\legacy\TF5000NewCover_unreleased.png" />
     <Resource Include="gamecover\legacy\tfcollectorsedition.png" />
-    <Resource Include="gamecover\TF2142Banner.jpg" />
-    <Resource Include="gamecover\TF4KBanner.jpg" />
-    <Resource Include="gamecover\TF5KBanner.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="materials\xbox_btn.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="albumcover\TFalbum art 5 Part II.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 1.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 2.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 3.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 4.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 5 Part II.png" />
-    <Resource Include="albumcover - Copy\TFalbum art 5.png" />
+    <Resource Include="bg\badcomp-test.jpg" />
+    <Resource Include="gamecover\battlelog\icon_pussyopussyo.png" />
+    <Resource Include="gamecover\battlelog\icon_tetfuck2142.png" />
+    <Resource Include="gamecover\battlelog\icon_tetfuck4k.png" />
+    <Resource Include="gamecover\battlelog\icon_tetfuckv.png" />
+    <Resource Include="gamecover\battlelog\icon_tetrizz.png" />
+    <Resource Include="materials\tfhq_banner.png" />
+    <Resource Include="bg\TF2142_bg.jpg" />
+    <Resource Include="bg\TF4K_bg.jpg" />
+    <Resource Include="gamecover\logos\logo_tf_kunnykrysis.png" />
+    <Resource Include="gamecover\logos\logo_tf_tetrizz.png" />
+    <Resource Include="gamecover\logos\logo_tf_tf2142.png" />
+    <Resource Include="gamecover\logos\logo_tf_tf4k.png" />
+    <Resource Include="gamecover\logos\logo_tf_tf4k_enhanced.png" />
+    <Resource Include="gamecover\logos\logo_tf_tffive.png" />
+    <Resource Include="gamecover\logos\logo_tf_tffive_enhanced.png" />
+    <Resource Include="bg\RR_Spirit_of_Ecstasy.png" />
+    <Resource Include="bg\TF5K_bg.jpg" />
+    <Resource Include="screenshots\TF2142-screenshot.png" />
+    <Resource Include="gamecover\battlelog\icon_tetfuck4k_enhanced.png" />
+    <Resource Include="gamecover\battlelog\icon_tetfuckv_enhanced.png" />
+    <Resource Include="gamecover\battlelog\icon_tetrizz_enhanced.png" />
+    <Resource Include="bg\TRIZZ_bg.jpg" />
+    <Resource Include="screenshots\kunny-krysis-screenshot.png" />
     <Content Include="sound\csgo_ui_page_scroll.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -326,11 +389,8 @@
     <Content Include="sound\buttonrollover.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="gamecover\logos\CunnyCrysisLogoTransparent.png" />
     <Resource Include="bg\CunnyCrysisLauncherBG.jpg" />
-    <Resource Include="bg\TF4KBG.jpg" />
     <Resource Include="bg\loading.jpg" />
-    <Resource Include="bg\TF5000BG.jpg" />
     <Content Include="sound\buttonclickrelease.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

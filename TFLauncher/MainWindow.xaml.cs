@@ -65,7 +65,7 @@ namespace TFLauncher
         private void AboutBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            AboutTF aboutpopup = new AboutTF();
+            TFAbout aboutpopup = new TFAbout();
             aboutpopup.ShowDialog();
         }
 
@@ -84,6 +84,13 @@ namespace TFLauncher
             this.Hide();
             SelectGameWindow selectgamewin = new SelectGameWindow();
             selectgamewin.ShowDialog();
+        }
+        // UPDATE POPUP 2025
+        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
+            aboutpopup.ShowDialog();
         }
     }
 }

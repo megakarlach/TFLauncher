@@ -54,7 +54,7 @@ namespace TFLauncher
         private void AboutBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            AboutTF aboutpopup = new AboutTF();
+            TFAbout aboutpopup = new TFAbout();
             aboutpopup.ShowDialog();
         }
 
@@ -63,16 +63,18 @@ namespace TFLauncher
             Launcher.PlayBtnSound();
             Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
         }
-        private void GoBackBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            this.Hide();
-            SelectGameWindow selgamewin = new SelectGameWindow();
-            selgamewin.ShowDialog();
-        }
 
         // TOP BAR STUFF
 
+        //          Deprecated
+        //        private void UseLegacyTF2142Launcher_Click(object sender, RoutedEventArgs e)
+        //        {
+        //            Launcher.PlayBtnSound();
+        //            Launcher.OpenTF2142LegacyLauncher();
+        //            Launcher.ExitMe();
+        //        }
+
+        // Launch game btn
         private void PlayTF2142NoMusicBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
@@ -80,64 +82,108 @@ namespace TFLauncher
             Launcher.ExitMe();
         }
 
-        private void UseLegacyTF2142Launcher_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142LegacyLauncher();
-            Launcher.ExitMe();
-        }
         private void PlayTF2142AllMusicBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             Launcher.OpenTF2142AllMusic();
             Launcher.ExitMe();
         }
-        private void PlayTF2142Mus1Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142Mus1();
-            Launcher.ExitMe();
-        }
-
-        private void PlayTF2142Mus2Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142Mus2();
-            Launcher.ExitMe();
-        }
-
-        private void PlayTF2142Mus3Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142Mus3();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus4Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142Mus4();
-            Launcher.ExitMe();
-        }
-        private void PlayTF2142Mus5Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenTF2142Mus5();
-            Launcher.ExitMe();
-        }
-
-        private void NextSetlistBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayScrollBtnSound();
-            Thread.Sleep(150);
-            this.Hide();
-            TF2142Window_P2 tf2142page2 = new TF2142Window_P2();
-            tf2142page2.ShowDialog();
-        }
 
         private void OpenMusicSetlistBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             Launcher.OpenSetlist();
+        }
+        // Launch game btn - END
+
+        // SELECT GAME SCRIPTS
+        // Button that opens TetFuck 2142
+        private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TF2142Window tf2142win = new TF2142Window();
+            tf2142win.ShowDialog();
+        }
+
+        // Button that opens TetFuck 4K
+        private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TF4000Window tf4kwin = new TF4000Window();
+            tf4kwin.ShowDialog();
+        }
+
+        // Button that opens TetFuck 4K Enhanced
+        private void OpenTetFuck4000Enhanced_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TF4000EnhancedWindow tf4kewin = new TF4000EnhancedWindow();
+            tf4kewin.ShowDialog();
+        }
+
+        // Button that opens TetFuck Five
+        private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TF5000Window tf5000win = new TF5000Window();
+            tf5000win.ShowDialog();
+        }
+
+        // Button that opens TetFuck Five enhanced
+        private void OpenTetFuck5000Enhanced_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TF5000EnhancedWindow tf5kewin = new TF5000EnhancedWindow();
+            tf5kewin.ShowDialog();
+        }
+
+        // Button that opens Cunny Crysis
+        private void OpenCunnyCrisis_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            CunnyCrisisWindow cunnycrysis = new CunnyCrisisWindow();
+            cunnycrysis.ShowDialog();
+        }
+
+        // Button that opens Tetrizz
+        private void OpenTetRizz_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TetRizzWindow game_tetrizz = new TetRizzWindow();
+            game_tetrizz.ShowDialog();
+        }
+
+        // Button that opens Tetrizz Enhanced
+        private void OpenTetRizzEnhanced_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TetRizzEnhancedWindow game_tetrizz_enhanced = new TetRizzEnhancedWindow();
+            game_tetrizz_enhanced.ShowDialog();
+        }
+
+        // SELECT GAME SCRIPTS
+        // UPDATE POPUP 2025
+        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
+            aboutpopup.ShowDialog();
         }
     }
 }
