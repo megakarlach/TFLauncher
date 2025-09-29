@@ -163,6 +163,16 @@
             </Button>
             <Label x:Name="labelnotice" Content="System Requirements: Win 9x/ME, NT4, 2000, XP, Vista or later, Intel Pentium II 233, 32MB RAM, DirectX 7.0 or higher." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="10,0,0,8" HorizontalAlignment="Left" Width="646" Background="#66303030"/>
             <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetRizz v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | © AxySoft&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Button x:Name="OpenTetRizzCDKeyBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="💿 VIEW CD-KEY" Margin="566,0,0,105" Click="OpenTetRizzControlsBtn_Click" BorderBrush="#FFB5C6D0" Foreground="#FF394044" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Left" Width="223" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                        <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                        <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                        <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </Grid>
         <!-- Game logo and play button-->
     </Grid>

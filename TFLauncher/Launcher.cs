@@ -12,6 +12,7 @@ namespace TFLauncher
     {
         public static void ExitMe()
         { System.Windows.Application.Current.Shutdown(); }
+
         public static void LaunchWebsite(string url)
         {
             Process.Start(url);
@@ -46,9 +47,10 @@ namespace TFLauncher
         {
             var startTF2142 = new ProcessStartInfo
             {
-                FileName = "..\\tf2142\\TetFuck2142NG.exe",
+                FileName = "..\\tf2142\\bin\\TetFuck2142NG.exe",
+                WorkingDirectory = ".\\..\\tf2142\\bin\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -59,15 +61,16 @@ namespace TFLauncher
         {
             var startTF2142 = new ProcessStartInfo
             {
-                FileName = "..\\tf2142\\TetFuck2142NG.exe",
+                FileName = "..\\tf2142\\bin\\TetFuck2142NG.exe",
+                WorkingDirectory = "..\\tf2142\\bin\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
             var startTF2142withMusic = new ProcessStartInfo
             {
                 FileName = "..\\third-party\\vlc\\vlc.exe",
-                Arguments = "-Iskins --skins2-last=.\\skins\\ifon.vlt", // Command line
+                Arguments = "-Iskins --skins2-last=..\\third-party\\vlc\\skins\\ifon.vlt ..\\tf_shared\\sound\\music_mp3\\tf_playlist.m3u", // Command line
                 UseShellExecute = true,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
@@ -86,8 +89,9 @@ namespace TFLauncher
             var startTF4000 = new ProcessStartInfo
             {
                 FileName = "..\\tf4000\\TetFuck4K.exe",
+                WorkingDirectory = "..\\tf4000\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -98,8 +102,9 @@ namespace TFLauncher
             var startTF4000CFG = new ProcessStartInfo
             {
                 FileName = "..\\tf4000\\tf_config.exe",
+                WorkingDirectory = "..\\tf4000\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -111,8 +116,9 @@ namespace TFLauncher
             var startTF4000E = new ProcessStartInfo
             {
                 FileName = "..\\tf4000_enhanced\\TetFuck4K_Enhanced.exe",
+                WorkingDirectory = "..\\tf4000_enhanced\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -123,8 +129,9 @@ namespace TFLauncher
             var startTF4000ECFG = new ProcessStartInfo
             {
                 FileName = "..\\tf4000_enhanced\\tf_config.exe",
+                WorkingDirectory = "..\\tf4000_enhanced\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -136,8 +143,9 @@ namespace TFLauncher
             var startTF5000 = new ProcessStartInfo
             {
                 FileName = "..\\tf5000\\TetFuckV.exe",
+                WorkingDirectory = "..\\tf5000\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -150,8 +158,9 @@ namespace TFLauncher
             var startTF5000E = new ProcessStartInfo
             {
                 FileName = "..\\tf5000_enhanced\\TetFuckV_Enhanced.exe",
+                WorkingDirectory = "..\\tf5000_enhanced\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -164,8 +173,9 @@ namespace TFLauncher
             var startKunnyKrysis = new ProcessStartInfo
             {
                 FileName = "..\\cunnycrisis\\CandyCrisis.exe",
+                WorkingDirectory = "..\\cunnycrisis\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -177,8 +187,9 @@ namespace TFLauncher
             var startTetRizz = new ProcessStartInfo
             {
                 FileName = "..\\tetrizz\\runme.exe",
+                WorkingDirectory = "..\\tetrizz\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 
@@ -191,8 +202,9 @@ namespace TFLauncher
             var startTetRizzE = new ProcessStartInfo
             {
                 FileName = "..\\tetrizz_enhanced\\runme.exe",
+                WorkingDirectory = "..\\tetrizz_enhanced\\",
                 Arguments = "", // Command line
-                UseShellExecute = true,   // Required for certain applications
+                UseShellExecute = false,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
 

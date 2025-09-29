@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck HQ Help - Controls" Height="415" Width="517" ResizeMode="NoResize">
+        Title="TetFuck HQ Help" Height="415" Width="517" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="53*"/>

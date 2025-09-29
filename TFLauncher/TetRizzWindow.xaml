@@ -161,6 +161,16 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
+            <Button x:Name="OpenTetRizzCDKeyBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="💿 VIEW CD-KEY" Margin="566,0,0,105" Click="OpenTetRizzControlsBtn_Click" BorderBrush="#FFB5C6D0" Foreground="#FF394044" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Left" Width="223" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                        <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                        <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                        <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
             <Button x:Name="TryTetRizzEnhancedBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TRY TETRIZZ ENHANCED" Margin="13,0,0,65" Click="TryTetRizzEnhanced_Click" BorderBrush="#FFC4B377" Foreground="#FFF3D97A" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Segoe UI Emoji" HorizontalAlignment="Left" Width="320" FontSize="20">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
