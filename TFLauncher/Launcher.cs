@@ -11,7 +11,36 @@ namespace TFLauncher
     class Launcher
     {
         public static void ExitMe()
-        { System.Windows.Application.Current.Shutdown(); }
+        {   //Shutdown startup menu music
+            string processName = "mpv-tetfuck"; // Replace with the desired process name (without .exe)
+
+            try
+            {
+                // Get all processes with the specified name
+                Process[] processes = Process.GetProcessesByName(processName);
+
+                foreach (Process process in processes)
+                {
+                    // Terminate the process
+                    process.Kill();
+                    process.WaitForExit(); // Optional: Wait for the process to exit
+                    process.Dispose(); // Release resources
+                    Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
+                }
+
+                if (processes.Length == 0)
+                {
+                    Console.WriteLine($"No processes found with the name '{processName}'.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            System.Windows.Application.Current.Shutdown(); //Close launcher
+
+        }
 
         public static void LaunchWebsite(string url)
         {
@@ -34,6 +63,25 @@ namespace TFLauncher
             SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\csgo_ui_page_scroll.wav");
             buttonclickrelease.Load();
             buttonclickrelease.Play();
+        }
+
+        public static void PlayLauncherBGMusic()
+        {
+            // random number generator
+            Random random = new Random();
+            int randomInRange = random.Next(1, 13); // Upper bound is exclusive
+            Console.WriteLine($"Random Integer Test (1-100): {randomInRange}");
+
+            // playing music
+            var startBGMusic = new ProcessStartInfo
+            {
+                FileName = "..\\third-party\\mpv\\mpv-tetfuck.exe",
+                WorkingDirectory = "..\\third-party\\mpv\\",
+                Arguments = ($"--no-osc --no-input-default-bindings --no-config --window-scale=0.1 --force-window=no --volume=90 --vo=null .\\..\\..\\tf_shared\\sound\\ui_launcher\\gamestartup{randomInRange}.m4a"), // Command line
+                UseShellExecute = false,   // Required for certain applications
+                CreateNoWindow = false    // Show the window
+            };
+            Process.Start(startBGMusic);
         }
 
         // See music setlist for TetFuck 2142 (Excel)

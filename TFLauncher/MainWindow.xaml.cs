@@ -29,7 +29,8 @@ namespace TFLauncher
 
         private void animatedBG_Loaded(object sender, RoutedEventArgs e)
         {
-            animatedBG.Play();
+            animatedBG.Play();            // playing animated bg
+            Launcher.PlayLauncherBGMusic(); // play bg music
         }
 
         private void animatedBG_Ended(object sender, RoutedEventArgs e)
