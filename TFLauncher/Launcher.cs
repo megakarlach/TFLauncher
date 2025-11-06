@@ -10,12 +10,35 @@ namespace TFLauncher
 {
     class Launcher
     {
+        public static void PlayLauncherBGMusic()
+        {
+            // random number generator
+            Random random = new Random();
+            int randomInRange = random.Next(1, 7); // Upper bound is exclusive
+            Console.WriteLine($"Random Integer Test: {randomInRange}");
+
+            // playing launcher background music
+            try
+            {
+                var startBGMusic = new ProcessStartInfo
+                {
+                    FileName = "..\\third-party\\mpv\\mpv-tetfuck.exe",
+                    WorkingDirectory = "..\\third-party\\mpv\\",
+                    Arguments = ($"--no-osc --no-input-default-bindings --no-config --window-scale=0.1 --force-window=no --loop=inf --volume=90 --vo=null .\\..\\..\\tf_shared\\sound\\ui_launcher\\gamestartup{randomInRange}.m4a"), // Command line
+                    UseShellExecute = false,   // Required for certain applications
+                    CreateNoWindow = false    // Show the window
+                };
+                Process.Start(startBGMusic);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
         public static void ExitMe()
         {   //Shutdown startup menu music
             string processName = "mpv-tetfuck"; // Replace with the desired process name (without .exe)
 
-            try
-            {
                 // Get all processes with the specified name
                 Process[] processes = Process.GetProcessesByName(processName);
 
@@ -25,19 +48,16 @@ namespace TFLauncher
                     process.Kill();
                     process.WaitForExit(); // Optional: Wait for the process to exit
                     process.Dispose(); // Release resources
-                    Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
+                    // Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
+
                 }
 
                 if (processes.Length == 0)
                 {
-                    Console.WriteLine($"No processes found with the name '{processName}'.");
+                    // Console.WriteLine($"No processes found with the name '{processName}'.");
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
 
+            System.Threading.Thread.Sleep(200);
             System.Windows.Application.Current.Shutdown(); //Close launcher
 
         }
@@ -65,29 +85,10 @@ namespace TFLauncher
             buttonclickrelease.Play();
         }
 
-        public static void PlayLauncherBGMusic()
-        {
-            // random number generator
-            Random random = new Random();
-            int randomInRange = random.Next(1, 13); // Upper bound is exclusive
-            Console.WriteLine($"Random Integer Test (1-100): {randomInRange}");
-
-            // playing music
-            var startBGMusic = new ProcessStartInfo
-            {
-                FileName = "..\\third-party\\mpv\\mpv-tetfuck.exe",
-                WorkingDirectory = "..\\third-party\\mpv\\",
-                Arguments = ($"--no-osc --no-input-default-bindings --no-config --window-scale=0.1 --force-window=no --volume=90 --vo=null .\\..\\..\\tf_shared\\sound\\ui_launcher\\gamestartup{randomInRange}.m4a"), // Command line
-                UseShellExecute = false,   // Required for certain applications
-                CreateNoWindow = false    // Show the window
-            };
-            Process.Start(startBGMusic);
-        }
-
-        // See music setlist for TetFuck 2142 (Excel)
+        // See music setlist for TetFuck
         public static void OpenSetlist()
         {
-            Process.Start("ListOfTetFuckOST.xls");
+            Process.Start(@"..\\docs\\TFSetlist.xlsx");
         }
 
         // TetFuck 2142
@@ -117,13 +118,24 @@ namespace TFLauncher
             };
             var startTF2142withMusic = new ProcessStartInfo
             {
-                FileName = "..\\third-party\\vlc\\vlc.exe",
+                FileName = "..\\third-party\\vlc\\vlc_tetfuck.exe",
                 Arguments = "-Iskins --skins2-last=..\\third-party\\vlc\\skins\\ifon.vlt ..\\tf_shared\\sound\\music_mp3\\tf_playlist.m3u", // Command line
                 UseShellExecute = true,   // Required for certain applications
                 CreateNoWindow = false    // Show the window
             };
+            var startTF2142Tracker = new ProcessStartInfo
+            {
+                FileName = "cscript.exe",
+                WorkingDirectory = "..\\scripts\\",
+                Arguments = " TF2142_loop_process_check.vbs", // Command line
+                UseShellExecute = false,   // Required for certain applications
+                CreateNoWindow = false    // Show the window
+            };
             Process.Start(startTF2142);
             Process.Start(startTF2142withMusic);
+            System.Threading.Thread.Sleep(200);
+            Process.Start(startTF2142Tracker);
+            Launcher.ExitMe();
         }
 //        DEPRECATED
 //        public static void OpenTF2142LegacyLauncher()

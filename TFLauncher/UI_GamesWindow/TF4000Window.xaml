@@ -1,0 +1,175 @@
+﻿<Window x:Class="TFLauncher.TF4000Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck HQ (The TetFuck Box) - TetFuck 4K Legacy" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../bg/TF4K_bg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <!-- top bar grid -->
+        <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="533*"/>
+                <ColumnDefinition Width="739*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#BF494949" Offset="0"/>
+                    <GradientStop Color="#BF000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK FOR UPDATES..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,391,0" Height="32" Click="UpdateBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,194,0" Height="32" Click="AboutBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF161B21" Offset="0"/>
+                        <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <!-- TetFlog (Steam-like and Battlelog-like) system-->
+            <Button x:Name="UserPFPBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="48" Margin="0,2,2,0" Height="48" Click="VisitKanyeTwitterProfile_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/pfp_ye_goat.jpg"/>
+                </Button.Background>
+            </Button>
+            <!-- TetFlog (Steam-like and Battlelog-like) system-->
+            <Label x:Name="labelUsrname" Content="Kanye West" Grid.Column="1" Margin="0,4,55,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="Tahoma" Height="29" FlowDirection="RightToLeft" VerticalContentAlignment="Center" UseLayoutRounding="True" HorizontalAlignment="Right" Width="100" FontSize="16"/>
+            <Label x:Name="labelTFPoints" Content="250M+$ TFPoints" Grid.Column="1" Margin="0,24,55,0" Background="{x:Null}" Foreground="#FFF3D97A" FontFamily="Tahoma" FlowDirection="RightToLeft" VerticalContentAlignment="Center" UseLayoutRounding="True" HorizontalAlignment="Right" Width="105" Height="24" VerticalAlignment="Top"/>
+        </Grid>
+        <!-- top bar grid -->
+        <!-- select game toolbar -->
+        <Grid HorizontalAlignment="Left" Margin="0,52,0,0" Width="58" Background="#65101010">
+            <Button x:Name="OpenTetFuck2142" Content="Play TetFuck 2142" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,10,9,0" VerticalAlignment="Top" Height="48" Click="OpenTetFuck2142_Click" RenderTransformOrigin="0.5,0.5" FontFamily="/TFLauncher;component/resources/#Marker Felt" Foreground="#00000000" OpacityMask="#FFC164BD" BorderBrush="#FFB841FF">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetfuck2142.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck4000" Content="Play TetFuck 4K" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,64,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFD9233B" Foreground="#00000000" Height="48" VerticalAlignment="Top" BorderThickness="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetfuck4k.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck4000Enhanced" Content="Play TetFuck 4K" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,118,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck4000Enhanced_Click" OpacityMask="#FFE8DBC4" BorderBrush="#FFD9233B" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetfuck4k_enhanced.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck5000" Content="Play TetFuck V" Margin="9,172,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000_Click" OpacityMask="#FF65C95C" BorderBrush="#FFCAFDAA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetfuckv.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetFuck5000Enhanced" Content="Play TetFuck V" Margin="9,226,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck5000Enhanced_Click" OpacityMask="#FF65C95C" BorderBrush="#FFCAFDAA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetfuckv_enhanced.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenCunnyCrisis" Content="Play Kunny Krysis" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,280,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenCunnyCrisis_Click" OpacityMask="#FF81E4D7" BorderBrush="#FF90DAC6" Foreground="#00000000" Height="48" VerticalAlignment="Top" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_pussyopussyo.png"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="LauncherNameLabel" Content="Select Game" Margin="10,0,1090,10" VerticalAlignment="Bottom" Foreground="White" FontSize="22" HorizontalAlignment="Center"/>
+            <Button x:Name="OpenTetRizz" Content="Play TetRizz" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,334,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizz_Click" OpacityMask="#FFCD90DA" BorderBrush="#FF90B8DA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetrizz.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetRizzEnhanced" Content="Play TetRizz Enhanced" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,388,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizzEnhanced_Click" OpacityMask="#FFCD90DA" BorderBrush="#FF90B8DA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="../gamecover/battlelog/icon_tetrizz_enhanced.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" Margin="13,0,13,13" Click="QuitBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="28" FontFamily="Segoe MDL2 Assets" Width="32" Height="32" VerticalAlignment="Bottom">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/poweroff_btn.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>        </Grid>
+        <!-- select game toolbar -->
+        <!-- Game logo and play button -->
+        <Grid Margin="69,52,0,0">
+            <Image x:Name="image_game_screenshot" Margin="184,10,241,298" Source="../screenshots/tf4k_screenshot.png"/>
+            <Image x:Name="GameLogo" Margin="13,0,0,59" VerticalAlignment="Bottom" Source="../gamecover/logos/logo_tf_tf4k.png" HorizontalAlignment="Left" Width="594"/>
+            <Button x:Name="PlayTF4000Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="START GAME" Margin="13,0,0,113" Click="PlayTF4000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="223" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9DD53A" Offset="0"/>
+                        <GradientStop Color="#FF7CBC0A" Offset="1"/>
+                        <GradientStop Color="#FFA1D54F" Offset="0.5"/>
+                        <GradientStop Color="#FF80C217" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTF4KSettingsBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OPTIONS" Margin="241,0,0,113" Click="OpenTF4KSettingsBtn_Click" BorderBrush="#FFB5C6D0" Foreground="#FF394044" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="223" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                        <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                        <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                        <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="ViewTF4KControlsBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="VIEW CONTROLS" Margin="470,0,0,113" Click="ViewTF4KControlsBtn_Click" BorderBrush="#FFB5C6D0" Foreground="#FF394044" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="223" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                        <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                        <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                        <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="TryTF4KEnhancedBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TRY TETFUCK 4K ENHANCED" Margin="13,0,0,73" Click="TryTF4KEnhanced_Click" BorderBrush="#FFC4B377" Foreground="#FFF3D97A" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="451" FontSize="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFAEBCBF" Offset="0"/>
+                        <GradientStop Color="#FF0A0809" Offset="1"/>
+                        <GradientStop Color="#FF6E7774" Offset="0.5"/>
+                        <GradientStop Color="#FF0A0E0A" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenMusicSetlistBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="View list of songs (requires Excel)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="223" Margin="470,0,0,73" Height="35" Click="OpenMusicSetlistBtn_Click" BorderBrush="#FFDAAEAE" Foreground="#FFDAAEAE" FontSize="14" FontFamily="/TFLauncher;component/resources/#Purista SemiBold">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF4B1313" Offset="0"/>
+                        <GradientStop Color="#FF892222" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="labelnotice" Content="TetFuck 4K supports CD and MIDI music. We have installed a wrapper which switched CD to OGG playback (supported in WinNT, 2K, XP or later).&#xA;System Requirements: Win9x, ME, 2000, XP or later, Intel Pentium, 128MB RAM, DirectX 7.0 (Software or HW renderer)&#xD;&#xA;NOTE: IF THE GAME CRASHES ON STARTUP, CLICK ON HELP BUTTON ABOVE FOR MORE INFORMATION" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,10" HorizontalAlignment="Left" Width="915"/>
+            <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetFuck 4K v26.0.0 (build 10612 | RTM-PMFB)&#xD;&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | 2001 - 2003 Alawar / V. Artem, P. Sergey&#xD;&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+        </Grid>
+        <!-- Game logo and play button-->
+    </Grid>
+</Window>

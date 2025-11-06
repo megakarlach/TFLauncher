@@ -25,18 +25,18 @@ namespace TFLauncher
         public MainWindow()
         {
             InitializeComponent();
+            Launcher.PlayLauncherBGMusic(); // play bg music
         }
 
         private void animatedBG_Loaded(object sender, RoutedEventArgs e)
         {
-            animatedBG.Play();            // playing animated bg
-            Launcher.PlayLauncherBGMusic(); // play bg music
+            // animatedBG.Play();            // playing animated bg
         }
 
         private void animatedBG_Ended(object sender, RoutedEventArgs e)
         {
 
-           animatedBG.Position = TimeSpan.FromSeconds(0);
+           // animatedBG.Position = TimeSpan.FromSeconds(0);
 
         }
         // Play sounds when hovering buttons
@@ -70,17 +70,18 @@ namespace TFLauncher
             aboutpopup.ShowDialog();
         }
 
-        private void sendfeedbackbtn_Click(object sender, RoutedEventArgs e)
+        private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("mailto:maxperture247@gmail.com?subject=TetFuck%20-%20Feedback%20(Insert%20title%20here)&body=Describe%20your%20feedback%3A%0A(Tell%20us%20what%20prompted%20this%20feedback...)%0A%0ANOTE%3A%20Please%20don%E2%80%99t%20include%20any%20sensitive%20information.");
+            TF_Help_Window aboutpopup = new TF_Help_Window();
+            aboutpopup.ShowDialog();
         }
         // TOP BAR STUFF
 
         private void selectgamebtn_Click(object sender, RoutedEventArgs e)
         { //click to select game btn
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // stop animated BG
+            // animatedBG.Stop(); // stop animated BG (UNUSED)
             // Open up the select game window.
             this.Hide();
             SelectGameWindow selectgamewin = new SelectGameWindow();

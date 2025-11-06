@@ -9,11 +9,12 @@
         Title="TetFuck HQ" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="bg/loading.jpg" TileMode="Tile" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="bg/login-screen-static.jpg" TileMode="Tile" Stretch="UniformToFill"/>
         </Grid.Background>
-        <MediaElement x:Name="animatedBG" Source="media/background.mp4" Volume="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True"/>
-        <Image x:Name="image" Height="86" Margin="0,0,0,10" VerticalAlignment="Bottom" Source="gamecover/LauncherLogo_CE.png" HorizontalAlignment="Left" Width="258"/>
+        <!-- <MediaElement x:Name="animatedBG" Source="media/background_login.wmv" Volume="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True"/> disabled due to performance issues -->
+        <Image x:Name="image" Height="86" Margin="10,0,0,10" VerticalAlignment="Bottom" Source="gamecover/LauncherLogo_TFBOX_PMFB.png" HorizontalAlignment="Left" Width="258"/>
         <!-- top bar grid -->
+        <!-- (unused)
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="235*"/>
@@ -49,7 +50,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="FeedbackBtn2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TECHNICAL SUPPORT" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,601,0" Height="32" Click="sendfeedbackbtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,601,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Stratum2 Md" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -66,13 +67,25 @@
                 </Button.Background>
             </Button>
         </Grid>
+        -->
         <!-- top bar grid -->
+        <Label x:Name="freezenoticeLabel" Content="NOTE: The launcher will free for few seconds after startup. This is normal so don't worry about it.&#xA;Just wait few seconds for everything to be loaded and the Launcher will work properly." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" Margin="335,0,335,10" Height="36" Background="#66000000"/>
         <Label x:Name="versionlabel" Content="TetFuck Launcher v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!-- game version check -->
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="322,147,310,99" />
-        <Grid Margin="10,0,10,10" Height="330" VerticalAlignment="Bottom">
-            <Image x:Name="image1" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="454,0,766,52" Source="materials/xbox_btn.png" Stretch="None" HorizontalAlignment="Center" Width="32" Height="32" VerticalAlignment="Bottom" RenderTransformOrigin="0.922,0.141"/>
-            <Button x:Name="button" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="/ CLICK HERE TO SELECT GAME" Margin="493,0,441,50" VerticalAlignment="Bottom" FontSize="22" FontFamily="Trebuchet MS" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" HorizontalAlignment="Center"/>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="10,10,320,101" />
+        <Grid Margin="0,10,10,101" Background="#BF000000" HorizontalAlignment="Right" Width="304">
+            <Button x:Name="EnterTFbutton" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ENTER TETFUCK" Margin="10,0,53,10" VerticalAlignment="Bottom" FontSize="22" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" FontWeight="Bold" Background="#FF373532" Foreground="#FFE2AE3D" BorderBrush="#FFAE9A56" Click="selectgamebtn_Click" Height="37"/>
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" Margin="256,0,10,10" Click="QuitBtn_Click" FontSize="28" FontFamily="Segoe MDL2 Assets" BorderBrush="#FFD84F4F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,3,1,1" Height="37" VerticalAlignment="Bottom" BorderThickness="1" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="materials/poweroff_red_btn.png"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="selectacclabel" Content="SELECT YOUR ACCOUNT" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF585858" Foreground="White" Width="304" FontFamily="/TFLauncher;component/resources/#Purista" Margin="1,0,0,0"/>
+            <Label x:Name="welcomelabel" Content="WELCOME BACK" Background="{x:Null}" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" Margin="32,64,32,0" FontSize="30" HorizontalContentAlignment="Center" Height="60" VerticalAlignment="Top"/>
+            <Label x:Name="label" Content="SELECT YOUR ACCOUNT" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF585858" Foreground="White" Width="304" FontFamily="/TFLauncher;component/resources/#Purista" Margin="1,0,0,0"/>
+            <Label x:Name="label_Copy" Content="LOGIN" Background="#FF585858" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" Height="26" VerticalAlignment="Top"/>
+            <Label x:Name="playerusernamelabel" Content="Kanye West" Background="{x:Null}" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" Margin="32,0,32,85" FontSize="30" HorizontalContentAlignment="Center" Height="60" VerticalAlignment="Bottom"/>
+            <Image x:Name="image1" Margin="88,0,88,170" Source="materials/pfp_ye_goat.jpg" Height="128" VerticalAlignment="Bottom"/>
         </Grid>
     </Grid>
 </Window>

@@ -138,75 +138,110 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TetRizzEnhancedWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\TetRizzEnhancedWindow.xaml.cs">
       <DependentUpon>TetRizzEnhancedWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TF4000EnhancedWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\TF4000EnhancedWindow.xaml.cs">
       <DependentUpon>TF4000EnhancedWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TetRizzWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\TetRizzWindow.xaml.cs">
       <DependentUpon>TetRizzWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TF5000EnhancedWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\TF5000EnhancedWindow.xaml.cs">
       <DependentUpon>TF5000EnhancedWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TFAbout.xaml.cs">
+    <Compile Include="UI_Help\TF_Help_TFV_Controls_Window.xaml.cs">
+      <DependentUpon>TF_Help_TFV_Controls_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Help\TF_Help_TF2142_CDKey_Window.xaml.cs">
+      <DependentUpon>TF_Help_TF2142_CDKey_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Help\TF_Help_TR_CDKey_Window.xaml.cs">
+      <DependentUpon>TF_Help_TR_CDKey_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Help\TF_Help_TR_Controls_Window.xaml.cs">
+      <DependentUpon>TF_Help_TR_Controls_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_misc\TFAbout.xaml.cs">
       <DependentUpon>TFAbout.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TFViewControlsWindow.xaml.cs">
-      <DependentUpon>TFViewControlsWindow.xaml</DependentUpon>
+    <Compile Include="UI_Help\TF_Help_Window.xaml.cs">
+      <DependentUpon>TF_Help_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TFChkUpdateWindow.xaml.cs">
+    <Compile Include="UI_Help\TF_Help_TF4K_Controls_Window.xaml.cs">
+      <DependentUpon>TF_Help_TF4K_Controls_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_misc\TFChkUpdateWindow.xaml.cs">
       <DependentUpon>TFChkUpdateWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TF5000Window.xaml.cs">
+    <Compile Include="UI_GamesWindow\TF5000Window.xaml.cs">
       <DependentUpon>TF5000Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CunnyCrisisWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\CunnyCrisisWindow.xaml.cs">
       <DependentUpon>CunnyCrisisWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SelectGameWindow.xaml.cs">
+    <Compile Include="UI_GamesWindow\SelectGameWindow.xaml.cs">
       <DependentUpon>SelectGameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TF4000Window.xaml.cs">
+    <Compile Include="UI_GamesWindow\TF4000Window.xaml.cs">
       <DependentUpon>TF4000Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TF2142Window.xaml.cs">
+    <Compile Include="UI_GamesWindow\TF2142Window.xaml.cs">
       <DependentUpon>TF2142Window.xaml</DependentUpon>
     </Compile>
-    <Page Include="TetRizzEnhancedWindow.xaml">
+    <Page Include="UI_GamesWindow\TetRizzEnhancedWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TF4000EnhancedWindow.xaml">
+    <Page Include="UI_GamesWindow\TF4000EnhancedWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TetRizzWindow.xaml">
+    <Page Include="UI_GamesWindow\TetRizzWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TF5000EnhancedWindow.xaml">
+    <Page Include="UI_GamesWindow\TF5000EnhancedWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TFAbout.xaml">
+    <Page Include="UI_Help\TF_Help_TFV_Controls_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TFViewControlsWindow.xaml">
+    <Page Include="UI_Help\TF_Help_TF2142_CDKey_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TFChkUpdateWindow.xaml">
+    <Page Include="UI_Help\TF_Help_TR_CDKey_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TF5000Window.xaml">
+    <Page Include="UI_Help\TF_Help_TR_Controls_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SelectGameWindow.xaml">
+    <Page Include="UI_misc\TFAbout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Help\TF_Help_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Help\TF_Help_TF4K_Controls_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_misc\TFChkUpdateWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_GamesWindow\TF5000Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_GamesWindow\SelectGameWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -223,15 +258,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="CunnyCrisisWindow.xaml">
+    <Page Include="UI_GamesWindow\CunnyCrisisWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TF4000Window.xaml">
+    <Page Include="UI_GamesWindow\TF4000Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TF2142Window.xaml">
+    <Page Include="UI_GamesWindow\TF2142Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -261,6 +296,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="resources\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="resources\Purista-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -378,6 +416,18 @@
     <Resource Include="gamecover\battlelog\icon_tetrizz_enhanced.png" />
     <Resource Include="bg\TRIZZ_bg.jpg" />
     <Resource Include="screenshots\kunny-krysis-screenshot.png" />
+    <Resource Include="materials\pfp_ye_goat.jpg" />
+    <Resource Include="gamecover\LauncherLogo_TFBOX_PMFB.png" />
+    <Resource Include="screenshots\tf4k_screenshot.png" />
+    <Resource Include="screenshots\tf5_screenshot.png" />
+    <Resource Include="screenshots\tetrizz_screenshot.png" />
+    <Resource Include="bg\login-screen-static.jpg" />
+    <Resource Include="gamecover\logos\logo_tf_tetrizz_enhanced.png" />
+    <Resource Include="materials\poweroff_btn.png" />
+    <Resource Include="materials\poweroff_red_btn.png" />
+    <Content Include="media\background.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="sound\csgo_ui_page_scroll.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -392,12 +442,6 @@
     <Resource Include="bg\CunnyCrysisLauncherBG.jpg" />
     <Resource Include="bg\loading.jpg" />
     <Content Include="sound\buttonclickrelease.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="media\background.mp4">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="media\background_tf.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
