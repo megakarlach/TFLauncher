@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck HQ (The TetFuck Box) - Select Game" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ (The TetFuck Box) - Select Game" Height="768" Width="1024" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="../bg/loading.jpg" TileMode="Tile" Stretch="UniformToFill"/>
@@ -18,8 +18,8 @@
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="121*"/>
-                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -27,7 +27,7 @@
                     <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,10,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -35,7 +35,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" VerticalAlignment="Top" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1" HorizontalAlignment="Right" Width="192">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -102,7 +102,6 @@
                     <ImageBrush ImageSource="../gamecover/battlelog/icon_pussyopussyo.png"/>
                 </Button.Background>
             </Button>
-            <Label x:Name="LauncherNameLabel" Content="Select Game" Margin="10,0,1090,10" VerticalAlignment="Bottom" Foreground="White" FontSize="22" HorizontalAlignment="Center"/>
             <Button x:Name="OpenTetRizz" Content="Play TetRizz" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Margin="9,334,9,0" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizz_Click" OpacityMask="#FFCD90DA" BorderBrush="#FF90B8DA" Foreground="#00000000" Height="48" VerticalAlignment="Top">
                 <Button.Background>
                     <ImageBrush ImageSource="../gamecover/battlelog/icon_tetrizz.png"/>
@@ -120,9 +119,9 @@
             </Button>
         </Grid>
         <!-- select game toolbar -->
-        <Label x:Name="labelSelectGame" Content="&lt; SELECT GAME" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" FontSize="20" Margin="63,69,1052,609" RenderTransformOrigin="0.5,0.5" FontWeight="Bold"/>
         <Label x:Name="label_SELECT" Content="SELECT" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" FontSize="20" Margin="0,0,69,42"/>
         <Label x:Name="labelver" Content="TetFuck Launcher v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="labelTFNotice" Content="Start selecting game by clicking on the icons on the left." Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="68,62,10,0" Height="27" VerticalAlignment="Top"/>
         <Image x:Name="image1" Margin="0,0,151,42" Source="../materials/xbox_btn.png" Stretch="None" HorizontalAlignment="Right" Width="32" Height="32" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

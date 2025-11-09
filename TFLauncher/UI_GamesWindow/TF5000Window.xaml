@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="The TetFuck Box - TetFuck V (Five)" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="The TetFuck Box - TetFuck V (Five)" Height="768" Width="1024" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="../bg/TF5K_bg.jpg" Stretch="UniformToFill"/>
@@ -14,8 +14,8 @@
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="533*"/>
-                <ColumnDefinition Width="739*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -23,7 +23,7 @@
                     <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,10,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -31,7 +31,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" VerticalAlignment="Top" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1" HorizontalAlignment="Right" Width="192">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -145,7 +145,7 @@
             </Button.Background>
         </Button>-->
         <!-- Game logo and play button -->
-        <Grid Margin="69,52,0,0">
+        <Grid Margin="58,52,0,0">
             <Image x:Name="image_game_screenshot" Margin="184,10,241,298" Source="../screenshots/tf5_screenshot.png"/>
             <Image x:Name="GameLogo" Margin="13,0,0,59" VerticalAlignment="Bottom" Source="../gamecover/logos/logo_tf_tffive.png" HorizontalAlignment="Left" Width="594"/>
             <Button x:Name="PlayTF5000Btn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="RUN LAUNCHER (PLAY/CONFIG)" Margin="13,0,0,105" Click="PlayTF5000Btn_Click" BorderBrush="#FFA1D54F" Foreground="#FF334710" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="320" FontSize="20">
@@ -186,8 +186,9 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Label x:Name="labelnotice" Content="NOTE: If you have issues with the animated background, try to switch the themes again. Fuckominos will be stretched due to the game engine &#xD;&#xA;designed for 4:3 monitors.&#xA;System Requirements: Win 2000, XP, Vista or later, Intel Pentium III/4, 128MB RAM, DirectX 9.0. Support Widescreen 16:9 &amp; 4:3 (via Themes)." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="10,0,0,8" HorizontalAlignment="Left" Width="646"/>
+            <Label x:Name="labelnotice" Content="System Requirements: Win 2000, XP, Vista or later, Intel Pentium III/4, 128MB RAM, &#xD;&#xA;DirectX 9.0." Background="#66303030" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,8" HorizontalAlignment="Left" Width="570" Height="38"/>
             <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetFuck Five v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | © 2004 Elefun Multimedia&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Label x:Name="labelTFNotice" Content="NOTE: If you have issues with the animated background, try to switch the themes again. Fuckominos will be stretched due to the game engine &#xA;designed for 4:3 monitors, however we provide support for both 16:9 and 4:3 backgrounds." Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="10,10,10,0" Height="44" VerticalAlignment="Top"/>
         </Grid>
         <!-- Game logo and play button-->
     </Grid>

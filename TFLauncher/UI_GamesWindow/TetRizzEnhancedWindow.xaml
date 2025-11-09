@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="The TetFuck Box - TetRizz" Height="854" Width="1442" WindowState="Maximized" WindowStyle="None">
+        Title="The TetFuck Box - TetRizz" Height="768" Width="1024" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="../bg/TRIZZ_bg.jpg" Stretch="UniformToFill"/>
@@ -14,8 +14,8 @@
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="533*"/>
-                <ColumnDefinition Width="739*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -23,7 +23,7 @@
                     <GradientStop Color="#BF000000" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,9,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="33" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold">
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="10,10,0,0" Click="VisitTFWebsiteBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" HorizontalAlignment="Left" Width="192" Height="32" VerticalAlignment="Top" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -31,7 +31,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" HorizontalAlignment="Right" VerticalAlignment="Top" Width="192" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1">
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" VerticalAlignment="Top" Margin="0,10,588,0" Height="32" Click="HelpBtn_Click" BorderBrush="#FF418B8A" Foreground="#FF418B8A" FontSize="16" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" Grid.Column="1" HorizontalAlignment="Right" Width="192">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF161B21" Offset="0"/>
@@ -113,7 +113,8 @@
                 <Button.Background>
                     <ImageBrush ImageSource="/TFLauncher;component/materials/poweroff_btn.png" Stretch="UniformToFill"/>
                 </Button.Background>
-            </Button>        </Grid>
+            </Button>
+        </Grid>
         <!-- select game toolbar -->
         <!--Button x:Name="NextPage2Btn" Content="► Next (Page 2)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192" Margin="601,651,0,0" Height="32" Click="NextPage2Btn_Click" BorderBrush="#FFFF7ED4" Foreground="#FF22FFFF" FontSize="14">
             <Button.Background>
@@ -144,7 +145,7 @@
             </Button.Background>
         </Button>-->
         <!-- Game logo and play button -->
-        <Grid Margin="69,52,0,0">
+        <Grid Margin="58,52,0,0">
             <Image x:Name="image_game_screenshot" Margin="184,10,241,298" Source="../screenshots/tetrizz_screenshot.png"/>
             <Image x:Name="GameLogo" Margin="13,0,0,111" VerticalAlignment="Bottom" Source="/TFLauncher;component/gamecover/logos/logo_tf_tetrizz_enhanced.png" HorizontalAlignment="Left" Width="594"/>
             <Button x:Name="PlayTetRizzEBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="START GAME" Margin="10,0,0,105" Click="PlayTetRizzEBtn_Click" BorderBrush="#FFC4B377" Foreground="#FFF3D97A" FontWeight="Bold" Height="35" VerticalAlignment="Bottom" FontFamily="/TFLauncher;component/resources/#Purista SemiBold" HorizontalAlignment="Left" Width="320" FontSize="20">
@@ -185,8 +186,9 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Label x:Name="labelnotice" Content="System Requirements: Win 9x/ME, NT4, 2000, XP, Vista or later, Intel Pentium II 233, 32MB RAM, DirectX 7.0 or higher." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="10,0,0,8" HorizontalAlignment="Left" Width="646" Background="#66303030"/>
+            <Label x:Name="labelnotice" Content="System Requirements: Win Vista, 7 or later, Intel Pentium 4, 512MB RAM, DirectX 9.0 or higher." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="10,0,0,8" HorizontalAlignment="Left" Width="643" Background="#66303030"/>
             <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetRizz v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | © AxySoft&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Label x:Name="labelTFNotice" Content="NOTE: TetRizz Enhanced use DirectDraw 7/Direct3D 7 to 9 wrapper (DXWrapper) to improve modern OS support." Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="10,10,10,0" Height="27" VerticalAlignment="Top"/>
         </Grid>
         <!-- Game logo and play button-->
     </Grid>
