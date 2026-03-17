@@ -1,0 +1,34 @@
+﻿<Window x:Class="TFLauncher.TFNewsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck HQ - News" Height="600" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF180700" Offset="0"/>
+                <GradientStop Color="#FF6A461A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="0,0,0,50" Grid.RowSpan="2" />
+        <Button x:Name="OKbtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="Black" BorderBrush="#FFAAAAAA" Grid.Row="1" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                    <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                    <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                    <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labellaunchercopyright" Content="Here are the latest News about  TetFuck.&#xD;&#xA;* Requires Internet Connection" Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="42" Grid.Row="1" Width="398"/>
+    </Grid>
+</Window>

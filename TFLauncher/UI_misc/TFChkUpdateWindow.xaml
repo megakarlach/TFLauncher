@@ -14,19 +14,21 @@
         </Grid.RowDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF180000" Offset="0"/>
-                <GradientStop Color="#FF6A1A1A" Offset="1"/>
+                <GradientStop Color="#FF180700" Offset="0"/>
+                <GradientStop Color="#FF6A461A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/launcher_version/launcher_v26.0.0.html" Margin="0,0,0,50" Grid.RowSpan="2" />
-        <Button x:Name="OKbtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave"  Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="#FF418B8A" BorderBrush="#FF418B8A" Grid.Row="1">
+        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/launcher_version/launcher_v26.1.0.html" Margin="0,0,0,50" Grid.RowSpan="2" />
+        <Button x:Name="OKbtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="Black" BorderBrush="#FFAAAAAA" Grid.Row="1" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="16">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF161B21" Offset="0"/>
-                    <GradientStop Color="#FF1D3C3F" Offset="1"/>
+                    <GradientStop Color="#FFF2F6F8" Offset="0"/>
+                    <GradientStop Color="#FFE0EFF9" Offset="1"/>
+                    <GradientStop Color="#FFD8E1E7" Offset="0.5"/>
+                    <GradientStop Color="#FFB5C6D0" Offset="0.51"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="labellaunchercopyright" Content="* Checking for Updates requires Internet Connection, and of course, &#xD;&#xA;&quot;Update require restart&quot;, like COD HQ." Foreground="White" FontFamily="/TFLauncher;component/resources/#Purista" FontSize="11" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="42" Grid.Row="1" Width="398"/>
+        <Label x:Name="labellaunchercopyright" Content="* Checking for Updates requires Internet Connection, and of course, &#xD;&#xA;&quot;Update require restart&quot;, like COD HQ." Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="42" Grid.Row="1" Width="398"/>
     </Grid>
 </Window>

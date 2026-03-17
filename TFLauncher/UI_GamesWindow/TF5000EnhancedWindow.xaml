@@ -9,7 +9,7 @@
         Title="The TetFuck Box - TetFuck V (Five)" Height="768" Width="1024" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="../bg/TF5K_bg.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/TF5K_bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
@@ -177,7 +177,7 @@
                 </Button.Background>
             </Button>
             <Label x:Name="labelnotice" Content="System Requirements: Windows 7 or later, Intel Core 2 Duo or Dual-Core AMD, 1GB RAM, &#xA;DirectX 9.0 (with support for D3D9Ex). " VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,0,8" HorizontalAlignment="Left" Width="584" Background="#66303030" Height="46"/>
-            <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetFuck Five v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | © 2004 Elefun Multimedia&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetFuck Five v26.1.0 (build 10655 | PMFB-SS1)&#xA;© 2025-26 LK (TetFuck Company) &amp; MEGA Limited | © 2004 Elefun Multimedia&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
             <Label x:Name="labelTFNotice" Content="NOTE: If you have issues with the animated background, try to switch the themes again. Fuckominos will be stretched due to the game engine &#xA;designed for 4:3 monitors, however we provide support for both 16:9 and 4:3 backgrounds. TetFuck V Enhanced uses D3D9Ex and ReShade &#xD;&#xA;to enhance graphics and enhance modern Windows support.&#xD;&#xA;WARNING: EXTREME BLOOM &amp; LENS FLARE EFFECT AHEAD, YOUR EYES WILL BE RETINAL RAPED!!!" Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="10,10,10,0" Height="78" VerticalAlignment="Top"/>
         </Grid>
         <!-- Game logo and play button-->

@@ -9,7 +9,7 @@
         Title="The TetFuck Box - TetRizz" Height="768" Width="1024" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="../bg/TRIZZ_bg.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/TRIZZ_bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
         <!-- top bar grid -->
         <Grid Height="52" VerticalAlignment="Top" AutomationProperties.Name="TopGrid">
@@ -197,7 +197,7 @@
                 </Button.Background>
             </Button>
             <Label x:Name="labelnotice" Content="System Requirements: Win 9x/ME, NT4, 2000, XP, Vista or later, Intel Pentium II 233, 32MB RAM, DirectX 7.0 or higher." VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="10,0,0,8" HorizontalAlignment="Left" Width="643" Background="#66303030"/>
-            <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetRizz v26.0.0 (build 10612 | RTM-PMFB)&#xA;© 2025 LK (TetFuck Company) &amp; MEGA Limited | © AxySoft&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
+            <Label x:Name="labelver" Content="TetFuck Launcher &amp; TetRizz v26.1.0 (build 10655 | PMFB-SS1)&#xA;© 2025-26 LK (TetFuck Company) &amp; MEGA Limited | © AxySoft&#xA;https://playtetfuck.wordpress.com" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000"/>
         </Grid>
         <!-- Game logo and play button-->
     </Grid>

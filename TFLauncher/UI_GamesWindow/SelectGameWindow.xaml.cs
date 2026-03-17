@@ -1,19 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using CefSharp;
-using CefSharp.Wpf;
-using System.Media;
 
 namespace TFLauncher
 {
@@ -22,10 +9,12 @@ namespace TFLauncher
     /// </summary>
     public partial class SelectGameWindow : Window
     {
+
         public SelectGameWindow()
         {
             InitializeComponent();
         }
+
         private void animatedBG_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -51,50 +40,7 @@ namespace TFLauncher
             // stop playing
         }
 
-        // Top bar buttons
-        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://playtetfuck.wordpress.com/"); //link updated 8/3/2024
-        }
-
-        // shitty battlelog system
-        private void VisitKanyeTwitterProfile_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://x.com/kanyewest"); //link updated 11/2025
-        }
-
-        // UPDATE POPUP 2025
-        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
-            aboutpopup.ShowDialog();
-        }
-
-        private void QuitBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.ExitMe();
-        }
-
-        private void AboutBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            TFAbout aboutpopup = new TFAbout();
-            aboutpopup.ShowDialog();
-        }
-
-        private void HelpBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            TF_Help_Window aboutpopup = new TF_Help_Window();
-            aboutpopup.ShowDialog();
-        }
-        // Top bar buttons
-
-        // SELECT GAME SCRIPTS
+        // SELECT GAME SCRIPTS & Middle bottom btns
         // Button that opens TetFuck 2142
         private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
         {
@@ -175,6 +121,68 @@ namespace TFLauncher
             game_tetrizz_enhanced.ShowDialog();
         }
 
-        // SELECT GAME SCRIPTS
+        private void OpenMoreGamesBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // SELECT GAME SCRIPTS & Middle bottom btns
+
+        // Bottom bar buttons
+        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://playtetfuck.wordpress.com/"); //link updated 8/3/2024
+        }
+        // Fake Ultimate Team btn
+        private void OpenUltimateTeamBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); //link updated 3/15/2026
+        }
+        // UPDATE POPUP 2025
+        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
+            aboutpopup.ShowDialog();
+        }
+
+        // TETFUCK TRAX 2026
+        private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            EATraxWindow eatraxwnd = new EATraxWindow();
+            eatraxwnd.ShowDialog();
+        }
+
+        private void QuitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.ExitMe();
+        }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TFAbout aboutpopup = new TFAbout();
+            aboutpopup.ShowDialog();
+        }
+
+        private void HelpBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TF_Help_Window helppopup = new TF_Help_Window();
+            helppopup.ShowDialog();
+        }
+
+        private void NewsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            TFNewsWindow tfnewswnd = new TFNewsWindow();
+            tfnewswnd.ShowDialog();
+        }
+
+        // Bottom bar buttons
     }
 }

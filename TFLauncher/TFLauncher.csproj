@@ -138,6 +138,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UI_GamesWindow\EATraxWindow.xaml.cs">
+      <DependentUpon>EATraxWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI_GamesWindow\TetRizzEnhancedWindow.xaml.cs">
       <DependentUpon>TetRizzEnhancedWindow.xaml</DependentUpon>
     </Compile>
@@ -171,6 +174,9 @@
     <Compile Include="UI_Help\TF_Help_TF4K_Controls_Window.xaml.cs">
       <DependentUpon>TF_Help_TF4K_Controls_Window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI_misc\TFNewsWindow.xaml.cs">
+      <DependentUpon>TFNewsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI_misc\TFChkUpdateWindow.xaml.cs">
       <DependentUpon>TFChkUpdateWindow.xaml</DependentUpon>
     </Compile>
@@ -189,6 +195,10 @@
     <Compile Include="UI_GamesWindow\TF2142Window.xaml.cs">
       <DependentUpon>TF2142Window.xaml</DependentUpon>
     </Compile>
+    <Page Include="UI_GamesWindow\EATraxWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UI_GamesWindow\TetRizzEnhancedWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -230,6 +240,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UI_Help\TF_Help_TF4K_Controls_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_misc\TFNewsWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -296,6 +310,21 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="resources\UniversBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\UniversCnBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\UniversCnRg.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\UniversLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\UniversRegular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="resources\segmdl2.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -363,19 +392,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg\beta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg\beta_hover.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="gamecover\tfhqlogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg\woodstock94-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg\tflauncher_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="gamecover\CunnyCrisisSteamBanner.jpg" />
@@ -391,16 +408,95 @@
     <Resource Include="materials\xbox_btn.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="materials\bg\TF13_menu_nobg_btm.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_selectgame.png" />
+    <Resource Include="materials\bg\login-screen-static-season2_alt.jpg" />
+    <Resource Include="materials\btn_newredesign2013\trax\tf_trax_window.png" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_A.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_B.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_BACK.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_L3.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LB.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LDPAD_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LDPAD_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LDPAD_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LDPAD_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LS_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LS_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LS_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LS_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_LT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_R3.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RB.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RS_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RS_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RS_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RS_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_RT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_START.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_X.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_AI_Y.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_CANCEL.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_HELP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_L3.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LB.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LDPAD_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LDPAD_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LDPAD_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LDPAD_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LS_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LS_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LS_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LS_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_LT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_R3.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RB.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RS_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RS_LEFT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RS_RIGHT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RS_UP.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_RT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_SELECT.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_START.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_X.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_FE_Y.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_VOIP_TOGGLE_MUTE.png" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_VOIP_VOLUME_DOWN.PNG" />
+    <Resource Include="materials\btn_newredesign2013\controllerbtns\VB_VOIP_VOLUME_UP.PNG" />
+    <Resource Include="materials\bg\fifa14test2.png" />
+    <Resource Include="materials\bg\RR_Spirit_of_Ecstasy.png" />
+    <Resource Include="materials\bg\ea_sports_2011.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-cdkey-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-playgame-13.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tf2142.png" />
+    <Content Include="media\background_s2_26.wmv" />
+    <Content Include="media\tf2142_gameplay_menu.wmv" />
+    <Content Include="sound\fifa13_m_clicked.wav" />
+    <Content Include="sound\fifa13_m_select.wav" />
+    <Resource Include="materials\bg\TF13_menu_nobg.png" />
+    <Resource Include="gamecover\LauncherLogo_TF26.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-back-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-cc-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-moregames-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-tetrizz-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-tf2142-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-tf4000-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-tf5000-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-ui-quit-13.png" />
+    <Resource Include="materials\bg\login-screen-static-season2.jpg" />
+    <Resource Include="materials\bg\TF2142_bg.jpg" />
+    <Resource Include="materials\bg\TF4K_bg.jpg" />
+    <Resource Include="materials\bg\TF5K_bg.jpg" />
+    <Resource Include="materials\bg\TRIZZ_bg.jpg" />
+    <Resource Include="materials\bg\CunnyCrysisLauncherBG.jpg" />
+    <Resource Include="tfmenu_1.png" />
     <Resource Include="albumcover\TFalbum art 5 Part II.png" />
-    <Resource Include="bg\badcomp-test.jpg" />
     <Resource Include="gamecover\battlelog\icon_pussyopussyo.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuck2142.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuck4k.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuckv.png" />
     <Resource Include="gamecover\battlelog\icon_tetrizz.png" />
     <Resource Include="materials\tfhq_banner.png" />
-    <Resource Include="bg\TF2142_bg.jpg" />
-    <Resource Include="bg\TF4K_bg.jpg" />
     <Resource Include="gamecover\logos\logo_tf_kunnykrysis.png" />
     <Resource Include="gamecover\logos\logo_tf_tetrizz.png" />
     <Resource Include="gamecover\logos\logo_tf_tf2142.png" />
@@ -408,26 +504,19 @@
     <Resource Include="gamecover\logos\logo_tf_tf4k_enhanced.png" />
     <Resource Include="gamecover\logos\logo_tf_tffive.png" />
     <Resource Include="gamecover\logos\logo_tf_tffive_enhanced.png" />
-    <Resource Include="bg\RR_Spirit_of_Ecstasy.png" />
-    <Resource Include="bg\TF5K_bg.jpg" />
     <Resource Include="screenshots\TF2142-screenshot.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuck4k_enhanced.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuckv_enhanced.png" />
     <Resource Include="gamecover\battlelog\icon_tetrizz_enhanced.png" />
-    <Resource Include="bg\TRIZZ_bg.jpg" />
     <Resource Include="screenshots\kunny-krysis-screenshot.png" />
     <Resource Include="materials\pfp_ye_goat.jpg" />
     <Resource Include="gamecover\LauncherLogo_TFBOX_PMFB.png" />
     <Resource Include="screenshots\tf4k_screenshot.png" />
     <Resource Include="screenshots\tf5_screenshot.png" />
     <Resource Include="screenshots\tetrizz_screenshot.png" />
-    <Resource Include="bg\login-screen-static.jpg" />
     <Resource Include="gamecover\logos\logo_tf_tetrizz_enhanced.png" />
     <Resource Include="materials\poweroff_btn.png" />
     <Resource Include="materials\poweroff_red_btn.png" />
-    <Content Include="media\background.wmv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="sound\csgo_ui_page_scroll.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -439,8 +528,6 @@
     <Content Include="sound\buttonrollover.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="bg\CunnyCrysisLauncherBG.jpg" />
-    <Resource Include="bg\loading.jpg" />
     <Content Include="sound\buttonclickrelease.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

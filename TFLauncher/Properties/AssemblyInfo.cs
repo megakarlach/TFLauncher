@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("The TetFuck Company (leonidakarlach)")]
 [assembly: AssemblyProduct("TetFuck HQ")]
-[assembly: AssemblyCopyright("Copyright © 2025 Starfuckers Inc. (leonidakarlach) & Activision Publishing Inc.")]
+[assembly: AssemblyCopyright("Copyright © 2025 Starfuckers Inc. (leonidakarlach) & 2012 Electronic Arts")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,7 +51,7 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("26.0.0.0")]
-[assembly: AssemblyFileVersion("26.0.0.0")]
+[assembly: AssemblyVersion("26.2.0.0")]
+[assembly: AssemblyFileVersion("26.2.0.0")]
 [assembly: NeutralResourcesLanguage("en")]
 

@@ -1,0 +1,80 @@
+﻿<Window x:Class="TFLauncher.EATraxWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck HQ (The TetFuck Box 26) - TetFuck TRAX" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
+    <Grid ClipToBounds="True">
+        <Grid.Background>
+            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/login-screen-static-season2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <MediaElement x:Name="animatedBG" Source="../media/background_s2_26.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True" Margin="0,0,0,-1"/>
+        <!-- ea trax -->
+        <Grid ClipToBounds="True">
+            <Image x:Name="TFHQ_FIFA13_menu_trax" Source="/TFLauncher;component/materials/btn_newredesign2013/trax/tf_trax_window.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="712" Width="1272"/>
+            <ListBox x:Name="listBox" Height="398" Margin="171,109,567,205" HorizontalAlignment="Center" VerticalAlignment="Center" Width="534" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF24282D" Offset="0"/>
+                        <GradientStop Color="#FF0B0F13" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListBox.Background>
+                <Label Background="{x:Null}" Content="Ana Tijoux - 1977" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="A-Trak - Push (feat. Andrew Wyatt)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Bastille - Weight Of Living, Pt. II" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Blur - Song 2" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Unknown Artists - BNWO chant" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Brian Tuey &amp; LK - Damned271jewishAeACK" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Jimmy &quot;Big Giant Circle&quot; Hinson - Adrenaline 2025" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="siemka321 - Crack-Life Anniversary Theme" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="siemka321 - Sea Shanty 2 x I'm a fucking alcoholic" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Crystal Fighters - Follow" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="CSS - Hits Me Like a Rock" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Deadmau5 - Professional Griefers" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Digitalism - Circles" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="DJ Raff - Latino &amp; Proud" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Empire Of The Sun - We Are The People" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Foster The People - Call It What You Want" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Gorillaz - Rhinestone Eyes" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Grouplove - Colours (Captain Cuts Remix)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Imagine Dragons - On Top Of The World" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="John Newman - Love Me Again" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Kanye West (ft. Dwele) - Flashing Lights" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Madeon - Finale" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Ram Di Dam - Flashbacks" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Rock Mafia - Fly or Die" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Rock Mafia - The Big Bang" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Savoir Adore - Dreamers" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="The Strokes - Machu Picchu" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="The Ting Tings - Hands" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Thievery Corporation - Stargazer" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Walk The Moon - Quesadilla" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+            </ListBox>
+            <Button x:Name="button_BACK" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="69,632,1179,56" Width="24" Height="24" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="button_BACK_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/controllerbtns/VB_AI_B.PNG"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button_BACK2" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Back" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="93,630,1131,58" Width="48" Height="24" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="18.667" Click="button_BACK_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Direction="320" ShadowDepth="1"/>
+                </Button.Effect>
+            </Button>
+
+        </Grid>
+        <!-- ea trax -->
+        <!-- select game toolbar -->
+        <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" UseLayoutRounding="False" Grid.IsSharedSizeScope="True" Height="155.625" VerticalAlignment="Bottom" ClipToBounds="True" HorizontalAlignment="Center" Width="1272">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2" MinWidth="2"/>
+                <ColumnDefinition Width="Auto" MinWidth="1263"/>
+                <ColumnDefinition Width="2" MinWidth="2"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+        <!-- select game toolbar -->
+    </Grid>
+</Window>

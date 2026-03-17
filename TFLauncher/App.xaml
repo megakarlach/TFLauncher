@@ -12,5 +12,7 @@
         <FontFamily x:Key="Purista Medium">./resources/Purista-Medium.ttf</FontFamily>
         <FontFamily x:Key="Purista SemiBold">./resources/Purista-SemiBold.ttf</FontFamily>
         <FontFamily x:Key="Stratum2 Md">./resources/stratum2.ttf</FontFamily>
+        <FontFamily x:Key="Univers Condensed">./resources/UniversCnRg.ttf</FontFamily>
+        <FontFamily x:Key="Univers Condensed Bold">./resources/UniversCnBold.ttf</FontFamily>
     </Application.Resources>
 </Application>

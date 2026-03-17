@@ -10,31 +10,6 @@ namespace TFLauncher
 {
     class Launcher
     {
-        public static void PlayLauncherBGMusic()
-        {
-            // random number generator
-            Random random = new Random();
-            int randomInRange = random.Next(1, 7); // Upper bound is exclusive
-            Console.WriteLine($"Random Integer Test: {randomInRange}");
-
-            // playing launcher background music
-            try
-            {
-                var startBGMusic = new ProcessStartInfo
-                {
-                    FileName = "..\\third-party\\mpv\\mpv-tetfuck.exe",
-                    WorkingDirectory = "..\\third-party\\mpv\\",
-                    Arguments = ($"--no-osc --no-input-default-bindings --no-config --window-scale=0.1 --force-window=no --loop=inf --volume=90 --vo=null .\\..\\..\\tf_shared\\sound\\ui_launcher\\gamestartup{randomInRange}.m4a"), // Command line
-                    UseShellExecute = false,   // Required for certain applications
-                    CreateNoWindow = false    // Show the window
-                };
-                Process.Start(startBGMusic);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-        }
         public static void ExitMe()
         {   //Shutdown startup menu music
             string processName = "mpv-tetfuck"; // Replace with the desired process name (without .exe)
@@ -48,13 +23,13 @@ namespace TFLauncher
                     process.Kill();
                     process.WaitForExit(); // Optional: Wait for the process to exit
                     process.Dispose(); // Release resources
-                    // Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
+                    Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
 
                 }
 
                 if (processes.Length == 0)
                 {
-                    // Console.WriteLine($"No processes found with the name '{processName}'.");
+                     Console.WriteLine($"No processes found with the name '{processName}'.");
                 }
 
             System.Threading.Thread.Sleep(200);
@@ -68,22 +43,22 @@ namespace TFLauncher
         }
         public static void PlayHoverBtnSound()
         {
-            SoundPlayer buttonclickrollover = new SoundPlayer(@".\sound\buttonrollover.wav");
+            SoundPlayer buttonclickrollover = new SoundPlayer(@".\sound\FIFA13_m_select.wav");
             buttonclickrollover.Load();
             buttonclickrollover.Play();
         }
         public static void PlayBtnSound()
         {
-            SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\buttonclickrelease.wav");
+            SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\FIFA13_m_clicked.wav");
             buttonclickrelease.Load();
             buttonclickrelease.Play();
         }
-        public static void PlayScrollBtnSound()
-        {
-            SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\csgo_ui_page_scroll.wav");
-            buttonclickrelease.Load();
-            buttonclickrelease.Play();
-        }
+//        public static void PlayScrollBtnSound()
+//        {
+//            SoundPlayer buttonclickrelease = new SoundPlayer(@".\sound\csgo_ui_page_scroll.wav");
+//            buttonclickrelease.Load();
+//            buttonclickrelease.Play();
+//        }
 
         // See music setlist for TetFuck
         public static void OpenSetlist()
