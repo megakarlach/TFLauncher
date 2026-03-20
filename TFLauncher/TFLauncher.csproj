@@ -141,6 +141,9 @@
     <Compile Include="UI_GamesWindow\EATraxWindow.xaml.cs">
       <DependentUpon>EATraxWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI_GamesWindow\SelectGameWindowP2.xaml.cs">
+      <DependentUpon>SelectGameWindowP2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI_GamesWindow\TetRizzEnhancedWindow.xaml.cs">
       <DependentUpon>TetRizzEnhancedWindow.xaml</DependentUpon>
     </Compile>
@@ -196,6 +199,10 @@
       <DependentUpon>TF2142Window.xaml</DependentUpon>
     </Compile>
     <Page Include="UI_GamesWindow\EATraxWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_GamesWindow\SelectGameWindowP2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -469,7 +476,13 @@
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-cdkey-13.png" />
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-playgame-13.png" />
     <Resource Include="materials\bg\TF13_menu_nobg_top_tf2142.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_kunnykrysis.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tetrizz.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tf4k.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tf5000.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-nsfw.png" />
     <Content Include="media\background_s2_26.wmv" />
+    <Content Include="media\kk_gameplay_menu.wmv" />
     <Content Include="media\tf2142_gameplay_menu.wmv" />
     <Content Include="sound\fifa13_m_clicked.wav" />
     <Content Include="sound\fifa13_m_select.wav" />

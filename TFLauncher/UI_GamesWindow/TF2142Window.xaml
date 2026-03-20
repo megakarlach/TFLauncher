@@ -97,7 +97,7 @@
             </Grid>
             <!-- select game toolbar -->
             <Label x:Name="labelresetaudionotice" Content="System Requirements: Win9x or later (game), XP or later (for music playback), &#xA;any GPU &amp; RAM (as long it can run Paint)" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,746,212" HorizontalAlignment="Center" Width="516" Background="#66303030" Height="48"/>
-            <Label x:Name="label1" Content="© 2025-26 LK (TetFuck Company) &amp; MEGA Limited | 2000 - 2003 Jaibo Software" HorizontalAlignment="Center" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000" Height="22" VerticalAlignment="Top" Margin="893,0,0,0"/>
+            <Label x:Name="label1" Content="© 2025-26 LK (TetFuck Company) &amp; MEGA Limited | 2000 - 2003 Jaibo Software" HorizontalAlignment="Center" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000" Height="22" VerticalAlignment="Top" Margin="893,0,0,0" HorizontalContentAlignment="Right"/>
             <Label x:Name="labelTF2142Notice" Content="IMPORTANT: When playing TetFuck 2142 for the first time, you might need to reset audio settings in game options, for various sound effects &#xD;&#xA;to play properly." Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="10,0,10,161" Height="46" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="1252"/>
         </Grid>
         <!-- Game logo and play button-->

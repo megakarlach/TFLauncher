@@ -1,46 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using CefSharp;
-using CefSharp.Wpf;
-using System.Diagnostics;
-using System.Media;
 
 namespace TFLauncher
 {
     /// <summary>
-    /// Interaction logic for CunnyCrisisWindow.xaml
+    /// Interaction logic for SelectGameWindow.xaml
     /// </summary>
-    public partial class CunnyCrisisWindow : Window
+    public partial class SelectGameWindowP2 : Window
     {
-        public CunnyCrisisWindow()
+
+        public SelectGameWindowP2()
         {
             InitializeComponent();
         }
-        // Animated gameplay video
-        private void animatedgameplay_Loaded(object sender, RoutedEventArgs e)
+
+        private void animatedBG_Loaded(object sender, RoutedEventArgs e)
         {
 
-            animatedgameplay.Play();
+            animatedBG.Play();
 
         }
 
-        private void animatedgameplay_Ended(object sender, RoutedEventArgs e)
+        private void animatedBG_Ended(object sender, RoutedEventArgs e)
         {
 
-            animatedgameplay.Position = TimeSpan.FromSeconds(0);
+            animatedBG.Position = TimeSpan.FromSeconds(0);
 
         }
-
         // Play sounds when hovering buttons
         private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -53,27 +40,25 @@ namespace TFLauncher
             // stop playing
         }
 
-        // Top bar buttons
-        private void OpenMusicSetlistBtn_Click(object sender, RoutedEventArgs e)
+        // SELECT GAME SCRIPTS & Middle bottom btns
+        // Button that opens Cunny Crysis
+        private void OpenCunnyCrisis_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.OpenSetlist();
-        }
-        // Top bar buttons - END
-
-        // Middle bottom btns
-        private void PlayCunnyCrysisBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenCunnyCrisis();
-            Launcher.ExitMe();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            CunnyCrisisWindow cunnycrysis = new CunnyCrisisWindow();
+            cunnycrysis.ShowDialog();
         }
 
-        private void PlayCunnyCrisisNSFWBtn_Click(object sender, RoutedEventArgs e)
+        // Button that opens Tetrizz
+        private void OpenTetRizz_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://www.youtube.com/watch?v=iuQB-vQRYfU");
-            Launcher.ExitMe();
+            // Open up the game window and hide the select game window.
+            this.Hide();
+            TetRizzWindow game_tetrizz = new TetRizzWindow();
+            game_tetrizz.ShowDialog();
         }
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
@@ -83,7 +68,7 @@ namespace TFLauncher
             selectgamewnd.ShowDialog();
         }
 
-        // Middle bottom btns - END
+        // SELECT GAME SCRIPTS & Middle bottom btns
 
         // Bottom bar buttons
         private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
@@ -139,6 +124,7 @@ namespace TFLauncher
             TFNewsWindow tfnewswnd = new TFNewsWindow();
             tfnewswnd.ShowDialog();
         }
+
         // Bottom bar buttons
     }
 }

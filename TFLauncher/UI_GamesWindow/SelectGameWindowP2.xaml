@@ -1,0 +1,65 @@
+﻿<Window x:Class="TFLauncher.SelectGameWindowP2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:TFLauncher"
+        mc:Ignorable="d"
+        Title="TetFuck HQ (The TetFuck Box 26) - More Games" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
+    <Grid ClipToBounds="True">
+        <Grid.Background>
+            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/login-screen-static-season2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <MediaElement x:Name="animatedBG" Source="../media/background_s2_26.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True" Margin="0,0,0,-1"/>
+        <!-- Collectors logo -->
+        <!-- game version check -->
+        <!--         <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/clientver.html" Margin="10,52,12,0" Height="66" VerticalAlignment="Top" /> -->
+        <!-- top bar grid -->
+        <Image x:Name="TFHQ_FIFA13_menu_top" Source="/TFLauncher;component/materials/bg/TF13_menu_nobg_top_selectgame.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="712" Width="1272"/>
+        <!-- top bar grid -->
+        <!-- bottom bar grid -->
+        <Grid ClipToBounds="True">
+            <Image x:Name="TFHQ_FIFA13_menu_btm" Source="/TFLauncher;component/materials/bg/TF13_menu_nobg_btm.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1272"/>
+            <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="128,0,920,34" Click="VisitTFWebsiteBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="41" VerticalAlignment="Bottom" Width="225" FontWeight="Bold"/>
+            <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" Margin="919,0,128,34" Click="AboutBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="41" VerticalAlignment="Bottom" Width="225" FontWeight="Bold"/>
+            <Button x:Name="OpenUltimateTeamBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ULTIMATE  TEAM" Margin="148,0,965,3" Click="OpenUltimateTeamBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" Width="160" FontWeight="Bold"/>
+            <Button x:Name="OpenTetFuckTraxBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TETFUCK  TRAX" Margin="354,0,758,3" Click="OpenTetFuckTraxBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+            <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK UPDATES" Margin="782,0,330,3" Click="UpdateBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+            <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" Margin="960,0,152,3" Click="HelpBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+            <Button x:Name="NewsBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TETFUCK NEWS" Margin="556,0,556,3" Click="NewsBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+        </Grid>
+        <!-- bottom bar grid -->
+        <!-- select game toolbar -->
+        <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" UseLayoutRounding="False" Grid.IsSharedSizeScope="True" Height="155.625" VerticalAlignment="Bottom" ClipToBounds="True" HorizontalAlignment="Center" Width="1272">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2" MinWidth="2"/>
+                <ColumnDefinition Width="Auto" MinWidth="1263"/>
+                <ColumnDefinition Width="2" MinWidth="2"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="OpenCunnyCrisis"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="2,6,948,74.625" Content="Play Kunny Krysis" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Click="OpenCunnyCrisis_Click" RenderTransformOrigin="0.5,0.5" FontFamily="/TFLauncher;component/resources/#Marker Felt" Foreground="#00000000" OpacityMask="#FF90DAC6" BorderBrush="#FF90DAC6" BorderThickness="1" SnapsToDevicePixels="True" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-cc-13.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OpenTetRizz" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="316,6,631,74.625" Content="Play TetRizz" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetRizz_Click" OpacityMask="#FF90B8DA" BorderBrush="#FF90B8DA" Foreground="#00000000" BorderThickness="1" SnapsToDevicePixels="True" Grid.Column="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-tetrizz-13.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="GoBackBtn" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="950,6,1,74.625" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Back" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="GoBackBtn_Click" OpacityMask="#FF65C95C"  BorderBrush="#FFB5C6D0" Foreground="#00000000" BorderThickness="1" SnapsToDevicePixels="True" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-back-13.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="QuitBtn"  MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" Margin="0,0,10,3.625" Click="QuitBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="28" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Right" Width="66" HorizontalContentAlignment="Right" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="68" VerticalAlignment="Bottom" Grid.Column="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-ui-quit-13.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!-- select game toolbar -->
+        <Label x:Name="labelver" VerticalAlignment="Top" HorizontalAlignment="Center" Content="TetFuck Launcher v26.2.0 (build 10655 | PMFB-SS2)&#xA;© 2025 - 2026 LK (TetFuck Company) &amp; MEGA Limited&#xA;© 2012 - 2026 Electronic Arts&#xA;https://playtetfuck.wordpress.com" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="1015,88,3,0" Background="#3F000000" Width="254" Height="58"/>
+        <Image x:Name="logo_TFLauncher" Margin="18,110,604,0" Source="/TFLauncher;component/gamecover/LauncherLogo_TF26.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="650"/>
+    </Grid>
+</Window>

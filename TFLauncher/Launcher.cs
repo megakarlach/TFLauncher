@@ -11,30 +11,9 @@ namespace TFLauncher
     class Launcher
     {
         public static void ExitMe()
-        {   //Shutdown startup menu music
-            string processName = "mpv-tetfuck"; // Replace with the desired process name (without .exe)
-
-                // Get all processes with the specified name
-                Process[] processes = Process.GetProcessesByName(processName);
-
-                foreach (Process process in processes)
-                {
-                    // Terminate the process
-                    process.Kill();
-                    process.WaitForExit(); // Optional: Wait for the process to exit
-                    process.Dispose(); // Release resources
-                    Console.WriteLine($"Process {processName} (ID: {process.Id}) terminated.");
-
-                }
-
-                if (processes.Length == 0)
-                {
-                     Console.WriteLine($"No processes found with the name '{processName}'.");
-                }
-
+        {   
             System.Threading.Thread.Sleep(200);
             System.Windows.Application.Current.Shutdown(); //Close launcher
-
         }
 
         public static void LaunchWebsite(string url)
