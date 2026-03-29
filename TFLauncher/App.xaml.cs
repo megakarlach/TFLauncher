@@ -26,5 +26,6 @@ namespace TFLauncher
             };
             Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
         }
+
     }
 }

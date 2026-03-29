@@ -36,7 +36,30 @@ namespace TFLauncher
         {
 
             animatedgameplay.Position = TimeSpan.FromSeconds(0);
+        }
+        // attempt fixing nasty memory leak
 
+        private void CleanupMedia()
+        {
+            try
+            {
+                if (animatedgameplay != null)
+                {
+                    animatedgameplay.Stop();
+                    animatedgameplay.Source = null;
+
+                    // Optional but helps:
+                    animatedgameplay.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
+                    animatedgameplay.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
+                }
+            }
+            catch { }
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            CleanupMedia();
+            base.OnClosing(e);
         }
 
         // Play sounds when hovering buttons
@@ -75,6 +98,7 @@ namespace TFLauncher
             // Switch to Enhanced version
             TetRizzWindow game_tetrizz_regular = new TetRizzWindow();
             game_tetrizz_regular.Show();
+            this.Content = null;
             this.Close();
         }
         private void OpenTetRizzCDKeyBtn_Click(object sender, RoutedEventArgs e)
@@ -90,6 +114,7 @@ namespace TFLauncher
             animatedgameplay.Stop();
             SelectGameWindow selectgamewnd = new SelectGameWindow();
             selectgamewnd.Show();
+            this.Content = null;
             this.Close();
         }
 
@@ -117,6 +142,7 @@ namespace TFLauncher
             animatedgameplay.Stop();
             EATraxWindow eatraxwnd = new EATraxWindow();
             eatraxwnd.Show();
+            this.Content = null;
             this.Close();
         }
 

@@ -178,17 +178,6 @@ namespace TFLauncher
             catch { }
         }
 
-        private void animatedBG_Loaded(object sender, RoutedEventArgs e)
-        {
-            // animatedBG.Play();            // playing animated bg
-        }
-
-        private void animatedBG_Ended(object sender, RoutedEventArgs e)
-        {
-
-           // animatedBG.Position = TimeSpan.FromSeconds(0);
-
-        }
         // Play sounds when hovering buttons
         private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
         {

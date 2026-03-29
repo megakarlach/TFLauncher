@@ -33,12 +33,36 @@ namespace TFLauncher
             animatedgameplay.Play();
 
         }
-
         private void animatedgameplay_Ended(object sender, RoutedEventArgs e)
         {
 
             animatedgameplay.Position = TimeSpan.FromSeconds(0);
 
+        }
+
+        // attempt fixing nasty memory leak
+
+        private void CleanupMedia()
+        {
+            try
+            {
+                if (animatedgameplay != null)
+                {
+                    animatedgameplay.Stop();
+                    animatedgameplay.Source = null;
+
+                    // Optional but helps:
+                    animatedgameplay.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
+                    animatedgameplay.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
+                }
+            }
+            catch { }
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            CleanupMedia();
+            base.OnClosing(e);
         }
 
         // Play sounds when hovering buttons
@@ -77,6 +101,7 @@ namespace TFLauncher
             // Switch to Regular version
             TF5000Window tf5kwnd = new TF5000Window();
             tf5kwnd.ShowDialog();
+            this.Content = null;
             this.Close();
         }
 
@@ -92,6 +117,7 @@ namespace TFLauncher
             animatedgameplay.Stop();
             SelectGameWindow selectgamewnd = new SelectGameWindow();
             selectgamewnd.ShowDialog();
+            this.Content = null;
             this.Close();
         }
 
@@ -119,6 +145,7 @@ namespace TFLauncher
             animatedgameplay.Stop();
             EATraxWindow eatraxwnd = new EATraxWindow();
             eatraxwnd.ShowDialog();
+            this.Content = null;
             this.Close();
         }
 

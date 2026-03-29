@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,16 @@ namespace TFLauncher
         public TF_Help_TF2142_CDKey_Window()
         {
             InitializeComponent();
+            var settings = new CefSettings();
+
+            // Enable GPU
+            settings.CefCommandLineArgs.Add("enable-gpu", "1");
+            settings.CefCommandLineArgs.Add("disable-gpu-vsync", "1");
+            settings.CefCommandLineArgs.Add("disable-software-rasterizer", "1");
+
+            // Optional tweaks
+            settings.CefCommandLineArgs.Add("enable-begin-frame-scheduling", "1");
+            settings.CefCommandLineArgs.Add("enable-gpu-compositing", "1");
         }
 
         // Play sounds when hovering buttons
@@ -36,6 +47,9 @@ namespace TFLauncher
 
         private void OKbtn_Click(object sender, RoutedEventArgs e)
         {
+            browserwnd.Stop();
+            browserwnd.Dispose();
+            this.Content = null;
             this.Close();
         }
     }
