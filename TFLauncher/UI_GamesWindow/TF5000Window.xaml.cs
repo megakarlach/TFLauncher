@@ -26,6 +26,21 @@ namespace TFLauncher
         {
             InitializeComponent();
         }
+        // Animated gameplay video
+        private void animatedgameplay_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            animatedgameplay.Play();
+
+        }
+
+        private void animatedgameplay_Ended(object sender, RoutedEventArgs e)
+        {
+
+            animatedgameplay.Position = TimeSpan.FromSeconds(0);
+
+        }
+
         // Play sounds when hovering buttons
         private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -38,26 +53,73 @@ namespace TFLauncher
             // stop playing
         }
 
-        // TOP BAR STUFF
-        private void VisitTFWebsiteBtn_Click(object sender, RoutedEventArgs e)
+        // Top bar buttons
+        private void OpenMusicSetlistBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://playtetfuck.wordpress.com/"); //link updated 8/3/2024
+            Launcher.OpenSetlist();
         }
 
-        // shitty battlelog system
-        private void VisitKanyeTwitterProfile_Click(object sender, RoutedEventArgs e)
+        // Top bar buttons - END
+
+        // Middle bottom btns
+        private void PlayTF5000Btn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.LaunchWebsite("https://x.com/kanyewest"); //link updated 11/2025
+            Launcher.OpenTetFuck5000();
+            Launcher.ExitMe();
         }
 
+        private void TryTF5KEnhanced_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
+            // Switch to Enhanced version
+            TF5000EnhancedWindow tf5kenhanced = new TF5000EnhancedWindow();
+            tf5kenhanced.Show();
+            this.Close();
+        }
+
+        private void FIFAAdBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"); //link updated 3/28/2026
+        }
+
+        private void GoBackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
+            SelectGameWindow selectgamewnd = new SelectGameWindow();
+            selectgamewnd.Show();
+            this.Close();
+        }
+
+        // Middle bottom btns - END
+
+        // Bottom bar buttons
+        // Fake Ultimate Team btn
+        private void OpenUltimateTeamBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); //link updated 3/15/2026
+        }
         // UPDATE POPUP 2025
         private void UpdateBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
             aboutpopup.ShowDialog();
+        }
+
+        // TETFUCK TRAX 2026
+        private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
+            EATraxWindow eatraxwnd = new EATraxWindow();
+            eatraxwnd.Show();
+            this.Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
@@ -76,124 +138,22 @@ namespace TFLauncher
         private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            TF_Help_Window aboutpopup = new TF_Help_Window();
-            aboutpopup.ShowDialog();
+            TF_Help_Window helppopup = new TF_Help_Window();
+            helppopup.ShowDialog();
         }
 
-        // TOP BAR STUFF
-
-        // Launch game
-        private void PlayTF5000Btn_Click(object sender, RoutedEventArgs e)
+        private void NewsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            Launcher.OpenTetFuck5000();
-            Launcher.ExitMe();
+            TFNewsWindow tfnewswnd = new TFNewsWindow();
+            tfnewswnd.ShowDialog();
         }
-
         private void OpenTF5KControlsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TF_Help_TFV_Controls_Window viewcontrolswnd = new TF_Help_TFV_Controls_Window();
             viewcontrolswnd.ShowDialog();
         }
-
-        private void TryTF5KEnhanced_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF5000EnhancedWindow tf5kewin = new TF5000EnhancedWindow();
-            tf5kewin.ShowDialog();
-        }
-        private void OpenMusicSetlistBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            Launcher.OpenSetlist();
-        }
-        // Launch game - END
-
-        // SELECT GAME SCRIPTS
-        // Button that opens TetFuck 2142
-        private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF2142Window tf2142win = new TF2142Window();
-            tf2142win.ShowDialog();
-        }
-
-        // Button that opens TetFuck 4K
-        private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF4000Window tf4kwin = new TF4000Window();
-            tf4kwin.ShowDialog();
-        }
-
-        // Button that opens TetFuck 4K Enhanced
-        private void OpenTetFuck4000Enhanced_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF4000EnhancedWindow tf4kewin = new TF4000EnhancedWindow();
-            tf4kewin.ShowDialog();
-        }
-
-        // Button that opens TetFuck Five
-        private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF5000Window tf5000win = new TF5000Window();
-            tf5000win.ShowDialog();
-        }
-
-        // Button that opens TetFuck Five enhanced
-        private void OpenTetFuck5000Enhanced_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TF5000EnhancedWindow tf5kewin = new TF5000EnhancedWindow();
-            tf5kewin.ShowDialog();
-        }
-
-        // Button that opens Cunny Crysis
-        private void OpenCunnyCrisis_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            CunnyCrisisWindow cunnycrysis = new CunnyCrisisWindow();
-            cunnycrysis.ShowDialog();
-        }
-
-        // Button that opens Tetrizz
-        private void OpenTetRizz_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TetRizzWindow game_tetrizz = new TetRizzWindow();
-            game_tetrizz.ShowDialog();
-        }
-
-        // Button that opens Tetrizz Enhanced
-        private void OpenTetRizzEnhanced_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            // Open up the game window and hide the select game window.
-            this.Hide();
-            TetRizzEnhancedWindow game_tetrizz_enhanced = new TetRizzEnhancedWindow();
-            game_tetrizz_enhanced.ShowDialog();
-        }
-
-        // SELECT GAME SCRIPTS
-
+        // Bottom bar buttons
     }
 }

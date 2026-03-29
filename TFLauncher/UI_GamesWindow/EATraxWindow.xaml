@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="TetFuck HQ (The TetFuck Box 26) - TetFuck TRAX" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ 26 (The TetFuck Box) - TetFuck TRAX" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
     <Grid ClipToBounds="True">
         <Grid.Background>
             <ImageBrush ImageSource="/TFLauncher;component/materials/bg/login-screen-static-season2.jpg" Stretch="UniformToFill"/>
@@ -23,26 +23,33 @@
                     </LinearGradientBrush>
                 </ListBox.Background>
                 <Label Background="{x:Null}" Content="Ana Tijoux - 1977" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
-                <Label Background="{x:Null}" Content="A-Trak - Push (feat. Andrew Wyatt)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="AR/CO - Generation Love" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="A-Trak - Push (ft. Andrew Wyatt)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Bastille - Weight Of Living, Pt. II" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Blur - Song 2" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
-                <Label Background="{x:Null}" Content="Unknown Artists - BNWO chant" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Bloco Bleque - Só Tem Jogador (ft. Gabriel O Pensador)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Brian Tuey &amp; LK - Damned271jewishAeACK" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
-                <Label Background="{x:Null}" Content="Jimmy &quot;Big Giant Circle&quot; Hinson - Adrenaline 2025" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="siemka321 - Crack-Life Anniversary Theme" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
-                <Label Background="{x:Null}" Content="siemka321 - Sea Shanty 2 x I'm a fucking alcoholic" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="siemka321 - Sea Shanty 2 x I'm a fucking alcoholic (CL Campaign)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Crystal Fighters - Follow" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="CSS - Hits Me Like a Rock" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Deadmau5 - Professional Griefers" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Digitalism - Circles" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="DJ Raff - Latino &amp; Proud" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Empire Of The Sun - We Are The People" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="El Guincho - Bombay (Fresh Touch Dub Mix)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Foster The People - Call It What You Want" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Gorillaz - Rhinestone Eyes" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Grouplove - Colours (Captain Cuts Remix)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Imagine Dragons - On Top Of The World" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Jelly Roll - Lighter (FIFA World Cup 2026)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="John Newman - Love Me Again" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Justin Timberlake - SexyBack" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Kanye West - ALL THE LOVE (ft. André Troutman)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Kanye West - FATHER (ft. Travis Scott)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Kanye West (ft. Dwele) - Flashing Lights" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Kanye West - HIGHS AND LOWS" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Kanye West - KING" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Madeon - Finale" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Ram Di Dam - Flashbacks" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Rock Mafia - Fly or Die" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
@@ -50,7 +57,11 @@
                 <Label Background="{x:Null}" Content="Savoir Adore - Dreamers" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="The Strokes - Machu Picchu" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="The Ting Tings - Hands" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="The Vaccines - Wreckin' Bar (Ra Ra Ra)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Thievery Corporation - Stargazer" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Tom Grennan - Cool With That" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Tying Tiffany - Drownin'" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
+                <Label Background="{x:Null}" Content="Unknown Artists - BNWO chant (BBC)" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
                 <Label Background="{x:Null}" Content="Walk The Moon - Quesadilla" FontSize="16" FontFamily="Arial" Foreground="White" FontWeight="Bold" Width="508" Height="28" ScrollViewer.CanContentScroll="True"/>
             </ListBox>
             <Button x:Name="button_BACK" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="69,632,1179,56" Width="24" Height="24" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="button_BACK_Click">

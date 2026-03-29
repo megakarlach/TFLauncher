@@ -6,7 +6,7 @@
         xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:TFLauncher"
         mc:Ignorable="d"
-        Title="The TetFuck Box - Pussyo Pussyo: Kunny Krysis" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
+        Title="TetFuck HQ 26 (The TetFuck Box) - Pussyo Pussyo: Kunny Krysis" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
     <Grid ClipToBounds="True">
         <Grid.Background>
             <ImageBrush ImageSource="/TFLauncher;component/materials/bg/CunnyCrysisLauncherBG.jpg" Stretch="UniformToFill"/>
@@ -16,13 +16,14 @@
         <!-- top bar grid -->
         <Image x:Name="TFHQ_FIFA13_menu_top" Source="/TFLauncher;component/materials/bg/TF13_menu_nobg_top_kunnykrysis.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="712" Width="1272"/>
         <!-- top bar grid -->
+        <Image x:Name="TFHQ_Grace" Source="/TFLauncher;component/materials/bg/grace-hot.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="382" Margin="320,0,570,155" Height="468" VerticalAlignment="Bottom"/>
         <!-- bottom bar grid -->
         <Grid Margin="0,86,0,0">
-            <Grid Margin="814,143,86,274" HorizontalAlignment="Center" VerticalAlignment="Center" Width="372" Height="209">
+            <Grid Margin="622,38,10,228" HorizontalAlignment="Center" VerticalAlignment="Center" Width="640" Height="360">
                 <!-- <Image x:Name="image_game_screenshot" Source="../screenshots/TF2142-screenshot.png" Stretch="UniformToFill"/> -->
-                <MediaElement x:Name="animatedgameplay" Source="../media/kk_gameplay_menu.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedgameplay_Loaded" MediaEnded="animatedgameplay_Ended" IsMuted="True" HorizontalAlignment="Center" VerticalAlignment="Center" Height="209" Width="373" Margin="0,0,-1,0"/>
+                <MediaElement x:Name="animatedgameplay" Source="../media/kk_gameplay_menu.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedgameplay_Loaded" MediaEnded="animatedgameplay_Ended" IsMuted="True" HorizontalAlignment="Center" VerticalAlignment="Center" Height="360" Width="640"/>
             </Grid>
-            <Image x:Name="GameLogo" Margin="3,2,794,0" Source="/TFLauncher;component/gamecover/logos/logo_tf_kunnykrysis.png" HorizontalAlignment="Center" Width="475" Height="282" VerticalAlignment="Top"/>
+            <Image x:Name="GameLogo" Margin="3,2,746,0" Source="/TFLauncher;component/gamecover/logos/logo_tf_kunnykrysis.png" HorizontalAlignment="Center" Width="523" Height="282" VerticalAlignment="Top"/>
             <!--            <Button x:Name="UseLegacyTF2142LauncherBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Use Legacy CMD Launcher&#xD;&#xA;(Unsupported)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="191" Margin="512,0,0,105" Height="35" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -47,8 +48,8 @@
                 <Button x:Name="VisitTFWebsiteBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OFFICIAL WEBSITE" Margin="128,0,920,34" Click="VisitTFWebsiteBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="41" VerticalAlignment="Bottom" Width="225" FontWeight="Bold"/>
                 <Button x:Name="AboutBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ABOUT" Margin="919,0,128,34" Click="AboutBtn_Click" BorderBrush="{x:Null}" Foreground="White" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="41" VerticalAlignment="Bottom" Width="225" FontWeight="Bold"/>
                 <Button x:Name="OpenUltimateTeamBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="ULTIMATE  TEAM" Margin="148,0,965,3" Click="OpenUltimateTeamBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" Width="160" FontWeight="Bold"/>
-                <Button x:Name="OpenTetFuckTraxBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TETFUCK  TRAX" Margin="354,0,758,3" Click="OpenTetFuckTraxBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
-                <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK UPDATES" Margin="782,0,330,3" Click="UpdateBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+                <Button x:Name="OpenTetFuckTraxBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TETFUCK  TRAX" Margin="353,0,759,3" Click="OpenTetFuckTraxBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
+                <Button x:Name="UpdateBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="CHECK UPDATES" Margin="759,0,353,3" Click="UpdateBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
                 <Button x:Name="HelpBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="HELP" Margin="960,0,152,3" Click="HelpBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
                 <Button x:Name="NewsBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="TETFUCK NEWS" Margin="556,0,556,3" Click="NewsBtn_Click" BorderBrush="{x:Null}" Foreground="Black" FontSize="18.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Background="{x:Null}" Height="31" VerticalAlignment="Bottom" FontWeight="Bold" Width="160"/>
             </Grid>
@@ -74,11 +75,11 @@
                         <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-nsfw.png"/>
                     </Button.Background>
                 </Button>
-                <!-- <Button x:Name="ViewTF2142CDKeyNew"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="633,6,314,74.625" Content="Play TetFuck V" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="OpenTetFuck2142CDKeyBtn_Click" OpacityMask="#FF65C95C" BorderBrush="#FFB5C6D0" Foreground="#00000000" BorderThickness="1" SnapsToDevicePixels="True" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
+                <Button x:Name="EAFIFAClubBtn"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="633,6,314,74.625" Content="Play TetFuck V" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="EAFIFAClubBtn_Click" OpacityMask="#FF65C95C" BorderBrush="#FFB5C6D0" Foreground="#00000000" BorderThickness="1" SnapsToDevicePixels="True" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
                     <Button.Background>
-                        <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-cdkey-13.png"/>
+                        <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-fifaclub-13.png"/>
                     </Button.Background>
-                </Button> -->
+                </Button>
                 <Button x:Name="GoBackBtn" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="950,6,1,74.625" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Play TetFuck V" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="GoBackBtn_Click" OpacityMask="#FF65C95C"  BorderBrush="#FFB5C6D0" Foreground="#00000000" BorderThickness="1" SnapsToDevicePixels="True" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
                     <Button.Background>
                         <ImageBrush ImageSource="/TFLauncher;component/materials/btn_newredesign2013/menuoptions/btn-back-13.png"/>
@@ -92,7 +93,7 @@
             </Grid>
             <!-- select game toolbar -->
             <Label x:Name="labelresetaudionotice" Content="System Requirements: Win 7, 512MB RAM, DirectX 11 (feature level 9.0) GPU" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="14" Margin="10,0,746,195" HorizontalAlignment="Center" Width="516" Background="#66303030" Height="28"/>
-            <Label x:Name="label1" Content="© 2025-26 LK (TetFuck Company) &amp;amp; MEGA Limited | Original Candy Crisis by John Stiles" HorizontalAlignment="Center" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000" Height="22" VerticalAlignment="Top" Margin="844,0,0,0" Width="428" HorizontalContentAlignment="Right"/>
+            <Label x:Name="label1" Content="© 2025-26 LK (TetFuck Company) &amp; MEGA Limited | Original Candy Crisis by John Stiles" HorizontalAlignment="Center" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#3F2A0000" Height="22" VerticalAlignment="Top" Margin="844,0,0,0" Width="428" HorizontalContentAlignment="Right"/>
             <Label x:Name="labelTF2142Notice" Content="NOTE: If widescreen option is disabled, the Credits button will not be available." Foreground="White" Background="#66303030" FontFamily="Tahoma" FontSize="14" Margin="10,0,10,161" Height="29" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="1252"/>
         </Grid>
         <!-- Game logo and play button-->

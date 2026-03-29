@@ -10,8 +10,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using CefSharp;
-using CefSharp.Wpf;
 using System.Diagnostics;
 using System.Media;
 using System.Threading;
@@ -30,9 +28,7 @@ namespace TFLauncher
         // Animated gameplay video
         private void animatedgameplay_Loaded(object sender, RoutedEventArgs e)
         {
-
             animatedgameplay.Play();
-
         }
 
         private void animatedgameplay_Ended(object sender, RoutedEventArgs e)
@@ -86,9 +82,11 @@ namespace TFLauncher
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
             SelectGameWindow selectgamewnd = new SelectGameWindow();
-            selectgamewnd.ShowDialog();
+            selectgamewnd.Show();
+            this.Close();
         }
 
         // Middle bottom btns - END
@@ -116,9 +114,11 @@ namespace TFLauncher
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
             EATraxWindow eatraxwnd = new EATraxWindow();
-            eatraxwnd.ShowDialog();
+            eatraxwnd.Show();
+            this.Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)

@@ -42,9 +42,11 @@ namespace TFLauncher
 
         private void button_BACK_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             SelectGameWindow selectgamewnd = new SelectGameWindow();
             selectgamewnd.ShowDialog();
+            this.Close();
         }
     }
 }

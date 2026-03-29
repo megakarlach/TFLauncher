@@ -311,7 +311,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.manifest" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -481,11 +483,27 @@
     <Resource Include="materials\bg\TF13_menu_nobg_top_tf4k.png" />
     <Resource Include="materials\bg\TF13_menu_nobg_top_tf5000.png" />
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-nsfw.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-fifaclub-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-view-enhanced-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-settings-13.png" />
+    <Resource Include="materials\bg\grace-hot.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tf4k_enhanced.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tf5000_enhanced.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-view-regular-13.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_btm_enhanced.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-playgame-tfv-13.png" />
+    <Resource Include="materials\btn_newredesign2013\menuoptions\btn-fifawc26-13.png" />
+    <Resource Include="materials\bg\TF13_menu_nobg_top_tetrizz_enhanced.png" />
     <Content Include="media\background_s2_26.wmv" />
     <Content Include="media\kk_gameplay_menu.wmv" />
     <Content Include="media\tf2142_gameplay_menu.wmv" />
-    <Content Include="sound\fifa13_m_clicked.wav" />
-    <Content Include="sound\fifa13_m_select.wav" />
+    <Content Include="media\tf4k_gameplay_menu.wmv" />
+    <Content Include="sound\fifa13_m_clicked.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\fifa13_m_select.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="materials\bg\TF13_menu_nobg.png" />
     <Resource Include="gamecover\LauncherLogo_TF26.png" />
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-back-13.png" />
@@ -502,7 +520,6 @@
     <Resource Include="materials\bg\TF5K_bg.jpg" />
     <Resource Include="materials\bg\TRIZZ_bg.jpg" />
     <Resource Include="materials\bg\CunnyCrysisLauncherBG.jpg" />
-    <Resource Include="tfmenu_1.png" />
     <Resource Include="albumcover\TFalbum art 5 Part II.png" />
     <Resource Include="gamecover\battlelog\icon_pussyopussyo.png" />
     <Resource Include="gamecover\battlelog\icon_tetfuck2142.png" />
@@ -530,20 +547,14 @@
     <Resource Include="gamecover\logos\logo_tf_tetrizz_enhanced.png" />
     <Resource Include="materials\poweroff_btn.png" />
     <Resource Include="materials\poweroff_red_btn.png" />
-    <Content Include="sound\csgo_ui_page_scroll.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="sound\csgo_ui_page_scroll.wav" />
     <Resource Include="albumcover\TFalbum art 1.png" />
     <Resource Include="albumcover\TFalbum art 2.png" />
     <Resource Include="albumcover\TFalbum art 3.png" />
     <Resource Include="albumcover\TFalbum art 4.png" />
     <Resource Include="albumcover\TFalbum art 5.png" />
-    <Content Include="sound\buttonrollover.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sound\buttonclickrelease.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="sound\buttonrollover.wav" />
+    <Content Include="sound\buttonclickrelease.wav" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

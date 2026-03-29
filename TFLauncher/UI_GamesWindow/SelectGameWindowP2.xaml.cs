@@ -28,6 +28,32 @@ namespace TFLauncher
             animatedBG.Position = TimeSpan.FromSeconds(0);
 
         }
+
+        // attempt fixing nasty memory leak
+
+        private void CleanupMedia()
+        {
+            try
+            {
+                if (animatedBG != null)
+                {
+                    animatedBG.Stop();
+                    animatedBG.Source = null;
+
+                    // Optional but helps:
+                    animatedBG.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
+                    animatedBG.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
+                }
+            }
+            catch { }
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            CleanupMedia();
+            base.OnClosing(e);
+        }
+
         // Play sounds when hovering buttons
         private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -45,27 +71,46 @@ namespace TFLauncher
         private void OpenCunnyCrisis_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             // Open up the game window and hide the select game window.
-            this.Hide();
             CunnyCrisisWindow cunnycrysis = new CunnyCrisisWindow();
-            cunnycrysis.ShowDialog();
+            Application.Current.MainWindow = cunnycrysis;
+            cunnycrysis.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         // Button that opens Tetrizz
         private void OpenTetRizz_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             // Open up the game window and hide the select game window.
-            this.Hide();
             TetRizzWindow game_tetrizz = new TetRizzWindow();
-            game_tetrizz.ShowDialog();
+            Application.Current.MainWindow = game_tetrizz;
+            game_tetrizz.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
+        }
+
+        private void FIFAAdBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"); //link updated 3/28/2026
         }
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             SelectGameWindow selectgamewnd = new SelectGameWindow();
-            selectgamewnd.ShowDialog();
+            Application.Current.MainWindow = selectgamewnd;
+            selectgamewnd.Show();
+            UnregisterName  ("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         // SELECT GAME SCRIPTS & Middle bottom btns
@@ -93,9 +138,14 @@ namespace TFLauncher
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             EATraxWindow eatraxwnd = new EATraxWindow();
-            eatraxwnd.ShowDialog();
+            Application.Current.MainWindow = eatraxwnd;
+            eatraxwnd.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)

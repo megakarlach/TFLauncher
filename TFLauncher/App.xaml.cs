@@ -24,6 +24,7 @@ namespace TFLauncher
             {
                 MessageBox.Show(e.ExceptionObject.ToString(), "Fatal Crash");
             };
+            Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
         }
     }
 }

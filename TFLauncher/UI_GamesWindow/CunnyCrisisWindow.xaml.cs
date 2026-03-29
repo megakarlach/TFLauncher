@@ -10,8 +10,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using CefSharp;
-using CefSharp.Wpf;
 using System.Diagnostics;
 using System.Media;
 
@@ -76,11 +74,19 @@ namespace TFLauncher
             Launcher.ExitMe();
         }
 
+        private void EAFIFAClubBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Launcher.PlayBtnSound();
+            Launcher.LaunchWebsite("http://web.archive.org/web/20130121005058/http://www.ea.com/soccer/fifa/xbox"); //link updated 3/21/2026
+        }
+
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
             SelectGameWindow selectgamewnd = new SelectGameWindow();
-            selectgamewnd.ShowDialog();
+            selectgamewnd.Show();
+            this.Close();
         }
 
         // Middle bottom btns - END
@@ -108,9 +114,11 @@ namespace TFLauncher
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedgameplay.Stop();
             EATraxWindow eatraxwnd = new EATraxWindow();
-            eatraxwnd.ShowDialog();
+            eatraxwnd.Show();
+            this.Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)

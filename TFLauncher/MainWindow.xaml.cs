@@ -233,16 +233,10 @@ namespace TFLauncher
             Launcher.PlayBtnSound();
             // animatedBG.Stop(); // stop animated BG (UNUSED)
             // Open up the select game window.
-            this.Hide();
             SelectGameWindow selectgamewin = new SelectGameWindow();
-            selectgamewin.ShowDialog();
-        }
-        // UPDATE POPUP 2025
-        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Launcher.PlayBtnSound();
-            TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
-            aboutpopup.ShowDialog();
+            selectgamewin.Show();
+            this.Content = null;
+            this.Hide();
         }
     }
 }

@@ -28,6 +28,32 @@ namespace TFLauncher
             animatedBG.Position = TimeSpan.FromSeconds(0);
 
         }
+
+        // attempt fixing nasty memory leak
+
+        private void CleanupMedia()
+        {
+            try
+            {
+                if (animatedBG != null)
+                {
+                    animatedBG.Stop();
+                    animatedBG.Source = null;
+
+                    // Optional but helps:
+                    animatedBG.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
+                    animatedBG.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
+                }
+            }
+            catch { }
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            CleanupMedia();
+            base.OnClosing(e);
+        }
+
         // Play sounds when hovering buttons
         private void ButtonSFX_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -45,35 +71,55 @@ namespace TFLauncher
         private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             // Open up the game window and hide the select game window.
-            this.Hide();
             TF2142Window tf2142win = new TF2142Window();
-            tf2142win.ShowDialog();
+            Application.Current.MainWindow = tf2142win;
+            tf2142win.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         // Button that opens TetFuck 4K (NOTE: Enhanced version can be accessed via TF4K)
         private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             // Open up the game window and hide the select game window.
-            this.Hide();
             TF4000Window tf4kwin = new TF4000Window();
-            tf4kwin.ShowDialog();
+            Application.Current.MainWindow = tf4kwin;
+            tf4kwin.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         // Button that opens TetFuck Five (NOTE: Enhanced version can be accessed via TFV)
         private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             // Open up the game window and hide the select game window.
-            this.Hide();
             TF5000Window tf5000win = new TF5000Window();
-            tf5000win.ShowDialog();
+            Application.Current.MainWindow = tf5000win;
+            tf5000win.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         private void OpenMoreGamesBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
+            // Open up the game window and hide the select game window.
+            SelectGameWindowP2 selectgamewnd2 = new SelectGameWindowP2();
+            Application.Current.MainWindow = selectgamewnd2;
+            selectgamewnd2.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         // SELECT GAME & Middle bottom btns
@@ -101,9 +147,14 @@ namespace TFLauncher
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            Launcher.PlayBtnSound();
+            animatedBG.Stop(); // Stop video playback
             EATraxWindow eatraxwnd = new EATraxWindow();
-            eatraxwnd.ShowDialog();
+            Application.Current.MainWindow = eatraxwnd;
+            eatraxwnd.Show();
+            UnregisterName("animatedBG");
+            this.Content = null;
+            this.Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
