@@ -33,19 +33,7 @@ namespace TFLauncher
 
         private void CleanupMedia()
         {
-            try
-            {
-                if (animatedBG != null)
-                {
-                    animatedBG.Stop();
-                    animatedBG.Source = null;
-
-                    // Optional but helps:
-                    animatedBG.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
-                    animatedBG.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
-                }
-            }
-            catch { }
+            WindowLifetimeHelper.CleanupMediaElement(animatedBG);
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -71,55 +59,39 @@ namespace TFLauncher
         private void OpenTetFuck2142_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             TF2142Window tf2142win = new TF2142Window();
             Application.Current.MainWindow = tf2142win;
             tf2142win.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // Button that opens TetFuck 4K (NOTE: Enhanced version can be accessed via TF4K)
         private void OpenTetFuck4000_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             TF4000Window tf4kwin = new TF4000Window();
             Application.Current.MainWindow = tf4kwin;
             tf4kwin.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // Button that opens TetFuck Five (NOTE: Enhanced version can be accessed via TFV)
         private void OpenTetFuck5000_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             TF5000Window tf5000win = new TF5000Window();
             Application.Current.MainWindow = tf5000win;
             tf5000win.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void OpenMoreGamesBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             SelectGameWindowP2 selectgamewnd2 = new SelectGameWindowP2();
             Application.Current.MainWindow = selectgamewnd2;
             selectgamewnd2.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // SELECT GAME & Middle bottom btns
@@ -141,20 +113,17 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
             EATraxWindow eatraxwnd = new EATraxWindow();
             Application.Current.MainWindow = eatraxwnd;
             eatraxwnd.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
@@ -167,21 +136,21 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFAbout aboutpopup = new TFAbout();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TF_Help_Window helppopup = new TF_Help_Window();
-            helppopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, helppopup);
         }
 
         private void NewsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TFNewsWindow tfnewswnd = new TFNewsWindow();
-            tfnewswnd.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, tfnewswnd);
         }
 
         // Bottom bar buttons

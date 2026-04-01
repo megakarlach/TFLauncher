@@ -18,7 +18,7 @@
                 <GradientStop Color="#FF6A461A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/launcher_version/launcher_v26.2.0.html" Margin="0,0,0,50" Grid.RowSpan="2" />
+        <cefSharp:ChromiumWebBrowser x:Name="browserwnd" Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/launcher_version/launcher_v26.2.0.html" Margin="0,0,0,50" Grid.RowSpan="2" />
         <Button x:Name="OKbtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Height="30" Click="OKbtn_Click" Foreground="Black" BorderBrush="#FFAAAAAA" Grid.Row="1" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontSize="16">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

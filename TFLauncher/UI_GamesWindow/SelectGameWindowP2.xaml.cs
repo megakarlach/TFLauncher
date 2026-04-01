@@ -33,19 +33,7 @@ namespace TFLauncher
 
         private void CleanupMedia()
         {
-            try
-            {
-                if (animatedBG != null)
-                {
-                    animatedBG.Stop();
-                    animatedBG.Source = null;
-
-                    // Optional but helps:
-                    animatedBG.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
-                    animatedBG.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
-                }
-            }
-            catch { }
+            WindowLifetimeHelper.CleanupMediaElement(animatedBG);
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -71,28 +59,20 @@ namespace TFLauncher
         private void OpenCunnyCrisis_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             CunnyCrisisWindow cunnycrysis = new CunnyCrisisWindow();
             Application.Current.MainWindow = cunnycrysis;
             cunnycrysis.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // Button that opens Tetrizz
         private void OpenTetRizz_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
-            // Open up the game window and hide the select game window.
             TetRizzWindow game_tetrizz = new TetRizzWindow();
             Application.Current.MainWindow = game_tetrizz;
             game_tetrizz.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void FIFAAdBtn_Click(object sender, RoutedEventArgs e)
@@ -104,13 +84,10 @@ namespace TFLauncher
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
             SelectGameWindow selectgamewnd = new SelectGameWindow();
             Application.Current.MainWindow = selectgamewnd;
             selectgamewnd.Show();
-            UnregisterName  ("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // SELECT GAME SCRIPTS & Middle bottom btns
@@ -132,20 +109,17 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
             EATraxWindow eatraxwnd = new EATraxWindow();
             Application.Current.MainWindow = eatraxwnd;
             eatraxwnd.Show();
-            UnregisterName("animatedBG");
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
@@ -158,21 +132,21 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFAbout aboutpopup = new TFAbout();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TF_Help_Window helppopup = new TF_Help_Window();
-            helppopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, helppopup);
         }
 
         private void NewsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TFNewsWindow tfnewswnd = new TFNewsWindow();
-            tfnewswnd.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, tfnewswnd);
         }
 
         // Bottom bar buttons

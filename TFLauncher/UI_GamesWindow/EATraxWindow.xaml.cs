@@ -33,19 +33,7 @@ namespace TFLauncher
 
         private void CleanupMedia()
         {
-            try
-            {
-                if (animatedBG != null)
-                {
-                    animatedBG.Stop();
-                    animatedBG.Source = null;
-
-                    // Optional but helps:
-                    animatedBG.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
-                    animatedBG.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
-                }
-            }
-            catch { }
+            WindowLifetimeHelper.CleanupMediaElement(animatedBG);
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -69,11 +57,10 @@ namespace TFLauncher
         private void button_BACK_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedBG.Stop(); // Stop video playback
             SelectGameWindow selectgamewnd = new SelectGameWindow();
-            selectgamewnd.ShowDialog();
-            this.Content = null;
-            this.Close();
+            Application.Current.MainWindow = selectgamewnd;
+            selectgamewnd.Show();
+            Close();
         }
     }
 }

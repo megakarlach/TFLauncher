@@ -275,6 +275,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Launcher.cs" />
+    <Compile Include="WindowLifetimeHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -498,6 +499,7 @@
     <Content Include="media\kk_gameplay_menu.wmv" />
     <Content Include="media\tf2142_gameplay_menu.wmv" />
     <Content Include="media\tf4k_gameplay_menu.wmv" />
+    <Content Include="media\tfv_gameplay_menu.wmv" />
     <Content Include="sound\fifa13_m_clicked.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

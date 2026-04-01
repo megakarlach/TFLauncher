@@ -21,16 +21,12 @@ namespace TFLauncher
         public TF_Help_TR_CDKey_Window()
         {
             InitializeComponent();
-            var settings = new CefSettings();
+        }
 
-            // Enable GPU
-            settings.CefCommandLineArgs.Add("enable-gpu", "1");
-            settings.CefCommandLineArgs.Add("disable-gpu-vsync", "1");
-            settings.CefCommandLineArgs.Add("disable-software-rasterizer", "1");
-
-            // Optional tweaks
-            settings.CefCommandLineArgs.Add("enable-begin-frame-scheduling", "1");
-            settings.CefCommandLineArgs.Add("enable-gpu-compositing", "1");
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            WindowLifetimeHelper.CleanupBrowser(browserwnd);
+            base.OnClosing(e);
         }
 
         // Play sounds when hovering buttons
@@ -47,8 +43,7 @@ namespace TFLauncher
 
         private void OKbtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Content = null;
-            this.Close();
+            Close();
         }
     }
 }

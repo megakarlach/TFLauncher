@@ -42,19 +42,7 @@ namespace TFLauncher
 
         private void CleanupMedia()
         {
-            try
-            {
-                if (animatedgameplay != null)
-                {
-                    animatedgameplay.Stop();
-                    animatedgameplay.Source = null;
-
-                    // Optional but helps:
-                    animatedgameplay.LoadedBehavior = System.Windows.Controls.MediaState.Manual;
-                    animatedgameplay.UnloadedBehavior = System.Windows.Controls.MediaState.Manual;
-                }
-            }
-            catch { }
+            WindowLifetimeHelper.CleanupMediaElement(animatedgameplay);
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -102,17 +90,16 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TF_Help_TF2142_CDKey_Window viewcdkeywnd = new TF_Help_TF2142_CDKey_Window();
-            viewcdkeywnd.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, viewcdkeywnd);
         }
 
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedgameplay.Stop();
             SelectGameWindow selectgamewnd = new SelectGameWindow();
+            Application.Current.MainWindow = selectgamewnd;
             selectgamewnd.Show();
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         // Middle bottom btns - END
@@ -134,18 +121,17 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFChkUpdateWindow aboutpopup = new TFChkUpdateWindow();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         // TETFUCK TRAX 2026
         private void OpenTetFuckTraxBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            animatedgameplay.Stop();
             EATraxWindow eatraxwnd = new EATraxWindow();
+            Application.Current.MainWindow = eatraxwnd;
             eatraxwnd.Show();
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
@@ -158,21 +144,21 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFAbout aboutpopup = new TFAbout();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TF_Help_Window helppopup = new TF_Help_Window();
-            helppopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, helppopup);
         }
 
         private void NewsBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TFNewsWindow tfnewswnd = new TFNewsWindow();
-            tfnewswnd.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, tfnewswnd);
         }
         // Bottom bar buttons
     }

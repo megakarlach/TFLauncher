@@ -69,11 +69,11 @@
         -->
         <!-- top bar grid -->
         <Label x:Name="freezenoticeLabel" Content="NOTE:  The launcher will freeze for few seconds after startup. This is normal so don't worry about it.&#xA;Just wait few seconds for everything to be loaded and the Launcher will work properly." VerticalAlignment="Bottom" Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Margin="10,0,705,10" Height="42" Background="#66000000"/>
-        <Label x:Name="versionlabel" Content="TetFuck Launcher v26.2.0 build 10748 | 2026-03-29 | PMFB-SS2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="versionlabel" Content="TetFuck Launcher v26.2.0 build 10750 | 2026-03-31 | PMFB-SS2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!-- game version check -->
         <!-- <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="10,10,320,101" /> -->
-        <Grid HorizontalAlignment="Center" Width="1272" Height="712" VerticalAlignment="Top">
-            <Button x:Name="EnterTFbutton" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="&gt;&gt;&gt; PRESS BUTTON  TO ENTER MENU &lt;&lt;&lt;" Margin="10,63,10,0" VerticalAlignment="Top" FontSize="48" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" Height="79">
+        <Grid HorizontalAlignment="Center" Width="1272">
+            <Button x:Name="EnterTFbutton" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="&gt; ENTER MENU &lt;" Margin="374,0,374,60" FontSize="26.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" Height="48" VerticalAlignment="Bottom">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="16" ShadowDepth="2"/>
                 </Button.Effect>

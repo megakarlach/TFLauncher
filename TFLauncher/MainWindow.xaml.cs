@@ -176,6 +176,20 @@ namespace TFLauncher
                 }
             }
             catch { }
+            finally
+            {
+                if (mpvProcess != null)
+                {
+                    mpvProcess.Dispose();
+                    mpvProcess = null;
+                }
+
+                if (job != null)
+                {
+                    job.Dispose();
+                    job = null;
+                }
+            }
         }
 
         // Play sounds when hovering buttons
@@ -206,26 +220,24 @@ namespace TFLauncher
         {
             Launcher.PlayBtnSound();
             TFAbout aboutpopup = new TFAbout();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
 
         private void HelpBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
             TF_Help_Window aboutpopup = new TF_Help_Window();
-            aboutpopup.ShowDialog();
+            WindowLifetimeHelper.ShowOwnedDialog(this, aboutpopup);
         }
         // TOP BAR STUFF
 
         private void selectgamebtn_Click(object sender, RoutedEventArgs e)
         { //click to select game btn
             Launcher.PlayBtnSound();
-            // animatedBG.Stop(); // stop animated BG (UNUSED)
-            // Open up the select game window.
             SelectGameWindow selectgamewin = new SelectGameWindow();
+            Application.Current.MainWindow = selectgamewin;
             selectgamewin.Show();
-            this.Content = null;
-            this.Hide();
+            Hide();
         }
     }
 }

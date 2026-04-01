@@ -37,8 +37,7 @@ namespace TFLauncher
 
         private void OKbtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Content = null;
-            this.Close();
+            Close();
         }
 
         private void brokenBtn_Click(object sender, RoutedEventArgs e)

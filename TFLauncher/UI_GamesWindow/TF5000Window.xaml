@@ -21,7 +21,7 @@
         <Grid Margin="0,86,0,0">
             <Grid Margin="622,38,10,228" HorizontalAlignment="Center" VerticalAlignment="Center" Width="640" Height="360">
                 <!-- <Image x:Name="image_game_screenshot" Source="../screenshots/TF2142-screenshot.png" Stretch="UniformToFill"/> -->
-                <MediaElement x:Name="animatedgameplay" Source="../media/tf4k_gameplay_menu.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedgameplay_Loaded" MediaEnded="animatedgameplay_Ended" IsMuted="True" HorizontalAlignment="Center" VerticalAlignment="Center" Height="360" Width="640"/>
+                <MediaElement x:Name="animatedgameplay" Source="../media/tfv_gameplay_menu.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedgameplay_Loaded" MediaEnded="animatedgameplay_Ended" IsMuted="True" HorizontalAlignment="Center" VerticalAlignment="Center" Height="360" Width="640"/>
             </Grid>
             <Image x:Name="GameLogo" Margin="3,2,746,0" Source="/TFLauncher;component/gamecover/logos/logo_tf_tffive.png" HorizontalAlignment="Center" Width="523" Height="350" VerticalAlignment="Top"/>
             <!--            <Button x:Name="UseLegacyTF2142LauncherBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="Use Legacy CMD Launcher&#xD;&#xA;(Unsupported)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="191" Margin="512,0,0,105" Height="35" Click="UseLegacyTF2142Launcher_Click" BorderBrush="#FFDAC5AE" Foreground="#FFDAC5AE">
