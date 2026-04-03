@@ -69,7 +69,7 @@
         -->
         <!-- top bar grid -->
         <Label x:Name="freezenoticeLabel" Content="NOTE:  The launcher will freeze for few seconds after startup. This is normal so don't worry about it.&#xA;Just wait few seconds for everything to be loaded and the Launcher will work properly." VerticalAlignment="Bottom" Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Margin="10,0,705,10" Height="42" Background="#66000000"/>
-        <Label x:Name="versionlabel" Content="TetFuck Launcher v26.2.0 build 10750 | 2026-03-31 | PMFB-SS2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="versionlabel" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
         <!-- game version check -->
         <!-- <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="10,10,320,101" /> -->
         <Grid HorizontalAlignment="Center" Width="1272">

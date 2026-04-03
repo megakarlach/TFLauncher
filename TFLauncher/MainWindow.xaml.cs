@@ -1,21 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using CefSharp;
-using CefSharp.Wpf;
-using System.Media;
+using System.Reflection;
+
 
 namespace TFLauncher
 {
@@ -26,6 +15,29 @@ namespace TFLauncher
     {
         Process mpvProcess;
         JobObject job;
+        public MainWindow()
+        {
+            InitializeComponent();
+            SetVersionLabel();
+            job = new JobObject();
+
+            PlayLauncherBGMusic();
+        }
+
+        private void SetVersionLabel()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version;
+
+            DateTime dotNetBaseDate = new DateTime(2000, 1, 1);
+
+            DateTime buildDate = dotNetBaseDate.AddDays(version.Build)
+                                               .AddSeconds(version.Revision * 2);
+
+            int customBuildNumber = (buildDate - LauncherVerInfo.CustomBaseDate).Days;
+
+            versionlabel.Content =
+                $"TetFuck Launcher v{LauncherVerInfo.Version} build {customBuildNumber} | {buildDate:yyyy-MM-dd} | {LauncherVerInfo.Codename}";
+        }
 
         void PlayLauncherBGMusic()
         {
@@ -152,14 +164,6 @@ namespace TFLauncher
                 public UIntPtr PeakProcessMemoryUsed;
                 public UIntPtr PeakJobMemoryUsed;
             }
-        }
-
-        public MainWindow()
-        {
-            InitializeComponent();
-            job = new JobObject();
-
-            PlayLauncherBGMusic();
         }
 
         // This kill MPV process when closing the game

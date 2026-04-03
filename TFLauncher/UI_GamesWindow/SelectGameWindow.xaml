@@ -64,7 +64,8 @@
             </Button>
         </Grid>
         <!-- select game toolbar -->
-        <Label x:Name="labelver" VerticalAlignment="Top" HorizontalAlignment="Center" Content="TetFuck Launcher v26.2.0 (build 10750 | 2026-03-31 | PMFB-SS2)&#xA;© 2025 - 2026 LK (TetFuck Company) &amp; MEGA Limited&#xA;© 2012 - 2026 Electronic Arts&#xA;https://playtetfuck.wordpress.com" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="961,88,3,0" Background="#3F000000" Width="308" Height="58"/>
+        <Label x:Name="versionlabel" VerticalAlignment="Top" HorizontalAlignment="Center" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="961,88,3,0" Background="#3F000000" Width="308" Height="23"/>
+        <Label x:Name="labellegal" VerticalAlignment="Top" HorizontalAlignment="Center" Content="© 2025 - 2026 LK (TetFuck Company) &amp; MEGA Limited&#xA;© 2012 - 2026 Electronic Arts&#xA;https://playtetfuck.wordpress.com" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="961,111,3,0" Background="#3F000000" Width="308" Height="47"/>
         <Image x:Name="logo_TFLauncher" Margin="18,110,604,0" Source="/TFLauncher;component/gamecover/LauncherLogo_TF26.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="650"/>
     </Grid>
 </Window>

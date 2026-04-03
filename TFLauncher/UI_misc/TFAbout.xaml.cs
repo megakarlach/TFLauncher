@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
+using System.Reflection;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -21,6 +22,22 @@ namespace TFLauncher
         public TFAbout()
         {
             InitializeComponent();
+            SetVersionLabel();
+        }
+
+        private void SetVersionLabel()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version;
+
+            DateTime dotNetBaseDate = new DateTime(2000, 1, 1);
+
+            DateTime buildDate = dotNetBaseDate.AddDays(version.Build)
+                                               .AddSeconds(version.Revision * 2);
+
+            int customBuildNumber = (buildDate - LauncherVerInfo.CustomBaseDate).Days;
+
+            labellauncheraboutver.Content =
+                $"Version {LauncherVerInfo.Version} Build {customBuildNumber} ({buildDate:yyyy-MM-dd})";
         }
 
         // Play sounds when hovering buttons

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
+using System.Reflection;
 
 namespace TFLauncher
 {
@@ -13,6 +14,22 @@ namespace TFLauncher
         public SelectGameWindowP2()
         {
             InitializeComponent();
+            SetVersionLabel();
+        }
+
+        private void SetVersionLabel()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version;
+
+            DateTime dotNetBaseDate = new DateTime(2000, 1, 1);
+
+            DateTime buildDate = dotNetBaseDate.AddDays(version.Build)
+                                               .AddSeconds(version.Revision * 2);
+
+            int customBuildNumber = (buildDate - LauncherVerInfo.CustomBaseDate).Days;
+
+            versionlabel.Content =
+                $"TetFuck Launcher v{LauncherVerInfo.Version} build {customBuildNumber} | {buildDate:yyyy-MM-dd} | {LauncherVerInfo.Codename}";
         }
 
         private void animatedBG_Loaded(object sender, RoutedEventArgs e)

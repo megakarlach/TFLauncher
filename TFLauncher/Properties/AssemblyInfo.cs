@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TetFuck HQ")]
-[assembly: AssemblyDescription("TetFuck HQ Launcher for TetFuck 2142, TetFuck 4K, TetFuck V, Kunny Krysis and TetRizz")]
+[assembly: AssemblyTitle("TetFuck 26 HQ")]
+[assembly: AssemblyDescription("TetFuck 26 HQ Launcher for TetFuck 2142, TetFuck 4K, TetFuck V, Kunny Krysis and TetRizz")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("The TetFuck Company (leonidakarlach)")]
-[assembly: AssemblyProduct("TetFuck HQ")]
-[assembly: AssemblyCopyright("Copyright © 2025 Starfuckers Inc. (leonidakarlach) & 2012 Electronic Arts")]
+[assembly: AssemblyCompany("Electronic Arts and The TetFuck Company (leonidakarlach)")]
+[assembly: AssemblyProduct("TetFuck 26 HQ")]
+[assembly: AssemblyCopyright("Copyright © 2026 Starfuckers Inc. (leonidakarlach) & 2012 Electronic Arts")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,7 +51,7 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("26.2.0.0")]
-[assembly: AssemblyFileVersion("26.2.0.0")]
+[assembly: AssemblyVersion("26.2.*")]
+[assembly: AssemblyFileVersion("26.2.1.0")]
 [assembly: NeutralResourcesLanguage("en")]
 
