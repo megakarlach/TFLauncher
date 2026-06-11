@@ -9,7 +9,7 @@
         Title="TetFuck HQ" Height="720" Width="1280" Background="#FF418B8A" Foreground="White" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="materials/bg/login-screen-static-season2_alt.jpg" TileMode="Tile" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="materials/bg/login-screen-static-season3_login.jpg" TileMode="Tile" Stretch="UniformToFill"/>
         </Grid.Background>
         <!-- <MediaElement x:Name="animatedBG" Source="media/background_login.wmv" Volume="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True"/> disabled due to performance issues -->
         <!-- top bar grid -->
@@ -68,20 +68,20 @@
         </Grid>
         -->
         <!-- top bar grid -->
-        <Label x:Name="freezenoticeLabel" Content="NOTE:  The launcher will freeze for few seconds after startup. This is normal so don't worry about it.&#xA;Just wait few seconds for everything to be loaded and the Launcher will work properly." VerticalAlignment="Bottom" Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Margin="10,0,705,10" Height="42" Background="#66000000"/>
-        <Label x:Name="versionlabel" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10"/>
+        <Label x:Name="freezenoticeLabel" Content="NOTE:  The launcher will freeze for few seconds after startup. This is normal so don't worry about it.&#xA;Just wait few seconds for everything to be loaded and the Launcher will work properly.&#xD;&#xA;WARNING: DO NOT QUIT  THE LAUNCHER DIRECTLY FROM  TASKBAR!!! OTHERWISE  THE MUSIC (via mpv) MAY STILL PLAY!!!" VerticalAlignment="Bottom" Foreground="White" FontFamily="/TFLauncher;component/resources/#Univers Condensed" Margin="10,0,650,10" Height="56" Background="#66000000"/>
+        <Label x:Name="versionlabel" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="White" FontFamily="Tahoma" FontSize="10" Background="#BF000000"/>
         <!-- game version check -->
         <!-- <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/tfupdatesv2.htm" Margin="10,10,320,101" /> -->
         <Grid HorizontalAlignment="Center" Width="1272">
-            <Button x:Name="EnterTFbutton" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="&gt; ENTER MENU &lt;" Margin="374,0,374,60" FontSize="26.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" Height="48" VerticalAlignment="Bottom">
+            <Button x:Name="EnterTFbutton" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="&gt; ENTER  TETFUCK MENU &lt;" Margin="374,0,374,113" FontSize="26.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" FontWeight="Bold" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="selectgamebtn_Click" Height="48" VerticalAlignment="Bottom">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="16" ShadowDepth="2"/>
                 </Button.Effect>
             </Button>
-            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="" Margin="612,10,612,0" Click="QuitBtn_Click" FontSize="28" FontFamily="Segoe MDL2 Assets" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,3,1,1" Height="48" VerticalAlignment="Top" BorderThickness="1" Foreground="{x:Null}" HorizontalAlignment="Center" Width="48">
-                <Button.Background>
-                    <ImageBrush ImageSource="materials/btn_newredesign2013/menuoptions/btn-ui-quit-13.png"/>
-                </Button.Background>
+            <Button x:Name="QuitBtn" MouseEnter="ButtonSFX_MouseEnter" MouseLeave="ButtonSFX_MouseLeave" Content="QUIT" Margin="541,0,541,60" Click="QuitBtn_Click" FontSize="26.667" FontFamily="/TFLauncher;component/resources/#Univers Condensed" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,3,1,1" Height="48" VerticalAlignment="Bottom" BorderThickness="1" Foreground="White" HorizontalAlignment="Center" Width="190" Background="{x:Null}" FontWeight="Bold">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="16" ShadowDepth="2"/>
+                </Button.Effect>
             </Button>
         </Grid>
     </Grid>

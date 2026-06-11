@@ -339,30 +339,6 @@
     <Resource Include="resources\segmdl2.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="resources\Purista-Bold.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-BoldItalic.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-Light.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-LightItalic.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-Medium.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-MediumItalic.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-SemiBold.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="resources\Purista-SemiBoldItalic.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="resources\stratum2.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -496,7 +472,11 @@
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-playgame-tfv-13.png" />
     <Resource Include="materials\btn_newredesign2013\menuoptions\btn-fifawc26-13.png" />
     <Resource Include="materials\bg\TF13_menu_nobg_top_tetrizz_enhanced.png" />
-    <Content Include="media\background_s2_26.wmv" />
+    <Resource Include="materials\bg\login-screen-static-season3.jpg" />
+    <Resource Include="materials\bg\login-screen-static-season3_login.jpg" />
+    <Content Include="media\background_s3_26_frontend.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="media\kk_gameplay_menu.wmv" />
     <Content Include="media\tf2142_gameplay_menu.wmv" />
     <Content Include="media\tf4k_gameplay_menu.wmv" />

@@ -99,7 +99,7 @@ namespace TFLauncher
         private void GoBackBtn_Click(object sender, RoutedEventArgs e)
         {
             Launcher.PlayBtnSound();
-            SelectGameWindow selectgamewnd = new SelectGameWindow();
+            SelectGameWindowP2 selectgamewnd = new SelectGameWindowP2();
             Application.Current.MainWindow = selectgamewnd;
             selectgamewnd.Show();
             Close();

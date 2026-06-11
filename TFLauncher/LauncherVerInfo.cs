@@ -10,8 +10,8 @@ namespace TFLauncher
 {
     class LauncherVerInfo
     {
-        public const string Version = "26.2.1";
-        public const string Codename = "PMFB-SS2";
+        public const string Version = "26.3.0";
+        public const string Codename = "PMFB-SS3-WC26";
 
         public static readonly DateTime CustomBaseDate = new DateTime(1996, 10, 24);
     }

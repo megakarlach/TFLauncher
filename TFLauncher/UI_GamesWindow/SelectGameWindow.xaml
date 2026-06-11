@@ -8,9 +8,9 @@
         Title="TetFuck HQ 26 (The TetFuck Box) - Select Game" Height="720" Width="1280" WindowState="Maximized" WindowStyle="None">
     <Grid ClipToBounds="True">
         <Grid.Background>
-            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/login-screen-static-season2.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="/TFLauncher;component/materials/bg/login-screen-static-season3.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <MediaElement x:Name="animatedBG" Source="../media/background_s2_26.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True" Margin="0,0,0,-1"/>
+        <MediaElement x:Name="animatedBG" Source="../media/background_s3_26_frontend.wmv" Volume="0" Stretch="UniformToFill" LoadedBehavior="Manual" UnloadedBehavior="Manual" Loaded="animatedBG_Loaded" MediaEnded="animatedBG_Ended" IsMuted="True" Margin="0,0,0,-1"/>
         <!-- Collectors logo -->
         <!-- game version check -->
         <!--         <cefSharp:ChromiumWebBrowser Grid.Row="0" Address="https://megakarlach.github.io/tetfuckupload/clientver.html" Margin="10,52,12,0" Height="66" VerticalAlignment="Top" /> -->
@@ -64,8 +64,8 @@
             </Button>
         </Grid>
         <!-- select game toolbar -->
-        <Label x:Name="versionlabel" VerticalAlignment="Top" HorizontalAlignment="Center" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="961,88,3,0" Background="#3F000000" Width="308" Height="23"/>
-        <Label x:Name="labellegal" VerticalAlignment="Top" HorizontalAlignment="Center" Content="© 2025 - 2026 LK (TetFuck Company) &amp; MEGA Limited&#xA;© 2012 - 2026 Electronic Arts&#xA;https://playtetfuck.wordpress.com" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="961,111,3,0" Background="#3F000000" Width="308" Height="47"/>
+        <Label x:Name="versionlabel" VerticalAlignment="Top" HorizontalAlignment="Center" Content="TetFuck Launcher (ver auto) (build num | build date | codename)" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="938,88,6,0" Background="#3F000000" Width="328" Height="23"/>
+        <Label x:Name="labellegal" VerticalAlignment="Top" HorizontalAlignment="Center" Content="© 2025 - 2026 LK (TetFuck Company) &amp; MEGA Limited&#xA;© 2012 - 2026 Electronic Arts&#xA;https://playtetfuck.wordpress.com" Foreground="White" FontFamily="Tahoma" FontSize="10" Margin="938,111,6,0" Background="#3F000000" Width="328" Height="47"/>
         <Image x:Name="logo_TFLauncher" Margin="18,110,604,0" Source="/TFLauncher;component/gamecover/LauncherLogo_TF26.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="650"/>
     </Grid>
 </Window>

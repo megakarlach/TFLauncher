@@ -8,9 +8,6 @@
         <FontFamily x:Key="markers felt thin">./resources/marker.ttf</FontFamily>
         <FontFamily x:Key="Segoe UI Light">./resources/segoeuil.ttf</FontFamily>
         <FontFamily x:Key="Segoe MDL2 Assets">./resources/segmdl2.ttf</FontFamily>
-        <FontFamily x:Key="Purista Light">./resources/Purista-Light.ttf</FontFamily>
-        <FontFamily x:Key="Purista Medium">./resources/Purista-Medium.ttf</FontFamily>
-        <FontFamily x:Key="Purista SemiBold">./resources/Purista-SemiBold.ttf</FontFamily>
         <FontFamily x:Key="Stratum2 Md">./resources/stratum2.ttf</FontFamily>
         <FontFamily x:Key="Univers Condensed">./resources/UniversCnRg.ttf</FontFamily>
         <FontFamily x:Key="Univers Condensed Bold">./resources/UniversCnBold.ttf</FontFamily>
